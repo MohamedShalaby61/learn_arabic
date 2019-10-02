@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'all' => 'الكل',
+    'all_items' => 'الكل',
+    'online' => 'عبر الانترنت',
+    'offline' => 'غير متصل على الانترنت',
+    'favorites' => 'المفضلة',
+    'availability' => 'متاح',
+    'available' => 'متاح',
+    'not_available' => 'غير متاح',
+    'profile' => 'الملف الشخصي',
+    'view_profile' => 'عرض الملف الشخصي',
+    'home' => 'الرئيسية',
+    'schedule' => 'جدول',
+    'search' => 'البحث',
+    'search_here' => 'ابحث هنا',
+    'teaching_certificate' => 'شهادة تدريس',
+    'find_tutor' => 'اعثر علي معلم',
+    'search_here_for_tutors' => 'ابحث عن معلم ...',
+    'date' => 'التاريخ',
+    'course_time' => 'مدة الدرس',
+    'student' => 'طالب',
+    'cancel_time' => 'إلغاء',
+];

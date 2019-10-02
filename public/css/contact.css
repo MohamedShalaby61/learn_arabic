@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.contact-all{
+   padding-top: 100px;
+    padding-bottom: 50px;
+    width: 60%;
+    z-index: 10;
+}
+.txt-con{
+  text-align: center;
+  letter-spacing: 1px;  
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #ffc000;
+}
+
+.input-con{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 1px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+
+
+
+.contact .input-con:last-child{
+  margin-right: 0;
+}
+
+.msg-con .area-con{
+  height: 200px;
+}
+
+.btn-send{
+  width: 250px;
+  background: #ffc000;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.input-con:focus,
+.msg-con .area-con:focus{
+  border: 1px solid #ffc000;
+}
+
+::-webkit-input-placeholder{
+  font-family: 'roboto';
+}
+
+
+/* start All Responsive for page contact */
+
+@media (max-width: 767px){ /* Extra small screen */
+   .contact-all {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { /* small screen */
+    .contact-all {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    
+}
+@media (min-width: 992px) and (max-width: 1199px) { /* medium screen */
+   .contact-all {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        width: 70%;
+    }
+}
+@media (min-width: 1200px) { /* large screen */
+    
+    
+}
+/* End All Responsive for page all-courses  */
+
+
+

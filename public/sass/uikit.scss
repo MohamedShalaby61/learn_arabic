@@ -1,0 +1,251 @@
+//colors
+$light: #FFF;
+$dark: #000;
+$primary: #ffc000;
+$primary-dark: #E1AB04;
+$primary-light: #BBD73B;
+$primary-shadow: #EADEC0;
+$secondary: #81E1FF;
+$secondary-dark:#0098C7;
+$secondary-light: #5C64D8;
+$secondary-light-x: #F6F6FF;
+$dark-opacity-9: rgba(0,0,0,0.9);
+$dark-opacity-3: rgba(0,0,0,0.3);
+$dark-opacity-1: rgba(0,0,0,0.1);
+$dark-opacity-0: rgba(0,0,0,0);
+$dark-opacity-5: rgba(0,0,0,0.5);
+$light-opacity-3: rgba(255,255,255,0.3);
+$light-opacity-5: rgba(255,255,255,0.5);
+$light-opacity-0: rgba(255,255,255,0);
+$border: #939393;
+$font: #404B54;
+$line: #E6E6EB;
+$largest: 3.125em; //50px
+$larger: 2.5em; //40px
+$large: 1.875em; //30px
+$medium: 1.2em; //24px
+$small: 1.1em; //20px
+$smallest: 0.8em; //16px
+$font-size-p: 0.9375em; //15px
+$extra-small: 0.75em; //12px
+//font-weight
+$bold-font: bold;
+$light-font: 100;
+$simibold-font: 500; //font-family
+$font-1: 'Bahij_TheSansArabic';
+$font-2: 'arial-rounded'; //margin
+$marginTop-15-per: 15%;
+//shadow
+$shadow1: 0 16px 51px 0 rgba(92,100,216,0.17);
+$shadow2: 0 0px 30px 0 rgba(92,100,216,0.17);
+$shadow3: 0 2px 23px 0 #EDEDED;
+$gradient1: linear-gradient(-206deg, #FAD84E 0%, #527D14 95%);
+$gradient2:linear-gradient(-180deg, #7E3D6E 0%, #383D94 42%);
+.marginTop-15-per {
+	margin-top: $marginTop-15-per;
+}
+//============== UIkit ================
+
+:focus {
+	outline: none !important;
+}
+
+body,
+html {
+	height: 100%;
+}
+body{
+	overflow-x: hidden;
+}
+//fonts
+
+a,
+b,
+body,
+del,
+p,
+small,
+strong {
+	font-family: $font-1;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-1;
+	font-weight: $bold-font;
+}
+
+h1 {
+	font-size: $largest;
+}
+
+h2 {
+	font-size: $larger;
+}
+
+h3 {
+	font-size: $large;
+}
+
+h4 {
+	font-size: $medium;
+}
+
+h5 {
+	font-size: $small;
+}
+
+h6 {
+	font-size: $smallest;
+}
+
+a,
+p,
+span {
+	font-size: $font-size-p;
+}
+
+small {
+	font-size: $extra-small;
+}
+
+b,
+strong {
+	font-size: $font-size-p;
+	font-weight: bold;
+}
+
+.mt-6 {
+	margin-top: 6em;
+}
+.filter{
+	filter: blur(20px);
+	transition: all easeIn 1s;
+}
+.overflow{
+	overflow: hidden;
+}
+// title
+
+.title-center {
+	margin: auto;
+	text-align: center;
+
+		&::after{
+			content: " ";
+			width: 110px;
+			height: 6px;
+			border-radius: 10px;
+			background: rgba(92, 100, 216, 0.13);
+			display: block;
+			margin: 5px auto 20px;
+		}
+}
+
+.title-side{
+	position: relative;
+	width: 100%;
+	&::before{
+		content: " ";
+		width: 110px;
+		height: 6px;
+		border-radius: 10px;
+		position: absolute;
+		top: 40px;
+		left: 0px;
+		z-index: 6;
+		background: rgba(92, 100, 216, 0.13);
+	}
+	h3, h2{
+		position: relative;
+		z-index: 3;
+		margin-bottom: 25px;
+	}
+}
+.title-slider{
+	position: relative;
+	width: 100%;
+	&::before{
+		content: " ";
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		position: absolute;
+		top: -20px;
+		left: 0px;
+		z-index: 1;
+		background: $primary;
+	}
+	h3, h2{
+		position: relative;
+		z-index: 3;
+		margin-bottom: 25px;
+	}
+}
+//color-classes
+.primary {
+	color: $primary;
+}
+.btn-primary{
+	background: $primary;
+	color:$light;
+	border-color:$primary;
+}
+.btn-border-primary{
+	border: 1px solid $primary;
+border-radius: 50px;
+padding: 5px 25px;
+color: $primary;
+}
+.btn-bordered-light{
+	border: 1px solid $light;
+	border-radius: 50px;
+	padding: 5px 25px;
+	color: $light;
+	&:hover{
+		color:$light;
+	}
+}
+.secondary {
+	color: $secondary;
+}
+
+.light {
+	color: $light;
+}
+//font-weight
+
+.bold-font {
+	font-weight: $bold-font;
+}
+
+.light-font {
+	font-weight: $light-font;
+}
+
+.simibold-font {
+	font-weight: $simibold-font;
+}
+.dropdown-menu.show{
+	    min-width: 320px;
+}
+.btn:focus, .btn.focus{
+	box-shadow: none;
+}
+// title
+h3 {
+	color: $primary;
+}

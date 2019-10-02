@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="846px" viewBox="0 0 1440 846" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>login_bg@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="94.518565%" y1="89.3131102%" x2="-34.5197419%" y2="-80.1925873%" id="linearGradient-1">
+            <stop stop-color="#FFC000" offset="0%"></stop>
+            <stop stop-color="#C57A00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="login">
+            <g id="login_bg" transform="translate(-9.000000, 0.000000)">
+                <path d="M375.60415,0 L1453,0 L1452.76288,846 L8.762875,846 L8.8954014,373.180445 L242.875518,602.050837 C345.186589,702.12761 508.987624,701.209261 610.170139,599.991602 C711.042081,499.084625 711.038126,335.518028 610.161305,234.615929 L375.60415,-2.84217094e-14 Z" id="Rectangle-2" fill="#FFFFFF"></path>
+                <path d="M5.53378696,369.892242 L242.875518,602.050837 C333.378471,690.577361 471.996865,700.075949 572.825032,631.028232 L764,844 L0.960386275,844 L5.53378696,369.892242 Z" id="Path-4" fill="url(#linearGradient-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

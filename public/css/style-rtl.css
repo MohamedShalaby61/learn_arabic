@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal:500');
+@import url('https://fonts.googleapis.com/css?family=Cairo:600');
+@import url('https://fonts.googleapis.com/css?family=El+Messiri');
+
+*{
+    direction: rtl;
+}
+body{
+    text-align: right;
+/*    font-family: 'El Messiri', sans-serif;*/
+    font-family: Tajawal,Helvetica Neue Bold,Helvetica,Arial,sans-serif;
+/*    direction: rtl;*/
+}
+ol, ul, dl, h1, h2 , h3{
+    direction: rtl;
+}
+.navbar{
+    direction: rtl;
+}
+.row{
+    direction: rtl;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    direction: ltr;
+/*    float: right;*/
+}
+.slider_bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/svg/login_bg@2x.svg);
+    background-size: cover;
+    z-index: 3;
+}
+.carousel.slide {
+    height: 100vh;
+    position: absolute;
+    width: 60%;
+    top: 0px;
+    left: -70px;
+    right: inherit;
+    z-index: -1;
+}
+.owl-carousel.owl-drag .owl-item .item{
+    direction: inherit;
+}
+.main .testimonials .container-fluid{
+    direction: inherit;
+}
+.testimonials .container{
+    direction: inherit;
+}
+.title-side {
+    float: right !important;
+    direction: rtl;
+}
+.float-left {
+    float: right!important;
+}
+.title-side::before {
+    right: 0;
+}
+.main .facility .facility_bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/svg/service_bg@2x.svg);
+    background-size: cover;
+    z-index: 3;
+}  
+.main .facility .facility_img img {
+    position: absolute;
+    right: 600px;
+    top: 0px;
+    z-index: -1;
+    height: 100%;
+}
+
+.float-right {
+    float: left!important;
+}
+#top{
+    text-align: left;
+}
+input , textarea, select{
+    direction: rtl;
+}
+.email{
+    direction: rtl;
+}
+.location{
+    margin-right: 7px;
+    margin-left: 0;
+}
+.rtl{
+    direction: rtl;
+}
+.lesson-list .item .icon_right, .fa-angle-right {
+    transform: rotate(180deg);
+}
+.modal-header .close {
+    margin: -1rem -1rem -1rem 0;
+}
+.modal-footer> :not(:last-child) {
+    margin-left: 5px;
+}
+.form-check-label {
+    margin-bottom: 5px;
+    margin-right: 16px;
+}
+.fa-lock{
+    float: left !important;
+}
+body .enrolled .panel h4 {  
+    margin-right: 10px;
+}
+.btn-group>.btn:not(:first-child), .btn-group>.btn-group:not(:first-child)>.btn {
+    border-radius: 3px 0 0 3px;
+}
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:last-child)>.btn {
+   
+    border-radius: 0 3px 3px 0;
+}
+.fa-phone{
+    transform: rotate(100deg);
+}
+.inp-time {
+     margin: 0; 
+}
+footer .social-icons {
+    float: right;
+}
+.fa-calendar-alt{
+    margin-right: 5px;
+    border-radius: 0px 2px 2px 0px;
+}
+#day-display {
+     letter-spacing: 1px; 
+}
+.main .mentors .owl-stage-outer {
+    direction: ltr !important;
+}
+.main .testimonials .owl-carousel .owl-stage-outer {
+    direction: ltr !important;
+}
+.jq-ry-group-wrapper .jq-ry-normal-group svg{
+    margin-left: 5px;
+}
+body .featured-courses.listview .col-md-4 .item .img-course {
+    border-radius: 0 10px 10px 0;
+}
+.mentors .filtr-container{
+    direction: ltr !important;
+    margin-right: 5px;
+}
+.dropdown-item {
+    text-align: right;
+}
+.dropdown-menu {
+   padding-right: 7px;
+    text-align: right;
+}
+body .filter-courses .search-row {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: none;
+}
+#tutor-search-tabs{
+    margin-right: 35px !important;
+    margin-left: auto !important;
+}
+/*
+.mr-auto {
+     margin-left: 10px !important; 
+}
+.ml-auto {
+    margin-right: 0 !important;
+}
+
+/*
+.header .left{
+    float: right;
+    margin-right: -20px;
+}
+.header .left .infoCall li .domain,.fas,.mobile{
+    margin-right: 10px;
+}
+.header .left .infoCall li .fas{
+}
+.header .left .infoCall li{
+    color: #0099ff;
+    
+}
+.header .right{
+    float: left;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #333332;
+    margin-right: 5px;
+}
+*/
+
+
+
+/*  start page all courses without login */
+
+.main .featured-courses .item .img-course {
+    border-radius: 10px;
+    height: 150px;
+    overflow: hidden;
+    background: #F6F6FF;
+    box-shadow: 0 2px 28px 0 #F6F6FF;
+    width: 90%;
+    margin: -150px auto auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    float: right;
+}
+
+body .featured-courses.listview .col-md-4 .item figcaption a {
+     right: inherit; 
+     left: -45px; 
+}
+
+/* end page all courses without login */
+@media (max-width: 576px) { 
+/*
+    .navbar-nav>li{
+        float: none;
+        margin-left: 20px;
+    }
+    .header .right{
+        float: none;
+    }
+*/
+}
+/* start All Responsive for navbar */
+
+/* devices (portrait phones, iphone 5) */
+@media (max-width: 320.98px){
+/*
+    .navbar-inverse .login {
+        margin-left: 100px;
+    }
+*/
+}
+/* devices (portrait phones, iphone 6/7/8 and galaxy s5) */
+@media (min-width: 321px) and (max-width: 375.98px){
+/*
+    .navbar-inverse .login {
+        margin-left: 127px;
+    }
+*/
+}
+/* devices (portrait phones, iphone 6/7/8 plus and pixel 2) */
+@media (min-width: 376px) and (max-width: 414.98px){
+/*
+    .navbar-inverse .login {
+        margin-left: 145px;
+    }
+*/
+}
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 415px) and (max-width: 575.98px) { 
+/*
+    .navbar-inverse .login {
+        margin-left: 150px;
+    }
+*/
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media(max-width: 767.98px) { 
+    .navbar-inverse .login {
+        float: none;
+        display: inline-block;
+        margin-left: 30px;
+    }
+}

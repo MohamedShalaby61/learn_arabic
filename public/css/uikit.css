@@ -1,0 +1,176 @@
+.marginTop-15-per {
+  margin-top: 15%; }
+
+:focus {
+  outline: none !important; }
+
+body,
+html {
+  height: 100%; }
+
+body {
+  overflow-x: hidden; }
+
+a,
+b,
+body,
+del,
+p,
+small,
+strong {
+  font-family: "Bahij_TheSansArabic";
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bahij_TheSansArabic";
+  font-weight: bold; }
+
+h1 {
+  font-size: 3.125em; }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 1.875em; }
+
+h4 {
+  font-size: 1.2em; }
+
+h5 {
+  font-size: 1.1em; }
+
+h6 {
+  font-size: 0.8em; }
+
+a,
+p,
+span {
+  font-size: 0.9375em; }
+
+small {
+  font-size: 0.75em; }
+
+b,
+strong {
+  font-size: 0.9375em;
+  font-weight: bold; }
+
+.mt-6 {
+  margin-top: 6em; }
+
+.filter {
+  filter: blur(20px);
+  transition: all easeIn 1s; }
+
+.overflow {
+  overflow: hidden; }
+
+.title-center {
+  margin: auto;
+  text-align: center; }
+  .title-center::after {
+    content: " ";
+    width: 110px;
+    height: 6px;
+    border-radius: 10px;
+    background: rgba(92, 100, 216, 0.13);
+    display: block;
+    margin: 5px auto 20px; }
+
+.title-side {
+  position: relative;
+  width: 100%; }
+  .title-side::before {
+    content: " ";
+    width: 110px;
+    height: 6px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    z-index: 6;
+    background: rgba(92, 100, 216, 0.13); }
+  .title-side h3, .title-side h2 {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 25px; }
+
+.title-slider {
+  position: relative;
+  width: 100%; }
+  .title-slider::before {
+    content: " ";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    z-index: 1;
+    background: #ffc000; }
+  .title-slider h3, .title-slider h2 {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 25px; }
+
+.primary {
+  color: #ffc000; }
+
+.btn-primary {
+  background: #ffc000;
+  color: #FFF;
+  border-color: #ffc000; }
+
+.btn-border-primary {
+  border: 1px solid #ffc000;
+  border-radius: 50px;
+  padding: 5px 25px;
+  color: #ffc000; }
+
+.btn-bordered-light {
+  border: 1px solid #FFF;
+  border-radius: 50px;
+  padding: 5px 25px;
+  color: #FFF; }
+  .btn-bordered-light:hover {
+    color: #FFF; }
+
+.secondary {
+  color: #81E1FF; }
+
+.light {
+  color: #FFF; }
+
+.bold-font {
+  font-weight: bold; }
+
+.light-font {
+  font-weight: 100; }
+
+.simibold-font {
+  font-weight: 500; }
+
+.dropdown-menu.show {
+  min-width: 320px; }
+
+.btn:focus, .btn.focus {
+  box-shadow: none; }
+
+h3 {
+  color: #ffc000; }
+
+/*# sourceMappingURL=uikit.css.map */

@@ -1,0 +1,9 @@
+html[lang="ar"] body {
+  text-align: right !important; }
+  html[lang="ar"] body .navbar .ml-auto {
+    margin-right: auto;
+    margin-left: 0px !important; }
+  html[lang="ar"] body .navbar .dropdown-menu {
+    text-align: right; }
+
+/*# sourceMappingURL=rtl.css.map */

@@ -1,0 +1,173 @@
+//==========  Mobile First Method  ==========
+//Custom, iPhone Retina
+@media only screen and (max-width: 320px) {}
+//Extra Small Devices, Phones
+@media only screen and (max-width: 480px) {
+  .wave-light {
+    margin-top: -30px !important;
+  }
+  .technology{
+    .side-video{
+      .overlay{
+        .play{
+          margin:-18px auto !important;
+        }
+      }
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media only screen and (max-width: 576px) {}
+//Small Devices, Tablets
+@media only screen and (max-width: 768px) {
+#search {
+  input[type="search"]{
+  font-size: 22px;
+  margin-top: 60%;
+}
+button[type="submit"]{
+  left: 25% !important;
+}
+
+}
+  nav.navbar {
+    height: auto;
+    max-height: inherit;
+    .navbar-toggler {
+      color: $light;
+    }
+
+    .ml-auto {
+      margin-right: auto !important;
+      margin-left: inherit !important;
+      .navbar-collapse {
+        width: 100%;
+        background: $primary-dark;
+        position: absolute;
+        right: 0px;
+        margin-top: 30px;
+padding-right: 0px;
+        .navbar-nav{
+          li{
+            a{
+              color: $light;
+              padding: 5px 0px;
+            }
+          }
+          .dropdown:hover {
+            .dropdown-menu{
+              background: none;
+              box-shadow: none;
+                .dropdown-item{
+                  color: $light;
+                  border-bottom:1px solid $primary;
+                }
+                &::before{
+                  content: none;
+                }
+            }
+          }
+        }
+      }
+      .collapsing{
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        background: $primary;
+      }
+
+      .search {
+        margin-right: -40px;
+        margin-top: -6px;
+      }
+    }
+  }
+
+  .navbar.scrolled {
+    .navbar-toggler {
+      color: $primary;
+    }
+  }
+
+  .wave-light {
+    margin-top: -34px;
+  }
+
+  .carousel-caption {
+  .title-side{
+    margin-top: 50% !important;
+    font-size: 70%;
+  }
+}
+
+  .carousel-indicators {
+    bottom: 8% !important;
+  }
+
+
+  .owl-carousel {
+    img {
+      margin: auto;
+    }
+  }
+
+  .main {
+    .technology {
+      .side-text {
+        margin-top: 30px;
+      }
+
+      .side-video {
+        background: none;
+        height: auto;
+        margin: 140px auto 0;
+
+        .overlay {
+          width: 94%;
+          height: auto;
+          overflow: hidden;
+          border-radius: 0;
+          margin-left: 16%;
+          position: relative;
+          left: 0;
+          bottom: 84px;
+
+          .play {
+            margin: 40px auto;
+          }
+        }
+      }
+    }
+
+    .competation {
+      .owl-stage-outer {
+        padding: 10px 0;
+
+        .item {
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+//Medium Devices, Desktops
+@media only screen and (max-width: 992px) {}
+//Large Devices, Wide Screens
+@media only screen and (max-width: 1200px) {}
+//==========  Non-Mobile First Method  =======
+//Large Devices, Wide Screens
+@media only screen and (min-width: 1800px) {
+  .wave-light {
+    // margin-top: -160px;
+  }
+  .main{
+    .technology{
+      .side-video{
+        height: 50vh;
+      }
+    }
+  }
+}
+//Medium Devices, Desktops
+@media only screen and (min-width: 992px) {}

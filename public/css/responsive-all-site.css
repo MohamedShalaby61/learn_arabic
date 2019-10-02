@@ -1,0 +1,305 @@
+/* start All Responsive for page all-courses */
+
+@media (max-width: 767px){ /* Extra small screen */
+    body .featured-courses.listview .col-md-4 .item {
+    padding: 0;
+    margin: 0 auto 20px;
+    
+}
+    body .featured-courses.listview .col-md-4 .item figcaption {
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+    body .featured-courses.listview .col-md-4 .item figcaption a {
+    right: 270px;
+        top: 160px;
+    left: auto;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 991px) { /* small screen */
+ 
+    
+}
+@media (min-width: 992px) and (max-width: 1199px) { /* medium screen */
+   
+}
+@media (min-width: 1200px) { /* large screen */
+    
+    
+}
+/* End All Responsive for page all-courses  */
+
+
+/* start All Responsive for page edit-profile-tutor */
+
+@media (max-width: 767px){ /* Extra small screen */
+    .edit-img{
+        left: 370px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { /* small screen */
+ 
+    
+}
+@media (min-width: 992px) and (max-width: 1199px) { /* medium screen */
+   .edit-img{
+        left: 225px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .input_style{
+        width: 250px;
+    }
+    .flo-left{
+        padding-left: 50px;
+        z-index: 10;
+    }
+}
+@media (min-width: 1200px) { /* large screen */
+    
+    
+}
+/* End All Responsive for page edit-profile-tutor  */
+
+/* start All Responsive for page index */
+
+@media (max-width: 767px){ /* Extra small screen */
+   .main .services .service_bg .item img {
+        width: 60px;
+        margin: 10px auto;
+    }
+    .main .services .row h4 ,p {
+        text-align: center;
+    }
+    .main .services .service_bg{
+        background-image: none;
+    }
+    .main .services .sevice_img img {
+        display: none;
+    }
+    .main .see_plans {
+        margin-top: 400px;
+    }
+    .slider_bg {
+         background-image: none; 
+        
+    }
+    body .main .item .xs-wid{
+        width: 75%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { /* small screen */
+    
+    .slider_bg .slider_caption {
+        margin-top: 140px;
+    }
+    .main .services .sevice_img img {
+      
+    }
+    .main .see_plans {
+        margin-top: 100px;
+    }
+    .main .services .service_bg{
+        background-image: none;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) { /* medium screen */
+   .main .services .sevice_img img {
+       margin-bottom: 50px;
+    }
+}
+@media (min-width: 1200px) { /* large screen */
+    
+    
+}
+/* End All Responsive for page index  */
+
+/* start All Responsive for page profile-tutor */
+@media (max-width: 767px){ /* Extra small screen */
+    body .profile .nav-tabs .nav-item {
+        font-size: 11px;
+    }
+}
+/* End All Responsive for page profile-tutor  */
+
+/* start All Responsive for page Navbar without login */
+
+@media (max-width: 767px){ /* Extra small screen */
+    body .login {
+        background-image: none;
+    }
+    .carousel-inner{
+        display: none;
+    }
+    body header nav.navbar .collapse .ml-auto .navbar-nav li a, body header nav.navbar .collapse .mr-auto .navbar-nav li a {
+        padding: 10px 0.8em;
+        color: #404B54;
+        text-transform: uppercase;
+    }
+    body header nav.navbar .collapse .ml-auto .navbar-nav li a, body header nav.navbar .collapse .mr-auto .navbar-nav li a:hover {
+        color: #FFC000;
+    }
+    nav.navbar .navbar-toggler {
+        color: #FFC000;
+    }
+    .navbar-collapse {
+        background: #f8f9fa;
+        opacity: 0.9;
+        margin-top: 25px;
+        padding: 20px;
+        text-align: center;
+/*        box-shadow:1px 1px 3px #bbb;*/
+        border-bottom: 1px solid #999;
+        border-right: 1px solid #999;
+        border-left: 1px solid #999;
+    }
+    .mr-auto{
+        margin: 0 auto;
+    }
+    .res-nav {
+        margin: 0px auto;
+        margin-bottom: 10px;
+        margin-right: 40px
+    }
+       nav.navbar .ml-auto .search {
+        margin-right: 23px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    body header nav.navbar .lang {
+        display: block;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        margin-right: 40px;
+    }
+    body header nav.navbar .profile a {
+        display: block;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        margin-right: 40px;
+    }
+    body header nav.scrolled .ml-auto .profile .register-btn {
+       margin: 0 auto;
+}
+    body header nav.navbar .favourite_tutors {
+        display: block; 
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { /* small screen */
+   .container {
+    max-width: 100%;
+}
+    body header nav.navbar .navbar-brand {
+        height: 24px;
+        width: 125px;
+    }
+   
+ body header nav.navbar .collapse .ml-auto .navbar-nav li a, body header nav.navbar .collapse .mr-auto .navbar-nav li a {
+        font-size: 13px;
+        padding: 10px -0.2em;
+        color: #404B54;
+        text-transform: uppercase;
+    }
+    body header nav.navbar .lang {
+        font-size: 14px;
+    }
+    body header nav.navbar .profile a {
+        font-size: 15px;
+    }
+    body header nav.navbar .mr-auto {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+     body header nav.navbar .collapse .ml-auto .search div span{
+        font-size: 12px;
+         padding-left: 5px;
+         padding-right: 5px;
+    }
+    body header nav.navbar .profile .btn.dropdown-toggle span {
+        display: none;
+    }   
+}
+@media (min-width: 992px) and (max-width: 1199px) { /* medium screen */
+   body header nav.navbar .collapse .ml-auto .navbar-nav li a, body header nav.navbar .collapse .mr-auto .navbar-nav li a {
+        color: #404B54;
+        text-transform: uppercase;
+    }
+}
+@media (min-width: 1200px) { /* large screen */
+    body header nav.navbar .collapse .ml-auto .navbar-nav li a, body header nav.navbar .collapse .mr-auto .navbar-nav li a {
+        color: #404B54;
+        text-transform: uppercase;
+    }
+
+}
+/* End All Responsive for page subscribe  */
+
+/* start All Responsive for page Navbar without login */
+
+@media (max-width: 767px){ /* Extra small screen */
+   #paidTrial-page .giant-select, #subscription-page:not(.giant) .giant-select {
+    
+    min-width: 100%;
+    max-width: 100%;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) { /* small screen */
+ 
+    
+}
+@media (min-width: 992px) and (max-width: 1199px) { /* medium screen */
+   
+}
+@media (min-width: 1200px) { /* large screen */
+    
+    
+}
+/* End All Responsive for page subscribe  */
+
+/* start All Responsive for page all-mentors (tutor) */
+
+@media (max-width: 767px){ /* Extra small screen */
+   .modal-lg .modal-dialog {
+        max-width: 90%;
+        margin: auto;
+    }
+    .modal-footer .nav-pills a i {
+        display: inline;
+        padding: 10px;
+    }
+    .modal-footer .nav-pills {
+        display: contents;
+    }
+    .wrapper .events.small {
+        width: 282px;
+       
+    }
+    .wrapper .calendar.small {
+        width: 282px;
+        margin-bottom: 15px;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 991px) { /* small screen */
+ 
+    #organizerContainer{
+        margin-left: 8px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) { /* medium screen */
+   #organizerContainer{
+        margin-left: 8px;
+    }
+}
+@media (min-width: 1200px) { /* large screen */
+    #organizerContainer{
+        margin-left: 8px;
+    }
+    
+}
+/* End All Responsive for page all-entors (tutor)  */

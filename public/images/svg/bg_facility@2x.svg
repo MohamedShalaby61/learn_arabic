@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="655px" viewBox="0 0 1440 655" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>bg_facility@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1062.42586,6 L815.530698,249.750811 C814.822851,250.449643 814.119489,251.153005 813.420656,251.860853 C723.082949,343.363904 724.027647,490.774965 815.530698,581.112672 C908.560029,672.957221 1058.13775,672.957221 1151.16708,581.112672 L1436.73616,299.180481 C1437.44401,298.481648 1438.14737,297.778286 1438.8462,297.070439 C1442.73311,293.133391 1446.45103,289.092842 1450.00001,284.957792 L1450,661 L0,661 L0,6 L1062.42586,6 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage" transform="translate(0.000000, -2727.000000)">
+            <g id="Online-Education-Benefits-Alliant-Copy-2" transform="translate(0.000000, 2721.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="bg_facility" fill="#FFFFFF" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

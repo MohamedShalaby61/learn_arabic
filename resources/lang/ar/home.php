@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'learn_english_at_the_touch_of_a_button' => 'تعلم اللغة العربية',
+    'enter_email_address' => 'ادخل البريد الالكتروني',
+    'get_started_it_is_free' => 'هيا نبدأ',
+    'learn_to_speak_like_a_native' => 'تعلم التحدث مثل مواطن',
+    'intro' => 'يعد مدرسو Cambly متحدثين أصليين ديناميين من الولايات المتحدة وكندا والمملكة المتحدة وأستراليا ، إلخ. تواصل مع مدرسك المثالي في أقل من 5 ثوانٍ بمجرد الضغط على زر. مارس محادثة باللغة الإنجليزية ، أو خذ دورة في اللغة الإنجليزية ، أو تعلم كيفية اختبار IELTS أو TOEFL.',
+    'see_our_plans' => 'انظر خططنا',
+    'testimonials' => 'اراء العملاء',
+    'welcome_title' => 'تعلم اللغة العربية',
+    'welcome_desc' => 'مرحبا بكم في موقعنا . فقط في حالة وجودك هنا فنحن بدأنا النجاح ، يرجى الاستمرار والتخيل ..',
+    'read_more' => 'اقرأ المزيد',
+    'great_mentors' => 'بعض المعلمين',
+    'see_all' => 'See All',
+    'available' => 'متاح',
+    'not_available' => 'غير متاح',
+    'get_most_classes' => 'الحصول على أقصى استفادة من الفصول الدراسية',
+    'get_most_classes_desc' => 'احصل على أقصى استفادة من الفصول الدراسية - تتيح لك تسجيلات الفيديو من كل فصل مشاهدة ومعاودة كل المفردات أو المفاهيم الجديدة التي تتعلمها',
+    'speak_without_fear' => 'تكلم بلا خوف',
+    'speak_without_fear_desc' => 'تسمح لك خدمة الترجمة في الدردشة بكتابة لغتك الأم عندما تتعثر',
+    'work_on_your_own_schedule' => 'العمل على الجدول الزمني الخاص بك',
+    'work_on_your_own_schedule_desc' => 'تسمح لك خدمة الترجمة في الدردشة بكتابة لغتك الأم عندما تتعثر',
+    'courses' => 'الدورات',
+    'courses_desc' => 'تريد المزيد من الهيكل؟ بغض النظر عن مستواك في اللغة الإنجليزية ، فإن Cambly لديه دورة اللغة الإنجليزية المناسبة لك',
+    'certificate' => 'شهادة',
+    'certificate_desc' => 'تحتاج شهادة؟ بعد 10 ساعات من دروس اللغة الإنجليزية الخاصة في كامبلي ، يحصل كل طالب على شهادته الخاصة',
+    'always_be_learning_on_the_device_you_prefer' => 'دائما تعلم على الجهاز الذي تفضله',
+    'always_be_learning_on_the_device_you_prefer_desc' => 'تعلم العربية بطريقة اسرع والكترونيا',
+    'always_be_learning_on_the_device_you_prefer_desc_2' => 'أخذ دروس من أي مكان',
+    'always_be_learning_on_the_device_you_prefer_desc_3' => 'متاح عند الحاجة إليها',
+    'always_be_learning_on_the_device_you_prefer_desc_4' => 'مشاهدة على الطلب'
+];

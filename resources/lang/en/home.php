@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'learn_english_at_the_touch_of_a_button' => 'Learn English at the touch of a button',
+    'enter_email_address' => 'Enter Email address',
+    'get_started_it_is_free' => 'Get started. It\'s free',
+    'learn_to_speak_like_a_native' => 'Learn to speak like a native',
+    'intro' => 'Our tutors are dynamic native speakers from the United States, Canada, UK and Australia, etc. Connect with your perfect tutor in under 5 seconds by simply pressing a button. Practice English conversation, take an English course, or learn to ace the IELTS or TOEFL.',
+    'see_our_plans' => 'See our plans',
+    'testimonials' => 'Testimonials',
+    'welcome_title' => 'Welcome to Learn Arabic',
+    'welcome_desc' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
+    'read_more' => 'read more',
+    'great_mentors' => 'Great Mentors',
+    'see_all' => 'See All',
+    'available' => 'Available',
+    'not_available' => 'Not Available',
+    'get_most_classes' => 'Get the most out of your classes',
+    'get_most_classes_desc' => 'Get the most out of your classes<br>VIDEO RECORDINGS of every class allow you to watch and rewatch every new vocabulary or concept you learn.',
+    'speak_without_fear' => 'Speak without fear',
+    'speak_without_fear_desc' => 'IN CHAT TRANSLATIONS allow you to type in your native language whenever you get stuck.',
+    'work_on_your_own_schedule' => 'Work on your own schedule',
+    'work_on_your_own_schedule_desc' => 'IN CHAT TRANSLATIONS allow you to type in your native language whenever you get stuck.',
+    'courses' => 'Courses',
+    'courses_desc' => 'Want more structure? Regardless of your English level, Cambly has the right English course for you.',
+    'certificate' => 'Certificate',
+    'certificate_desc' => 'Need a certificate? After 10 hours of private English classes on Cambly every student gets their own certificate.',
+    'always_be_learning_on_the_device_you_prefer' => 'Always be learning on the device you prefer',
+    'always_be_learning_on_the_device_you_prefer_desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'always_be_learning_on_the_device_you_prefer_desc_2' => 'Take classes from anywhere',
+    'always_be_learning_on_the_device_you_prefer_desc_3' => 'Available when you need them',
+    'always_be_learning_on_the_device_you_prefer_desc_4' => 'Watch on demand'
+];

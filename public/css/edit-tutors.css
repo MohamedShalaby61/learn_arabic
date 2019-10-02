@@ -1,0 +1,32 @@
+.mr-top{
+    padding-top: 50px;
+}
+#tutor-search-tabs a {
+    margin: 0 10px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+}
+#tutor-search-tabs a:hover{
+    border-bottom: 2px solid #ffc000;
+} 
+.btn-filter{
+    border: none;
+    background: #fff;
+    border: 1px solid #ffc000;
+    border-radius: 5px;
+    color: #999;
+    font-size: 14px;
+}
+/*
+button:hover{
+    background-color: rgba(34, 136, 145, 0.08);
+}*/
+.wrapper .day-radios:checked+.day {
+    /* background-color: rgba(21, 21, 21, 0.012); */
+    /* box-shadow: inset 0px 0px 4px rgba(21, 21, 21, 0.21); */
+    background: #ffc000;
+    text-align: center;
+    color: #fff;
+    
+}

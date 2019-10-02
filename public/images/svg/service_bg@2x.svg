@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="897px" viewBox="0 0 1440 897" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>service_bg@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage" transform="translate(0.000000, -1668.000000)" fill="#FFFFFF">
+            <g id="Online-Education-Benefits-Alliant-Copy" transform="translate(0.000000, 1668.000000)">
+                <path d="M86.8910446,897.000016 C121.064838,883.767724 153.100125,863.362035 180.678299,835.782985 L527.454749,488.969022 C633.477824,382.942584 633.478066,211.043404 527.455288,105.016668 L516.601224,94.1356849 C516.599015,94.1334754 516.596805,94.1312659 516.594596,94.1290565 C410.565569,-11.8966072 238.661277,-11.8938808 132.635614,94.1351459 L0,226.780037 L0,0 L1440,0 L1440,897 L86.8910856,897 Z" id="service_bg"></path>
+            </g>
+        </g>
+    </g>
+</svg>

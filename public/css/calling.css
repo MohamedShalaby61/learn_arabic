@@ -1,0 +1,113 @@
+body{
+    background: #fff;
+}
+.caling-page{
+    width: 60%;
+    margin: 0 auto;
+}
+.pd-100-top{
+    padding-top: 100px;
+}
+.card-body{
+    box-shadow: 1px 1px 25px #ccc;
+}
+.filter-call{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.table-filter .media-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.media-left, .media>.float-left {
+    padding-right: 10px;
+}
+.table-filter .media .title {
+    color: #2BBCDE;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+}
+.table-filter .media .summary {
+    font-size: 14px;
+}
+.table-filter .media-meta {
+    font-size: 11px;
+    color: #999;
+    margin: 0 15px;
+}
+.table-filter .media-meta:hover{
+   color: #333;
+}
+.date{
+    font-size: 15px;
+    color: #333;
+}
+.icons-call i {
+    border: 1px solid #ffc000;
+    color: #999;
+    border-radius: 100%;
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.icons-call i:hover{
+    background: #ffc000;
+    color: #fff;
+}
+.btn-cancel {
+    color: #fff;
+    background-color: #d22f32;
+    border: none;
+}
+.btn-cancel:hover{
+    background: #393939;
+}
+.btn-accept {
+    color: #fff;
+    background-color: #ffc000;
+    border: none;
+}
+.btn-accept:hover{
+    background: #999;
+}
+.call-load{
+    padding-top: 10px;
+    color: #999;
+}
+/* start All Responsive for call */
+
+@media (max-width: 767px){ /* Extra small screen */
+    .caling-page{
+        width: 100%;
+
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { /* small screen */
+     .caling-page{
+        width: 100%;
+
+    }
+    
+}
+@media (min-width: 992px) and (max-width: 1199px) { /* medium screen */
+    .caling-page{
+        width: 100%;
+
+    }
+}
+@media (min-width: 1200px) { /* large screen */
+    
+    
+}
+/* End All Responsive for call */

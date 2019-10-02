@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'set_your_weekly_agenda' => 'ضع جدول أعمالك الأسبوعي',
+    'minutes_per_day' => 'دقائق في اليوم',
+    'days_per_week' => 'أيام في الأسبوع',
+    'pick_a_commitment_level' => 'اختيار مستوى الالتزام',
+    'purchase_summary' => 'ملخص الشراء',
+    'package_30_5_3_private' => 'خاص: 30 دقيقة في اليوم, 5 أيام في الأسبوع | ربع سنوي',
+    'original_monthly_price' => 'السعر الشهري الأصلي',
+    'private' => 'خاص',
+    'month_subscription' => 'اشتراك شهري',
+    'today_charges_usd' => 'رسوم اليوم (بالدولار الأمريكي)',
+    'buy_with_confidence' => 'شراء مع الثقة',
+    'cancel_at_any_time' => 'الغاء في اي وقت',
+    'sign_up' => 'تسجيل',
+    'subscribe' => 'اشتراك',
+    'automatically_renew_and_cancel_anytime' => 'يجدد تلقائيا كل :months، يمكنك إلغاء  شتراكك في أي وقت',
+    'promo_code' => 'رمز ترويجي',
+    'enter_code' => 'أدخل الكود',
+    'apply' => 'تطبيق',
+    'payment_information' => 'معلومات الدفع',
+    'product' => 'المنتج',
+    'price' => 'السعر',
+    'purchase' => 'شراء',
+    'off' => 'خصم',
+    'month_short' => 'شهر',
+    'month' => 'شهر',
+    'months' => 'شهور'
+];

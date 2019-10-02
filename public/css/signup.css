@@ -1,0 +1,243 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #bbb;
+}
+
+/* start static */
+.colorFirst{
+    color: #ffc000;
+}
+.colorSecond{
+    color: #333332;
+}
+.colortxt{
+    color: gray;
+}
+.colorwhite{
+    color: #fff;    
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+over-hedden{
+    overflow: hidden;
+}
+.para-head{
+    font-size: 18px;
+}
+.para-item{
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.fromTop{
+    margin-top: 15px;
+}
+.pad-all{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pad-all:hover{
+    background: #f8f8f8;
+    
+}
+.pad-all:hover .edit{
+    color: #333;
+}
+.hidden{
+    display: none;
+}
+ /* end static */
+.clear{
+    clear: both;
+    
+}
+.flo-left{
+    float: left;
+}
+.flo-right{
+    float: right;
+}
+.area{
+    width: 300px;
+    height: 150px;
+}
+.color-item{
+    background: #333;
+}
+
+.static-sec{
+    width: 100%;
+    background: #eee;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.fix-link{
+    position: fixed;
+    padding-top: 15px;
+}
+.static-sec li{
+    margin-top: 20px;
+    border-bottom: #ffc000;
+}
+.static-sec a{
+    color: dimgray;
+    font-weight: bold;
+}
+.static-sec .links:hover{
+    background: #ffc000;
+    padding: 7px 15px;
+    color: #fff;
+}
+.static-sec .image-person{
+    border-radius: 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0px 1px 5px #bbb;
+}
+.edit-img{
+    position: absolute;
+    left: 270px;
+    border: 3px solid #ffc000;
+    padding: 7px;
+    width: 35px;
+    color: #bbb;
+    height: 35px;
+    border-radius: 50%;
+}
+.static-sec .image-person .div-photo{
+}
+.static-sec .image-person img{
+   width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0px auto;
+    border: 5px solid #ffc000;
+}
+.static-sec .head-name{
+    margin-top: 50px;
+    
+}
+
+#imagePreview {
+      width: 180px;
+      height: 180px;
+    border-radius: 50%;
+    border: 5px solid #ffc000;
+    
+      background-position: center center;
+      background-size: cover;
+      -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+      display: inline-block;
+      content: "click Here";
+      color: black;
+}
+#imagePreview:hover .edit-img{
+     color: #333;
+}
+/*
+#imagePreview:hover{
+    background: #333;
+}
+*/
+#imagePreview img{
+  width: 100%;  
+}
+
+input, select , textarea{
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+/* profile */
+.nav-pills {
+    border: none;
+}
+.profiles, .div-account, .settings{
+    border-radius: 7px;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0px 3px 5px #bbb;
+}
+.info-profile{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.profile-down ,.account-down ,.settings-down{
+    background: #ccc;
+    border-radius: 5px 5px 0px 0px;
+}
+.div-profile h5 ,.div-account h5 ,.div-settings h5{
+    padding: 7px;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*
+.info-profile ,.info-account, .info-settings{
+    display: none;
+}
+*/
+.operator,.operator-Speaks ,.operator-interests{
+    padding-top: 5px;
+    font-size: 20px;
+    color: #bbb;
+}
+.plus-txt{
+    margin-top: 10px;
+/*    display: none;*/
+}
+.mar-zero{
+    margin: 0px;
+}
+.input_style{
+    width: 500px;
+    width: 300px;;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+/*
+.new_input{
+    background: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+*/
+.input ,.input-specialize ,.input-style ,.input-levels ,.input-teaching ,.input-speaks ,.input-profession ,.input-education ,.input-discussing ,.input-interests ,.input-first ,.input-last ,.input-email ,.input-password ,.input-phone ,.input-lang,.input-country,.input-timezone,.input-notification ,.certificate{
+    padding-left: 3px;
+   
+}
+.btn-save ,.save-specialize  ,.save-about ,.save-background ,.save-qualificate ,.save-speaks ,.save-profession ,.save-education ,.save-discussing ,.save-interests ,.save-first ,.save-last ,.save-email ,.save-password ,.save-phone ,.save-lang,.save-country,.save-timezone,.save-notification{
+    background: #ffc000;
+    padding: 3px 15px;
+    border-radius: 5px;
+}
+.hov-edit:hover ,.edit-img:hover,.edit-specialize:hover ,.edit-about:hover ,.edit-background:hover ,.edit-qualificate:hover ,.edit-speaks:hover ,.edit-profession:hover ,.edit-education:hover ,.edit-discussing:hover ,.edit-interests:hover ,.edit-first:hover ,.edit-last:hover ,.edit-email:hover ,.edit-password:hover ,.edit-phone:hover ,.edit-lang:hover ,.edit-country:hover ,.edit-timezone:hover ,.edit-notification:hover {
+    color: #333;
+}
+.sec-hov{
+    padding: 5px;
+}
+.sec-hov:hover{
+    background: #f8f8f8;
+}
+.in-plus{
+    margin-top: 10px;
+}
+.fa-plus-circle ,.fa-minus-circle{
+    
+}

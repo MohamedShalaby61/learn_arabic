@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'set_your_weekly_agenda' => 'Set your weekly agenda',
+    'minutes_per_day' => 'Minutes Per Day',
+    'days_per_week' => 'Days per Week',
+    'pick_a_commitment_level' => 'Pick a commitment level',
+    'purchase_summary' => 'Purchase Summary',
+    'package_30_5_3_private' => 'Private: 30 minutes per day, 5 days per week | Quarter',
+    'original_monthly_price' => 'Original Monthly Price',
+    'private' => 'Private',
+    'month_subscription' => 'month subscription',
+    'today_charges_usd' => 'Today\'s Charges (in USD)',
+    'buy_with_confidence' => 'Buy with Confidence',
+    'cancel_at_any_time' => 'Cancel at any time',
+    'sign_up' => 'Sign Up',
+    'subscribe' => 'Subscribe',
+    'automatically_renew_and_cancel_anytime' => 'Automatically renews every :months. You can cancel your subscription at anytime.',
+    'promo_code' => 'Promo Code',
+    'enter_code' => 'enter code',
+    'apply' => 'Apply',
+    'payment_information' => 'Payment Information',
+    'product' => 'Product',
+    'price' => 'Price',
+    'purchase' => 'Purchase',
+    'off' => 'Off',
+    'month_short' => 'mo.',
+    'month' => 'month',
+    'months' => 'months'
+];

@@ -1,0 +1,17 @@
+html[lang="ar"] {
+  body {
+    text-align: right !important;
+
+    .navbar {
+      .ml-auto {
+        margin-right: auto;
+        margin-left: 0px !important;
+      
+      }
+
+      .dropdown-menu {
+        text-align: right;
+      }
+    }
+  }
+}
