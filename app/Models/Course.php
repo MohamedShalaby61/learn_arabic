@@ -32,7 +32,7 @@ class Course extends Model
     public function getTitleAttribute($value)
     {
         if (app()->getLocale() == 'ar') {
-           return $this->title_ar; 
+           return $this->title_ar;
         }
         
         return $value;
@@ -41,7 +41,7 @@ class Course extends Model
     public function getDescriptionAttribute($value)
     {
         if (app()->getLocale() == 'ar') {
-           return $this->description_ar; 
+           return $this->description_ar;
         }
         
         return $value;
@@ -50,7 +50,7 @@ class Course extends Model
     public function getSuitableForAttribute($value)
     {
         if (app()->getLocale() == 'ar') {
-           return $this->suitable_for_ar; 
+           return $this->suitable_for_ar;
         }
         
         return $value;
