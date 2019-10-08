@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['prefix'=>'admin-panel'],function() {
+Route::group(['prefix'=>'admin-panel','middleware'=>'lang'],function() {
     Route::group(['middleware' => 'admin'],function (){
         Route::get('/home', 'CommonController@index')->name('admin_home');
         Route::get('logout','CommonController@logout')->name('get_logout');
@@ -20,4 +20,13 @@ Route::group(['prefix'=>'admin-panel'],function() {
     Route::post('login','CommonController@post_login')->name('post_login');
 });
 
+Route::get('locale/{locale}',function ($locale){
+    if (session()->has('lang')){
+        session()->forget('lang');
+        session()->put('lang',$locale);
+    }else{
+        session()->put('lang',$locale);
+    }
 
+    return back();
+})->name('locale');
