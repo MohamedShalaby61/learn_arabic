@@ -26,7 +26,7 @@
                         <h3 class="box-title">@lang('tutor::tutor.create_tutors')</h3>
                     </div>
 
-                    <form role="form" method="post" action="{{ route('tutors.store') }}">
+                    <form role="form" method="post" action="{{ route('tutors.store') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="box-body">
                             @include('common::layouts._error')
@@ -43,19 +43,19 @@
                                         <div class="tab-pane active" id="tab_1-1">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">@lang('tutor::tutor.name') *</label>
-                                                <input type="text" class="form-control" name="name" id="exampleInputEmail1">
+                                                <input type="text" class="form-control" value="{{ old('name') }}" name="name" id="exampleInputEmail1">
                                             </div>
                                             <div class="form-group col-lg-6">
                                                 <label for="exampleInputEmail1">@lang('tutor::tutor.title') *</label>
-                                                <input type="text" class="form-control" name="title" id="exampleInputEmail1">
+                                                <input type="text" class="form-control" value="{{ old('title') }}" name="title" id="exampleInputEmail1">
                                             </div>
                                             <div class="form-group col-lg-6">
                                                 <label for="exampleInputEmail1">@lang('admin::admin.phone')</label>
-                                                <input type="text" class="form-control" name="phone" id="exampleInputEmail1">
+                                                <input type="text" class="form-control" value="{{ old('mobile') }}" name="mobile" id="exampleInputEmail1">
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">@lang('admin::admin.email') *</label>
-                                                <input type="email" class="form-control" name="email" id="exampleInputEmail1">
+                                                <input type="email" class="form-control" value="{{ old('email') }}" name="email" id="exampleInputEmail1">
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputPassword1">@lang('admin::admin.password') *</label>
@@ -63,35 +63,39 @@
                                             </div>
                                             <div class="form-group ">
                                                 <label>@lang('tutor::tutor.teaching_experience')</label>
-                                                <textarea type="text" name="teaching_experience" class="form-control"></textarea>
+                                                <textarea type="text" name="teaching_experience" class="form-control">{{ old('teaching_experience') }}</textarea>
                                             </div>
                                         </div><!-- /.tab-pane -->
                                         <div class="tab-pane" id="tab_2-2">
                                             <div class="form-group ">
                                                 <div class="form-group ">
                                                     <label>@lang('common::common.video')</label>
-                                                    <input type="text" name="video" class="form-control">
+                                                    <input type="text" value="{{ old('video') }}" name="video" class="form-control">
                                                 </div>
                                                 <div class="form-group ">
                                                     <label>@lang('common::common.certificates')</label>
-                                                    <input type="text" name="certificates" class="form-control">
+                                                    <input type="text" value="{{ old('certificates') }}" name="certificates" class="form-control">
                                                 </div>
                                                 <div class="form-group ">
                                                     <label>@lang('tutor::tutor.speaks')</label>
-                                                    <input type="text" name="speaks" class="form-control">
+                                                    <input type="text" value="{{ old('speaks') }}" name="speaks" class="form-control">
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label>@lang('tutor::tutor.interests')</label>
+                                                    <input type="text" value="{{ old('interests') }}" name="interests" class="form-control">
                                                 </div>
                                                 <label>@lang('common::common.image')</label>
                                                 <input type="file" name="image" class="form-control">
                                                 <div class="form-group ">
                                                     <label>@lang('tutor::tutor.profession')</label>
-                                                    <textarea type="text" name="profession" class="form-control"></textarea>
+                                                    <textarea type="text" name="profession" class="form-control">{{ old('profession') }}</textarea>
                                                 </div>
                                             </div>
                                         </div><!-- /.tab-pane -->
                                         <div class="tab-pane" id="tab_3-2">
                                             <div class="form-group col-lg-6">
                                                 <label>@lang('tutor::tutor.levels')</label>
-                                                <input type="text" name="levels" class="form-control">
+                                                <input type="text" value="{{ old('levels') }}" name="levels" class="form-control">
                                             </div>
                                             <div class="form-group col-lg-6">
                                                 <label>@lang('tutor::tutor.country')</label>
@@ -103,7 +107,7 @@
                                             </div>
                                             <div class="form-group col-lg-6">
                                                 <label>@lang('tutor::tutor.lessons_type')</label>
-                                                <select name="country_id" class="form-control">
+                                                <select name="lessons_type_id" class="form-control">
                                                     @foreach($lessons_type as $lesson)
                                                         <option value="{{ $lesson->id }}">{{ $lesson->name }}</option>
                                                     @endforeach
@@ -134,11 +138,11 @@
                                             </div>
                                             <div class="form-group ">
                                                 <label>@lang('tutor::tutor.education')</label>
-                                                <input type="text" name="education" class="form-control">
+                                                <input type="text" value="{{ old('education') }}" name="education" class="form-control">
                                             </div>
                                             <div class="form-group ">
                                                 <label>@lang('tutor::tutor.enjoys_discussing')</label>
-                                                <textarea type="text" name="enjoys_discussing" class="form-control"></textarea>
+                                                <textarea type="text" name="enjoys_discussing" class="form-control">{{ old('enjoys_discussing') }}</textarea>
                                             </div>
                                         </div><!-- /.tab-pane -->
                                     </div><!-- /.tab-content -->

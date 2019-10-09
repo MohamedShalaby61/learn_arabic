@@ -12,6 +12,8 @@ use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use App\Traits\HelpersTrait;
+use Illuminate\Support\Facades\Session;
 
 class TutorController extends Controller
 {
@@ -19,6 +21,8 @@ class TutorController extends Controller
      * Display a listing of the resource.
      * @return Response
      */
+    use HelpersTrait;
+
     public function index()
     {
         $rows = User::with(['profile'])->where('type','=',2)->get();
@@ -52,31 +56,33 @@ class TutorController extends Controller
                 'video' => ['required', 'string', 'max:255'],
                 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
                 'password' => ['required', 'string', 'min:8'],
-                'mobile' => ['nullable', 'numeric', 'digits_between:0,15']
+                'mobile' => ['nullable', 'numeric', 'digits_between:0,15'],
             ]);
 
             $data = $request->all();
+
             $user = User::create([
                 'name' => $data['name'],
                 'email' => $data['email'],
-                'mobile' => $data['mobile'],
+                'mobile' => in_array('mobile',$data) ? $data['mobile'] : null,
                 'password' => Hash::make($data['password']),
                 'type' => 2
             ]);
-            if ($request->hasFile('video')) {
-                $data['video'] = $this->customUploadFile('video', 'tutors');
+
+
+            $tutorData = $request->except(['email','password']);
+            if ($request->image){
+                $tutorData['image'] = $this->customUploadFile('image', 'tutors');
             }
-            $tutorData = [
-                'name' => $data['name'],
-                'mobile' => $data['mobile'],
-                'title' => $data['title'],
-                'video' => $data['video'],
-                'user_id' => $user->id
-            ];
-            $tutor = Tutor::create($tutorData);
+        }
+            $tutor = Tutor::create($tutorData + ['user_id'=>$user->id]);
 
             $user->fk_id = $tutor->id;
             $user->save();
+
+            Session::flash('message', __('common::common.add_message'));
+            Session::flash('alert-class', 'alert-success');
+            return redirect()->route('tutors.index');
     }
 
     /**
@@ -96,7 +102,14 @@ class TutorController extends Controller
      */
     public function edit($id)
     {
-        return view('tutor::edit');
+        $row = User::find($id);
+        $tutor = Tutor::find($row->fk_id);
+        $countries = Country::all();
+        $lessons_type = DB::table('lessons_types')->get();
+        $lessons_personalities = TutoringPersonality::all();
+        $accents = Accent::all();
+
+        return view('tutor::edit',compact('tutor','row','countries','lessons_type','lessons_personalities','accents'));
     }
 
     /**
@@ -117,6 +130,11 @@ class TutorController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+
+        Session::flash('message', __('common::common.delete_message'));
+        Session::flash('alert-class', 'alert-success');
+        return redirect()->route('tutors.index');
     }
 }

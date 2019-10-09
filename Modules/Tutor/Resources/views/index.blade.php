@@ -43,13 +43,13 @@
                                         <td>{{ $row->name }}</td>
                                         <td>{{ $row->email }}</td>
                                         <td>
-                                            <form action="{{ route('admins.destroy',$row->id) }}" method="post">
+                                            <form action="{{ route('tutors.destroy',$row->id) }}" method="post">
                                                 @csrf
                                                 @method('delete')
                                                 @if(auth()->user()->role_id == 5 )
                                                     <a href="####" class="btn btn-success disabled btn-sm"><i class="fa fa-edit"></i></a>
                                                 @else
-                                                    <a href="{{ route('admins.edit',$row->id) }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
+                                                    <a href="{{ route('tutors.edit',$row->id) }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
                                                 @endif
 
                                                     <button type="submit" onclick="return confirm('هل انت متأكد من حذف المطبعة')" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>

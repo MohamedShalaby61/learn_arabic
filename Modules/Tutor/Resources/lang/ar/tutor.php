@@ -18,4 +18,5 @@ return [
     'pending'=> 'موقوف',
     'tutor_info' => 'تفاصيل عن المعلم',
     'tutoring_personality' => 'المحتوي الشخصي',
+    'interests' => 'الاهتمامات',
 ];
