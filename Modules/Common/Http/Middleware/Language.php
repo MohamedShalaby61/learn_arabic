@@ -19,6 +19,7 @@ class Language
         if (session()->has('lang')){
             //dd(session('lang'));
             app()->setLocale(session('lang'));
+
         }else{
             app()->setLocale('ar');
         }

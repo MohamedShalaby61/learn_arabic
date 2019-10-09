@@ -1,0 +1,13 @@
+{
+    "name": "Tutor",
+    "alias": "tutor",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Tutor\\Providers\\TutorServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

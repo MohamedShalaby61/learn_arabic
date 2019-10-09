@@ -68,7 +68,8 @@ class AdminController extends Controller
      */
     public function edit($id)
     {
-        return view('admin::edit');
+        $row = User::find($id);
+        return view('admin::edit',compact('row'));
     }
 
     /**
@@ -79,7 +80,24 @@ class AdminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+        $data = $request->validate([
+            'name' => 'required',
+            'email' => 'required|unique:users,email,'.$id,
+            'password' => 'sometimes',
+            'phone' => 'sometimes',
+        ]);
+
+        if ($request->has('password') && $request->password !== null){
+            $data['password'] = bcrypt($request->password);
+        }else{
+            $data['password'] = $user->password;
+        }
+        $user->update($data);
+
+        Session::flash('message', __('common::common.edit_message'));
+        Session::flash('alert-class', 'alert-success');
+        return redirect()->route('admins.index');
     }
 
     /**
@@ -89,6 +107,12 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+
+        Session::flash('message', __('common::common.delete_message'));
+        Session::flash('alert-class', 'alert-success');
+        return redirect()->route('admins.index');
+
     }
 }

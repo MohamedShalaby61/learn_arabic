@@ -9,7 +9,7 @@
         </h1>
         <ol class="breadcrumb">
             <li><a href="{{ route('admin_home') }}"><i class="fa fa-dashboard"></i> @lang('common::common.home')</a></li>
-            <li>@lang('admin::admin.admins')</li>
+            <li>@lang('tutor::tutor.tutors')</li>
         </ol>
     </section>
 
@@ -20,7 +20,7 @@
             <div style="min-height: 800px;" class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3 style="font-family: 'Cairo', sans-serif;" class="box-title">{{ 'جدول العروض' }}</h3>
+                        <h3 style="font-family: 'Cairo', sans-serif;" class="box-title">{{ 'جدول المعلمين' }}</h3>
                     </div>
 
 
@@ -31,7 +31,7 @@
                                 <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>@lang('admin::admin.name')</th>
+                                    <th>@lang('tutor::tutor.name')</th>
                                     <th>@lang('admin::admin.email')</th>
                                     <th>@lang('common::common.operations')</th>
                                 </tr>
