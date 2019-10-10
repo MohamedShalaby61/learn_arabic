@@ -52,7 +52,7 @@
                                                     <a href="{{ route('students.edit',$row->id) }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
                                                 @endif
 
-                                                <button type="submit" onclick="return confirm('هل انت متأكد من حذف المطبعة')" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                                                <button type="submit" onclick="return confirm('هل انت متأكد من حذف الطالب')" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
 
                                             </form>
                                         </td>

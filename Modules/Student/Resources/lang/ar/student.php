@@ -10,4 +10,5 @@ return [
     'levels' => 'المستوي',
     'country' => 'الدولة',
     'accent' => 'اللهجة',
+    'edit_students' => 'تعديل طالب',
 ];
