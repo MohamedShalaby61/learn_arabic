@@ -23,7 +23,9 @@
         <link rel="stylesheet" href="{{ url('admin_en') }}/dist/css/skins/_all-skins.min.css">
     @endif
     {{--<link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>--}}
+
     <link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url('css/tagify.css') }}">
     <style>
         /*body, h1, h2, h3 {*/
             /*font-family: 'Cairo';font-size: 13px;*/
@@ -365,7 +367,16 @@
     <script src="{{ url('admin_en') }}/bower_components/chart.js/Chart.js"></script>
     <script src="{{ url('admin_en') }}/dist/js/pages/dashboard2.js"></script>
     <script src="{{ url('admin_en') }}/dist/js/demo.js"></script>
+    <script type="text/javascript" src="{{ url('js/tagify.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#certificates2').tagify();
 
+            // var input = document.querySelector('$certificates2'),
+            // tagify =new Tagify( input );
+
+        });
+    </script>
 @endif
 
 @stack('js')

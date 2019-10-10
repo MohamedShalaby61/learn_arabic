@@ -120,7 +120,37 @@ class TutorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+            $request->validate([
+                'name' => ['required', 'string', 'max:255'],
+                'title' => ['required', 'string', 'max:255'],
+                'video' => ['required', 'string', 'max:255'],
+                'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email,'.$id],
+                'mobile' => ['nullable', 'numeric', 'digits_between:0,15'],
+            ]);
+
+            $data = $request->all();
+
+            $user = User::find($id);
+            $user->update([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'mobile' => in_array('mobile',$data) ? $data['mobile'] : null,
+                'password' => $request->password !== null && $request->has('password') ? Hash::make($data['password']) : $user->password,
+            ]);
+
+
+            $tutorData = $request->except(['email','password']);
+            if ($request->image){
+                $tutorData['image'] = $this->customUploadFile('image', 'tutors');
+            }
+
+        $tutor = Tutor::find($user->fk_id);
+        $tutor->update($tutorData);
+
+
+        Session::flash('message', __('common::common.edit_message'));
+        Session::flash('alert-class', 'alert-success');
+        return redirect()->route('tutors.index');
     }
 
     /**

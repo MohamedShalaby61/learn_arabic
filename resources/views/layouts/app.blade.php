@@ -305,7 +305,7 @@
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div class="nav-profile">
-                                        <img src="{{ Auth::user()->profile->image }}" style="transform: scale(1.8);"/>
+                                        <img src="{{ auth()->user()->profile ? Auth::user()->profile->image : '' }}" style="transform: scale(1.8);"/>
                                     </div>
                                     <span>{{ Auth::user()->name }}</span>
                                 </button>

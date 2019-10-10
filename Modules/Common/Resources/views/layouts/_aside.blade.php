@@ -25,7 +25,7 @@
         <ul class="sidebar-menu">
             <li class="header" style="font-family: 'Cairo', sans-serif !important;">@lang('common::common.main_navigation')</li>
             <li class="active treeview">
-                <a href="#">
+                <a href="{{ route('admin_home') }}">
                     <i class="fa fa-dashboard"></i> <span>@lang('common::common.home')</span>
                 </a>
             </li>
@@ -51,25 +51,14 @@
                 </a>
             </li>
             <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-edit"></i> <span>Forms</span>
-                    <i class="fa fa-angle-left pull-right"></i>
+                <a href="{{ route('students.index') }}">
+                    <i class="fa fa-users"></i> <span>@lang('student::student.students')</span>
                 </a>
-                <ul class="treeview-menu">
-                    <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-                    <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-                    <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-                </ul>
             </li>
             <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-table"></i> <span>Tables</span>
-                    <i class="fa fa-angle-left pull-right"></i>
+                <a href="{{ route('students.create') }}">
+                    <i class="fa fa-plus"></i> <span>@lang('student::student.create_students')</span>
                 </a>
-                <ul class="treeview-menu">
-                    <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-                    <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
-                </ul>
             </li>
             <li>
                 <a href="pages/calendar.html">
