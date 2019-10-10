@@ -43,7 +43,7 @@
                                         <td>{{ $index+1 }}</td>
                                         <td>{{ $row->title }}</td>
                                         <td>{{ str_limit($row->description,100) }}</td>
-                                        <td><a>dsadsdasdsa</a></td>
+                                        <td><a>@lang('course::course.click_here')</a></td>
                                         <td>
                                             <form action="{{ route('admins.destroy',$row->id) }}" method="post">
                                                 @csrf
@@ -88,7 +88,7 @@
             $('#table_id').DataTable({
                 "columnDefs": [
 
-                    { "orderable": false, "targets": 3 },
+                    { "orderable": false, "targets": 4 },
 
                 ],
             });

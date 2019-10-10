@@ -60,9 +60,14 @@
                     <i class="fa fa-plus"></i> <span>@lang('student::student.create_students')</span>
                 </a>
             </li>
+            <li class="treeview">
+                <a href="{{ route('courses.index') }}">
+                    <i class="fa fa-laptop"></i> <span>@lang('course::course.courses')</span>
+                </a>
+            </li>
             <li>
                 <a href="pages/calendar.html">
-                    <i class="fa fa-calendar"></i> <span>Calendar</span>
+                    <i class="fa fa-calendar"></i> <span>أحا</span>
                     <small class="label pull-right bg-red">3</small>
                 </a>
             </li>
