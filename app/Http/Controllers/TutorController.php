@@ -2,23 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Call;
-use App\Models\CourseTutor;
-use App\Models\Student;
-use App\Models\Tutor;
-use App\Models\TutorTime;
-use App\Models\User;
-use App\Models\Speciality;
-use App\Models\TutorSpeciality;
-use App\Models\TutoringPersonality;
-
-use App\Models\UserCourse;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Auth;
+use App\Models\Call;
+use App\Models\User;
+use App\Models\Tutor;
+use App\Models\Student;
+use App\Models\TutorTime;
+use App\Models\Speciality;
+use App\Models\UserCourse;
+use App\Models\CourseTutor;
+
 use App\Traits\HelpersTrait;
+use Illuminate\Http\Request;
+use App\Models\TutorSpeciality;
+use Illuminate\Support\Collection;
+use App\Models\TutoringPersonality;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use App\Http\Requests\Tutor\PostAvailabilityRequest;
 
 class TutorController extends Controller
 {
@@ -187,11 +188,8 @@ class TutorController extends Controller
     public function availability(){
         return view('tutor.availability');
     }
-    public function postAvailability(Request $request){
-        $this->validate($request,[
-            'from'=>'required',
-            'to'=>'required',
-        ]);
+    public function postAvailability(PostAvailabilityRequest $request)
+    {
         $final=[];
        foreach ($request->from as $key=>$value){
            $data['from']=$value;
@@ -206,6 +204,7 @@ class TutorController extends Controller
        TutorTime::insert($final);
        return back()->with('success','Done');
     }
+
     public function getTutorTime($date,$tutor)
     {
 

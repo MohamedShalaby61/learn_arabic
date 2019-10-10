@@ -15,7 +15,7 @@
     <link href="{{ asset('vendors/colorbox-master/example3/colorbox.css') }}" rel="stylesheet" type="text/css" />
     <!-- rate-stars -->
     <link href="{{ asset('vendors/rate-stars/jquery.rateyo.min.css') }}" rel="stylesheet" type="text/css" />
-    {{--<script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>--}}
+    {{--  <script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>  --}}
     <script src="{{ env('SOCKET_DOMAIN') }}/socket.io/socket.io.js"></script>
     <!-- Custom stylesheet -->
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" />
