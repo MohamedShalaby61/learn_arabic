@@ -19,4 +19,5 @@ return [
     'tutor_info' => 'تفاصيل عن المعلم',
     'tutoring_personality' => 'المحتوي الشخصي',
     'interests' => 'الاهتمامات',
+    'students' => 'الطلبة',
 ];

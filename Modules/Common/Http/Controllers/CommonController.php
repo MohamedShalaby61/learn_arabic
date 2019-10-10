@@ -19,6 +19,9 @@ class CommonController extends Controller
 
     public function get_login()
     {
+        if (auth()->check()){
+         return redirect()->route('admin_home');
+        }
         return view('common::login');
     }
 
