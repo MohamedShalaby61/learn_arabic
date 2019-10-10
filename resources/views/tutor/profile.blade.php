@@ -36,7 +36,7 @@
     <div class="innerpages-top profile-top">
       <div class="profile-img">
         <div class="profile-edit">
-          <img src="{{ Auth::user()->profile->image }}" style="transform: scale(2);" />
+          <img src="{{ auth()->user()->profile ? Auth::user()->profile->image : '' }}" style="transform: scale(2);" />
         </div>
         <span class="edit-icon" data-toggle="modal" data-target="#upload_img"><i class="fas fa-edit"></i></span>
       </div>

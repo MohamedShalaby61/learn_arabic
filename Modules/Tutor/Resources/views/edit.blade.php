@@ -10,7 +10,7 @@
         <ol class="breadcrumb">
             <li><a href="{{ route('admin_home') }}"><i class="fa fa-dashboard"></i> @lang('common::common.home')</a></li>
             <li><a href="{{ route('tutors.index') }}">@lang('tutor::tutor.tutors')</a></li>
-            <li class="active">@lang('common::common.add')</li>
+            <li class="active">@lang('common::common.edit')</li>
         </ol>
     </section>
 
@@ -28,6 +28,7 @@
 
                     <form role="form" method="post" action="{{ route('tutors.update',$row->id) }}" enctype="multipart/form-data">
                         @csrf
+                        @method('put')
                         <div class="box-body">
                             @include('common::layouts._error')
                             @include('common::layouts._session')
@@ -43,7 +44,7 @@
                                         <div class="tab-pane active" id="tab_1-1">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">@lang('tutor::tutor.name') *</label>
-                                                <input type="text" class="form-control" value="{{ $row->name }}" name="name" id="exampleInputEmail1">
+                                                <input type="text" class="form-control" value="{{ $tutor->name }}" name="name" id="exampleInputEmail1">
                                             </div>
                                             <div class="form-group col-lg-6">
                                                 <label for="exampleInputEmail1">@lang('tutor::tutor.title') *</label>
@@ -63,45 +64,45 @@
                                             </div>
                                             <div class="form-group ">
                                                 <label>@lang('tutor::tutor.teaching_experience')</label>
-                                                <textarea type="text" name="teaching_experience" class="form-control">{{ old('teaching_experience') }}</textarea>
+                                                <textarea type="text" name="teaching_experience" class="form-control">{{ $tutor->teaching_experience }}</textarea>
                                             </div>
                                         </div><!-- /.tab-pane -->
                                         <div class="tab-pane" id="tab_2-2">
                                             <div class="form-group ">
                                                 <div class="form-group ">
                                                     <label>@lang('common::common.video')</label>
-                                                    <input type="text" value="{{ old('video') }}" name="video" class="form-control">
+                                                    <input type="text" value="{{ $tutor->video }}" name="video" class="form-control">
                                                 </div>
                                                 <div class="form-group ">
                                                     <label>@lang('common::common.certificates')</label>
-                                                    <input type="text" value="{{ old('certificates') }}" name="certificates" class="form-control">
+                                                    <input type="text" value="{{ $tutor->certificates[0] }}" name="certificates" class="form-control">
                                                 </div>
                                                 <div class="form-group ">
                                                     <label>@lang('tutor::tutor.speaks')</label>
-                                                    <input type="text" value="{{ old('speaks') }}" name="speaks" class="form-control">
+                                                    <input type="text" value="{{ $tutor->speaks[0] }}" name="speaks" class="form-control">
                                                 </div>
                                                 <div class="form-group ">
                                                     <label>@lang('tutor::tutor.interests')</label>
-                                                    <input type="text" value="{{ old('interests') }}" name="interests" class="form-control">
+                                                    <input type="text" value="{{ $tutor->interests }}" name="interests" class="form-control">
                                                 </div>
                                                 <label>@lang('common::common.image')</label>
                                                 <input type="file" name="image" class="form-control">
                                                 <div class="form-group ">
                                                     <label>@lang('tutor::tutor.profession')</label>
-                                                    <textarea type="text" name="profession" class="form-control">{{ old('profession') }}</textarea>
+                                                    <textarea type="text" name="profession" class="form-control">{{ $tutor->profession }}</textarea>
                                                 </div>
                                             </div>
                                         </div><!-- /.tab-pane -->
                                         <div class="tab-pane" id="tab_3-2">
                                             <div class="form-group col-lg-6">
                                                 <label>@lang('tutor::tutor.levels')</label>
-                                                <input type="text" value="{{ old('levels') }}" name="levels" class="form-control">
+                                                <input type="text" value="{{ $tutor->levels[0] }}" name="levels" class="form-control">
                                             </div>
                                             <div class="form-group col-lg-6">
                                                 <label>@lang('tutor::tutor.country')</label>
                                                 <select name="country_id" class="form-control">
                                                     @foreach($countries as $country)
-                                                        <option value="{{ $country->id }}">{{ $country->name }}</option>
+                                                        <option {{ $country->id == $tutor->country_id ? 'selected' : '' }} value="{{ $country->id }}">{{ $country->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
@@ -109,7 +110,7 @@
                                                 <label>@lang('tutor::tutor.lessons_type')</label>
                                                 <select name="lessons_type_id" class="form-control">
                                                     @foreach($lessons_type as $lesson)
-                                                        <option value="{{ $lesson->id }}">{{ $lesson->name }}</option>
+                                                        <option {{ $lesson->id == $tutor->lessons_type_id ? 'selected' : '' }} value="{{ $lesson->id }}">{{ $lesson->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
@@ -117,7 +118,7 @@
                                                 <label>@lang('tutor::tutor.tutoring_personality')</label>
                                                 <select name="tutoring_personality_id" class="form-control">
                                                     @foreach($lessons_personalities as $pers)
-                                                        <option value="{{ $pers->id }}">{{ $pers->name }}</option>
+                                                        <option {{ $pers->id == $tutor->tutoring_personality_id ? 'selected' : '' }} value="{{ $pers->id }}">{{ $pers->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
@@ -125,24 +126,24 @@
                                                 <label>@lang('tutor::tutor.accent')</label>
                                                 <select name="accent_id" class="form-control">
                                                     @foreach($accents as $accent)
-                                                        <option value="{{ $accent->id }}">{{ $accent->name }}</option>
+                                                        <option {{ $accent->id == $tutor->accent_id ? 'selected' : '' }} value="{{ $accent->id }}">{{ $accent->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
                                             <div class="form-group col-lg-6">
                                                 <label>@lang('tutor::tutor.status')</label>
                                                 <select name="status" class="form-control">
-                                                    <option value="1">@lang('tutor::tutor.active')</option>
-                                                    <option value="0">@lang('tutor::tutor.pending')</option>
+                                                    <option {{ $tutor->status == 1 ? 'selected' : '' }} value="1">@lang('tutor::tutor.active')</option>
+                                                    <option {{ $tutor->status == 0 ? 'selected' : '' }} value="0">@lang('tutor::tutor.pending')</option>
                                                 </select>
                                             </div>
                                             <div class="form-group ">
                                                 <label>@lang('tutor::tutor.education')</label>
-                                                <input type="text" value="{{ old('education') }}" name="education" class="form-control">
+                                                <input type="text" value="{{ $tutor->education }}" name="education" class="form-control">
                                             </div>
                                             <div class="form-group ">
                                                 <label>@lang('tutor::tutor.enjoys_discussing')</label>
-                                                <textarea type="text" name="enjoys_discussing" class="form-control">{{ old('enjoys_discussing') }}</textarea>
+                                                <textarea type="text" name="enjoys_discussing" class="form-control">{{ $tutor->enjoys_discussing[0] }}</textarea>
                                             </div>
                                         </div><!-- /.tab-pane -->
                                     </div><!-- /.tab-content -->
@@ -153,7 +154,7 @@
                         <!-- /.box-body -->
 
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-primary"><i class="fa fa-edit"></i> @lang('common::common.edit')</button>
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> @lang('common::common.edit')</button>
                         </div>
                     </form>
                 </div>

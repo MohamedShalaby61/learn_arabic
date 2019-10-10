@@ -1,7 +1,6 @@
 @extends('common::layouts.master')
 
 @section('content')
-
     <section class="content-header">
         <h1>
             @lang('common::common.home')
@@ -16,7 +15,6 @@
 
 
     <section class="content">
-
         <div class="row">
             <!-- left column -->
             <div class="col-md-12">
@@ -74,11 +72,11 @@
                                                 </div>
                                                 <div class="form-group ">
                                                     <label>@lang('common::common.certificates')</label>
-                                                    <input type="text" value="{{ old('certificates') }}" name="certificates" class="form-control">
+                                                    <input type="text" name="certificates[]" class="form-control" id="certificates" value="Amsterdam,Washington,Sydney,Beijing,Cairo">
                                                 </div>
                                                 <div class="form-group ">
                                                     <label>@lang('tutor::tutor.speaks')</label>
-                                                    <input type="text" value="{{ old('speaks') }}" name="speaks" class="form-control">
+                                                    <input type="text"  name="speaks[]" class="form-control">
                                                 </div>
                                                 <div class="form-group ">
                                                     <label>@lang('tutor::tutor.interests')</label>
@@ -95,7 +93,7 @@
                                         <div class="tab-pane" id="tab_3-2">
                                             <div class="form-group col-lg-6">
                                                 <label>@lang('tutor::tutor.levels')</label>
-                                                <input type="text" value="{{ old('levels') }}" name="levels" class="form-control">
+                                                <input type="text" name="levels[]" class="form-control">
                                             </div>
                                             <div class="form-group col-lg-6">
                                                 <label>@lang('tutor::tutor.country')</label>
@@ -142,7 +140,7 @@
                                             </div>
                                             <div class="form-group ">
                                                 <label>@lang('tutor::tutor.enjoys_discussing')</label>
-                                                <textarea type="text" name="enjoys_discussing" class="form-control">{{ old('enjoys_discussing') }}</textarea>
+                                                <input type="text" name="enjoys_discussing[]" class="form-control">
                                             </div>
                                         </div><!-- /.tab-pane -->
                                     </div><!-- /.tab-content -->
@@ -158,8 +156,6 @@
                     </form>
                 </div>
                 <!-- /.box -->
-
-
             </div>
         </div>
 
