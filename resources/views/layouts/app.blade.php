@@ -225,113 +225,71 @@
                     </div>
                     @endif
                     
-
                     @if(auth()->user()->type==3)
                         <div class="favourite_tutors">
                             <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn dropdown-toggle favorite-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-users"></i>
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    
+                                    
                                     <div class="cambly-contact-list" role="menu" style="padding: 8px 0px; display: table-cell; user-select: none; width: 336px;">
                                         <div>
                                             <div role="menuitem" style="color: rgba(0, 0, 0, 0.3); display: block; font-size: 16px; line-height: 48px; position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin-left: 0px; padding: 0px 16px; cursor: default; min-height: 48px; white-space: nowrap; margin-bottom: -10px;">
                                                 <div>@lang('main.favorite_tutors')</div>
                                             </div>
                                         </div>
-
-                                        @if(isset($favorites[1]))
+                                        @if(isset($favorites[0]) && !empty($favorites[0]))
+                                            <div style="box-sizing: border-box; color: rgba(0, 0, 0, 0.54); font-size: 14px; font-weight: 500; line-height: 48px; padding-left: 16px; width: 100%;">
+                                                Offline
+                                            </div>
+                                        @endif
+                                        @if(isset($favorites[1]) && !empty($favorites[1]))
                                         <div style="box-sizing: border-box; color: rgba(0, 0, 0, 0.54); font-size: 14px; font-weight: 500; line-height: 48px; padding-left: 16px; width: 100%;">
                                             Online
                                         </div>
-                                        @foreach($favorites[1] as $favoriteTutor)
-                                        <div>
-                                            <div class="cambly-contact" role="menuitem" style="color: rgba(0, 0, 0, 0.3); display: block; font-size: 16px; line-height: 48px; position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin-left: 0px; padding: 0px 38px 0px 72px; cursor: default; min-height: 48px; white-space: nowrap;">
-                                                <div class="contact-action-buttons" style="float: right; margin: 0px 6px; max-height: 48px; display: flex; align-items: center;">
-                                                    <button id="tutor_{{ $favoriteTutor->id }}" class="tutor_profile" tabindex="0" type="button" style="border: 10px; box-sizing: border-box; display: inline-block; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); cursor: pointer; text-decoration: none; margin: 0px; padding: 12px 6px; outline: none; font-size: 0px; font-weight: inherit; position: relative; overflow: visible; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; width: 36px; height: 48px; background: none;">
-                                                        <div>
-                                                            <svg viewBox="0 0 24 24" style="display: inline-block; color: rgba(0, 0, 0, 0.2); fill: rgba(0, 0, 0, 0.2); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;">
-                                                            <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"></path>
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                    <button id="tutor_{{ $favoriteTutor->id }}" class="tutor_profile" tabindex="0" type="button" style="border: 10px; box-sizing: border-box; display: inline-block; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); cursor: pointer; text-decoration: none; margin: 0px; padding: 12px 6px; outline: none; font-size: 0px; font-weight: inherit; position: relative; overflow: visible; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; width: 36px; height: 48px; background: none;">
-                                                        <div>
-                                                            <svg viewBox="0 0 24 24" style="display: inline-block; color: rgba(0, 0, 0, 0.2); fill: rgba(0, 0, 0, 0.2); height: 20px; width: 20px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;">
-                                                            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                </div>
-                                                <img size="40" color="#757575" src="{{ $favoriteTutor->image }}" draggable="true" data-bukket-ext-bukket-draggable="true" style="color: rgb(117, 117, 117); background-color: rgb(188, 188, 188); user-select: none; display: block; align-items: center; justify-content: center; font-size: 20px; border-radius: 50%; height: 40px; width: 40px; position: absolute; top: 0px; margin: 4px 0px 4px 12px; left: 4px;">
-                                                <svg viewBox="0 0 24 24" style="display: block; color: rgba(0, 0, 0, 0.87); fill: rgb(150, 196, 94); height: 12px; width: 12px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; position: absolute; top: 0px; margin: 18px; right: 4px;">
-                                                <circle cx="12" cy="12" r="8"></circle>
-                                                </svg>
-                                                <span style="color: rgba(0, 0, 0, 0.6);">{{ $favoriteTutor->name }}</span>
-                                            </div>
-                                        </div>
-                                        @endforeach
                                         @endif
-
-                                        @if(isset($favorites[0]))
-                                        <div style="box-sizing: border-box; color: rgba(0, 0, 0, 0.54); font-size: 14px; font-weight: 500; line-height: 48px; padding-left: 16px; width: 100%;">Offline</div>
-
-                                        @foreach($favorites[0] as $favoriteTutor)
-                                        <div>
-                                            <div class="cambly-contact" role="menuitem" style="color: rgba(0, 0, 0, 0.3); display: block; font-size: 16px; line-height: 48px; position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin-left: 0px; padding: 0px 38px 0px 72px; cursor: default; min-height: 48px; white-space: nowrap;">
-                                                <div class="contact-action-buttons" style="float: right; margin: 0px 6px; max-height: 48px; display: flex; align-items: center;">
-                                                    <button id="tutor_{{ $favoriteTutor->id }}" class="tutor_profile" tabindex="0" type="button" style="border: 10px; box-sizing: border-box; display: inline-block; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); cursor: pointer; text-decoration: none; margin: 0px; padding: 12px 6px; outline: none; font-size: 0px; font-weight: inherit; position: relative; overflow: visible; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; width: 36px; height: 48px; background: none;">
-                                                        <div>
-                                                            <svg viewBox="0 0 24 24" style="display: inline-block; color: rgba(0, 0, 0, 0.2); fill: rgba(0, 0, 0, 0.2); height: 20px; width: 20px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;">
-                                                            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z">  </path>
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                </div>
-                                                <img size="40" color="#757575" src="{{ $favoriteTutor->image }}" draggable="true" data-bukket-ext-bukket-draggable="true" style="color: rgb(117, 117, 117); background-color: rgb(188, 188, 188); user-select: none; display: block; align-items: center; justify-content: center; font-size: 20px; border-radius: 50%; height: 40px; width: 40px; position: absolute; top: 0px; margin: 4px 0px 4px 12px; left: 4px;">
-                                                <span style="color: rgba(0, 0, 0, 0.6);">{{ $favoriteTutor->name }}</span>
-                                            </div>
+                                        <div id="favoriteContainer">
+    
                                         </div>
-                                        @endforeach
-                                        @endif
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     @endif
 
-                        <div class="profile">
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <div class="nav-profile">
-                                        <img src="{{ auth()->user()->profile ? Auth::user()->profile->image : '' }}" style="transform: scale(1.8);"/>
-                                    </div>
-                                    <span>{{ Auth::user()->name }}</span>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    @if (Auth::user()->type == 3)
-                                        <a class="dropdown-item" href="{{ route('student.profile') }}">@lang('main.account_settings')</a>
-                                    @else
-                                        <a class="dropdown-item" href="{{ route('tutor.profile') }}">@lang('main.account_settings')</a>
-                                    @endif
-                                    <a class="dropdown-item" href="{{(auth()->user()->type==2)? url('schedule'): url('student/schedule')}}">@lang('main.schedule')</a>
-                                    @if (Auth::user()->type != 3)
-                                      <a class="dropdown-item" href="{{ route('tutor.availability') }}">@lang('main.my_availability')</a>                            
-                                    @endif
-                                    
-                                    <a class="dropdown-item" href="{{ route('student.enrolled') }}">@lang('main.my_courses')</a>
-                                    <a class="dropdown-item" href="{{ route('calls') }}">@lang('main.my_calling')</a>
-                                    <hr>
-                                    <a class="dropdown-item" href="{{ route('contact') }}">@lang('main.contact_us')</a>
-                                    <a class="dropdown-item logout" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">@lang('main.log_out') <i class="fas fa-sign-out"></i></a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
+                    <div class="profile">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="nav-profile">
+                                    <img src="{{ auth()->user()->profile ? Auth::user()->profile->image : '' }}" style="transform: scale(1.8);"/>
                                 </div>
+                                <span>{{ Auth::user()->name }}</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                @if (Auth::user()->type == 3)
+                                    <a class="dropdown-item" href="{{ route('student.profile') }}">@lang('main.account_settings')</a>
+                                @else
+                                    <a class="dropdown-item" href="{{ route('tutor.profile') }}">@lang('main.account_settings')</a>
+                                @endif
+                                <a class="dropdown-item" href="{{(auth()->user()->type==2)? url('schedule'): url('student/schedule')}}">@lang('main.schedule')</a>
+                                @if (Auth::user()->type != 3)
+                                    <a class="dropdown-item" href="{{ route('tutor.availability') }}">@lang('main.my_availability')</a>                            
+                                @endif
+                                
+                                <a class="dropdown-item" href="{{ route('student.enrolled') }}">@lang('main.my_courses')</a>
+                                <a class="dropdown-item" href="{{ route('calls') }}">@lang('main.my_calling')</a>
+                                <hr>
+                                <a class="dropdown-item" href="{{ route('contact') }}">@lang('main.contact_us')</a>
+                                <a class="dropdown-item logout" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">@lang('main.log_out') <i class="fas fa-sign-out"></i></a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
                             </div>
                         </div>
+                    </div>
                     </div>
                     </div>
                 </div>
@@ -545,7 +503,7 @@
     @yield('scripts')
     <script>
         $(document).ready(function(){
-            $('.tutor_profile').click(function(){
+            $('#favoriteContainer').on('click', '.tutor_profile',function(){
                 var id = this.id;
                 var splitid = id.split('_');
                 var userid = splitid[1];
@@ -568,6 +526,63 @@
                  $('#tutorVideo').get(0).pause();
                 $('#tutorVideo').currentTime = 0;
             });
+
+            $('.favourite_tutors .favorite-btn').click(function(){
+                // AJAX request
+                $.ajax({
+                    url: '{{ url("/ajax/students") }}',
+                    type: 'get',
+                    data: {},
+                    success: function(response){
+                        
+                        if(response.favorites[0] != '' && response.favorites[0] != undefined && response.favorites[0].length !==0)
+                        {
+                            $('#favoriteContainer').empty();
+                            $.each(response.favorites[0], function(index, item){
+                                $('#favoriteContainer').append(
+                                    '<div>'
+                                            +'<div class="cambly-contact" role="menuitem" style="color: rgba(0, 0, 0, 0.3); display: block; font-size: 16px; line-height: 48px; position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin-left: 0px; padding: 0px 38px 0px 72px; cursor: default; min-height: 48px; white-space: nowrap;">'
+                                                +'<div class="contact-action-buttons" style="float: right; margin: 0px 6px; max-height: 48px; display: flex; align-items: center;">'
+                                                    +'<button id="tutor_'+item.id+'" class="tutor_profile" tabindex="0" type="button" style="border: 10px; box-sizing: border-box; display: inline-block; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); cursor: pointer; text-decoration: none; margin: 0px; padding: 12px 6px; outline: none; font-size: 0px; font-weight: inherit; position: relative; overflow: visible; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; width: 36px; height: 48px; background: none;">'
+                                                        +'<div>'
+                                                            +'<svg viewBox="0 0 24 24" style="display: inline-block; color: rgba(0, 0, 0, 0.2); fill: rgba(0, 0, 0, 0.2); height: 20px; width: 20px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;">'
+                                                            +'<path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z">  </path>'
+                                                            +'</svg>'
+                                                        +'</div>'
+                                                    +'</button>'
+                                                +'</div>'
+                                                +'<img size="40" color="#757575" src="'+item.image+'" draggable="true" data-bukket-ext-bukket-draggable="true" style="color: rgb(117, 117, 117); background-color: rgb(188, 188, 188); user-select: none; display: block; align-items: center; justify-content: center; font-size: 20px; border-radius: 50%; height: 40px; width: 40px; position: absolute; top: 0px; margin: 4px 0px 4px 12px; left: 4px;">'
+                                                +'<span style="color: rgba(0, 0, 0, 0.6);">'+item.name+'</span>'
+                                        +'</div>'
+                                    )
+                            });
+                        }
+                        if(response.favorites[1] != '' && response.favorites[1] != undefined && response.favorites[1].length !==0)
+                        {
+                            $('#favoriteContainer').empty();
+                            $.each(response.favorites[1], function(index, item){
+                                $('#favoriteContainer').append(
+                                    '<div>'
+                                            +'<div class="cambly-contact" role="menuitem" style="color: rgba(0, 0, 0, 0.3); display: block; font-size: 16px; line-height: 48px; position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; margin-left: 0px; padding: 0px 38px 0px 72px; cursor: default; min-height: 48px; white-space: nowrap;">'
+                                                +'<div class="contact-action-buttons" style="float: right; margin: 0px 6px; max-height: 48px; display: flex; align-items: center;">'
+                                                    +'<button id="tutor_'+item.id+'" class="tutor_profile" tabindex="0" type="button" style="border: 10px; box-sizing: border-box; display: inline-block; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); cursor: pointer; text-decoration: none; margin: 0px; padding: 12px 6px; outline: none; font-size: 0px; font-weight: inherit; position: relative; overflow: visible; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; width: 36px; height: 48px; background: none;">'
+                                                        +'<div>'
+                                                            +'<svg viewBox="0 0 24 24" style="display: inline-block; color: rgba(0, 0, 0, 0.2); fill: rgba(0, 0, 0, 0.2); height: 20px; width: 20px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;">'
+                                                            +'<path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z">  </path>'
+                                                            +'</svg>'
+                                                        +'</div>'
+                                                    +'</button>'
+                                                +'</div>'
+                                                +'<img size="40" color="#757575" src="'+item.image+'" draggable="true" data-bukket-ext-bukket-draggable="true" style="color: rgb(117, 117, 117); background-color: rgb(188, 188, 188); user-select: none; display: block; align-items: center; justify-content: center; font-size: 20px; border-radius: 50%; height: 40px; width: 40px; position: absolute; top: 0px; margin: 4px 0px 4px 12px; left: 4px;">'
+                                                +'<span style="color: rgba(0, 0, 0, 0.6);">'+item.name+'</span>'
+                                        +'</div>'
+                                    )
+                            });
+                        }
+                    }
+                });
+            });
+
         });
 
 
