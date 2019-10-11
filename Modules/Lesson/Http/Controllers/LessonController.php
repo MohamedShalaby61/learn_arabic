@@ -55,7 +55,7 @@ class LessonController extends Controller
         if ($request->has('add_and_close')){
             Session::flash('message', __('common::common.add_message'));
             Session::flash('alert-class', 'alert-success');
-            return redirect()->route('courses.index');
+            return redirect()->route('lessons.index',$request->course_id);
         }
 
         if ($request->has('add_and_more')){

@@ -17,14 +17,17 @@
     <section class="content">
 
         <div class="row">
+
             <div style="min-height: 800px;" class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
                         <h3 style="font-family: 'Cairo', sans-serif;" class="box-title">{{ 'جدول الدروس الخاص بالدورة '.$course->title }}</h3>
                     </div>
 
-
                     <div class="box-body">
+                        <div class="form-group">
+                            <a href="{{ route('lessons.create',$course->id) }}" class="btn btn-success"><i class="fa fa-plus"></i> @lang('lesson::lesson.add')</a>
+                        </div>
                         @include('common::layouts._session')
                         @if($rows->count() > 0)
                             <table  id="table_id" class="table table-bordered table-striped table-hover">
@@ -79,11 +82,11 @@
 
         $(document).ready( function () {
             $('#table_id').DataTable({
-                // "columnDefs": [
-                //
-                //     { "orderable": false, "targets": 4 },
-                //
-                // ],
+                 "columnDefs": [
+
+                     { "orderable": false, "targets":3},
+
+                ],
             });
         } );
     </script>

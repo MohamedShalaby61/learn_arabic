@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36569565-79d2-4659-80a3-434c22a91b85" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Lesson/Resources/lang/ar/lesson.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Lesson/Resources/lang/en/lesson.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Lesson/Resources/views/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Lesson/Resources/views/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Course/Http/Controllers/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Course/Http/Controllers/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Course/Resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Course/Resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Config/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Config/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Console/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Database/Migrations/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Database/Seeders/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Database/Seeders/LessionDatabaseSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Database/factories/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Entities/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Http/Controllers/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Http/Controllers/LessionController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Http/Middleware/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Http/Requests/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Providers/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Providers/LessionServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Providers/RouteServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Resources/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Resources/assets/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Resources/assets/sass/app.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Resources/lang/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Resources/views/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Resources/views/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Resources/views/layouts/master.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Routes/api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Tests/Feature/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/Tests/Unit/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/module.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Lession/webpack.mix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Lesson/Resources/lang/ar/lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Lesson/Resources/lang/ar/lesson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Lesson/Resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Lesson/Resources/views/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,23 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
+            <state relative-caret-position="251">
+              <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LessonController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LessonController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/Lesson/Http/Controllers/LessonController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="102" column="60" selection-start-line="102" selection-start-column="60" selection-end-line="102" selection-end-column="60" />
-              <folding>
-                <element signature="e#51#73#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="52">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -76,8 +38,8 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/Lesson/Routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
+            <state relative-caret-position="260">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -103,8 +65,8 @@
       <file leaf-file-name="lesson.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/lang/ar/lesson.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="286">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -185,11 +147,11 @@
         <option value="$PROJECT_DIR$/Modules/Course/Http/Controllers/CourseController.php" />
         <option value="$PROJECT_DIR$/Modules/Course/Resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/Modules/Lesson/Resources/views/create.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Lesson/Resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/Modules/Lesson/Routes/web.php" />
-        <option value="$PROJECT_DIR$/Modules/Lesson/Resources/lang/ar/lesson.php" />
         <option value="$PROJECT_DIR$/Modules/Lesson/Resources/views/edit.blade.php" />
         <option value="$PROJECT_DIR$/Modules/Lesson/Http/Controllers/LessonController.php" />
+        <option value="$PROJECT_DIR$/Modules/Lesson/Resources/lang/ar/lesson.php" />
+        <option value="$PROJECT_DIR$/Modules/Lesson/Resources/views/index.blade.php" />
       </list>
     </option>
   </component>
@@ -413,12 +375,12 @@
       <updated>1570021354690</updated>
       <workItem from="1570021356347" duration="29840000" />
       <workItem from="1570526806421" duration="40632000" />
-      <workItem from="1570703521765" duration="25949000" />
+      <workItem from="1570703521765" duration="26300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96421000" />
+    <option name="totallyTimeSpent" value="96772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -803,27 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/lang/ar/lesson.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/views/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -831,13 +772,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/lang/ar/lesson.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Lesson/Http/Controllers/LessonController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="102" column="60" selection-start-line="102" selection-start-column="60" selection-end-line="102" selection-end-column="60" />
-          <folding>
-            <element signature="e#51#73#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="52">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
         </state>
       </provider>
     </entry>
