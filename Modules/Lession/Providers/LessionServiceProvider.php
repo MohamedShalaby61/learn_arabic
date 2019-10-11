@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\CourseLesson\Providers;
+namespace Modules\Lession\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
 
-class CourseLessonServiceProvider extends ServiceProvider
+class LessionServiceProvider extends ServiceProvider
 {
     /**
      * Boot the application events.
@@ -39,10 +39,10 @@ class CourseLessonServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            __DIR__.'/../Config/config.php' => config_path('courselesson.php'),
+            __DIR__.'/../Config/config.php' => config_path('lession.php'),
         ], 'config');
         $this->mergeConfigFrom(
-            __DIR__.'/../Config/config.php', 'courselesson'
+            __DIR__.'/../Config/config.php', 'lession'
         );
     }
 
@@ -53,7 +53,7 @@ class CourseLessonServiceProvider extends ServiceProvider
      */
     public function registerViews()
     {
-        $viewPath = resource_path('views/modules/courselesson');
+        $viewPath = resource_path('views/modules/lession');
 
         $sourcePath = __DIR__.'/../Resources/views';
 
@@ -62,8 +62,8 @@ class CourseLessonServiceProvider extends ServiceProvider
         ],'views');
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
-            return $path . '/modules/courselesson';
-        }, \Config::get('view.paths')), [$sourcePath]), 'courselesson');
+            return $path . '/modules/lession';
+        }, \Config::get('view.paths')), [$sourcePath]), 'lession');
     }
 
     /**
@@ -73,12 +73,12 @@ class CourseLessonServiceProvider extends ServiceProvider
      */
     public function registerTranslations()
     {
-        $langPath = resource_path('lang/modules/courselesson');
+        $langPath = resource_path('lang/modules/lession');
 
         if (is_dir($langPath)) {
-            $this->loadTranslationsFrom($langPath, 'courselesson');
+            $this->loadTranslationsFrom($langPath, 'lession');
         } else {
-            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'courselesson');
+            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'lession');
         }
     }
 

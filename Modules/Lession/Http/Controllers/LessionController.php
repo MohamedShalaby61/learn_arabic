@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\CourseLesson\Http\Controllers;
+namespace Modules\Lession\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
-class CourseLessonController extends Controller
+class LessionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class CourseLessonController extends Controller
      */
     public function index()
     {
-        return view('courselesson::index');
+        return view('lession::index');
     }
 
     /**
@@ -23,7 +23,7 @@ class CourseLessonController extends Controller
      */
     public function create()
     {
-        return view('courselesson::create');
+        return view('lession::create');
     }
 
     /**
@@ -43,7 +43,7 @@ class CourseLessonController extends Controller
      */
     public function show($id)
     {
-        return view('courselesson::show');
+        return view('lession::show');
     }
 
     /**
@@ -53,7 +53,7 @@ class CourseLessonController extends Controller
      */
     public function edit($id)
     {
-        return view('courselesson::edit');
+        return view('lession::edit');
     }
 
     /**

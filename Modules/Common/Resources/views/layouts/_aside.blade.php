@@ -65,6 +65,11 @@
                     <i class="fa fa-laptop"></i> <span>@lang('course::course.courses')</span>
                 </a>
             </li>
+            <li class="treeview">
+                <a href="{{ route('courses.create') }}">
+                    <i class="fa fa-plus"></i> <span>@lang('course::course.create_courses')</span>
+                </a>
+            </li>
         </ul>
     </section>
     <!-- /.sidebar -->

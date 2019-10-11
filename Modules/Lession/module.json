@@ -1,11 +1,11 @@
 {
-    "name": "CourseLesson",
-    "alias": "courselesson",
+    "name": "Lession",
+    "alias": "lession",
     "description": "",
     "keywords": [],
     "order": 0,
     "providers": [
-        "Modules\\CourseLesson\\Providers\\CourseLessonServiceProvider"
+        "Modules\\Lession\\Providers\\LessionServiceProvider"
     ],
     "aliases": {},
     "files": [],
