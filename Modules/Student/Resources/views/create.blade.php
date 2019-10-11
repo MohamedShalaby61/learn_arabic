@@ -102,43 +102,43 @@
                                             <div class="form-group">
                                                 <h5><strong>@lang('student-profile.interests')</strong></h5>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="14" value="Business" @if(in_array('Business', Auth::user()->profile->interests))checked=""@endif />
+                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="14" value="Business" />
                                                     <label class="form-check-label" for="14">
                                                         @lang('student-profile.business')
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="15" value="Sports" @if(in_array('Sports', Auth::user()->profile->interests))checked=""@endif />
+                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="15" value="Sports" />
                                                     <label class="form-check-label" for="15">
                                                         @lang('student-profile.sports')
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="16" value="World News" @if(in_array('World News', Auth::user()->profile->interests))checked=""@endif  />
+                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="16" value="World News" />
                                                     <label class="form-check-label" for="16">
                                                         @lang('student-profile.world_news')
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="17" value="Literature" @if(in_array('Literature', Auth::user()->profile->interests))checked=""@endif />
+                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="17" value="Literature" />
                                                     <label class="form-check-label" for="17">
                                                         @lang('student-profile.literature')
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="18" value="Entertainment & Lifestyle" @if(in_array('Entertainment & Lifestyle', Auth::user()->profile->interests))checked=""@endif />
+                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="18" value="Entertainment & Lifestyle" />
                                                     <label class="form-check-label" for="18">
                                                         @lang('student-profile.entertainment_and_lifestyle')
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="19" value="Science and Technology" @if(in_array('Science and Technology', Auth::user()->profile->interests))checked=""@endif />
+                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="19" value="Science and Technology" />
                                                     <label class="form-check-label" for="19">
                                                         @lang('student-profile.science_and_technology')
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="20" value="Language & Culture" @if(in_array('Language & Culture', Auth::user()->profile->interests))checked=""@endif />
+                                                    <input class="form-check-input" type="checkbox" name="interests[]" id="20" value="Language & Culture"  />
                                                     <label class="form-check-label" for="20">
                                                         @lang('student-profile.language_and_culture')
                                                     </label>

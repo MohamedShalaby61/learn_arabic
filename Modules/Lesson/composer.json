@@ -1,5 +1,5 @@
 {
-    "name": "nwidart/courselesson",
+    "name": "nwidart/lesson",
     "description": "",
     "authors": [
         {
@@ -10,7 +10,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\CourseLesson\\Providers\\CourseLessonServiceProvider"
+                "Modules\\Lesson\\Providers\\LessonServiceProvider"
             ],
             "aliases": {
                 
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\CourseLesson\\": ""
+            "Modules\\Lesson\\": ""
         }
     }
 }

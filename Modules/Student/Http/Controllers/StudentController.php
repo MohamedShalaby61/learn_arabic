@@ -108,12 +108,12 @@ class StudentController extends Controller
     public function edit($id)
     {
         $row = User::find($id);
-        $student = Student::find($row);
+        $student = Student::find($row->fk_id);
         $countries = Country::all();
         $lessons_type = DB::table('lessons_types')->get();
         $lessons_personalities = TutoringPersonality::all();
         $accents = Accent::all();
-        return view('student::create',compact('student','row','countries','accents','lessons_personalities','lessons_type'));
+        return view('student::edit',compact('student','row','countries','accents','lessons_personalities','lessons_type'));
     }
 
     /**
@@ -124,7 +124,35 @@ class StudentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+            $request->validate([
+                'name' => ['required', 'string', 'max:255'],
+                'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email,'.$id],
+            ]);
+
+            $data = $request->all();
+            //dd($request->all());
+            $user = User::find($id);
+            $user->update([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'mobile' => in_array('mobile',$data) ? $data['mobile'] : null,
+                'password' => $request->password !== null && $request->has('password') ? Hash::make($data['password']) : $user->password,
+            ]);
+
+
+            $studentData = $request->except(['email','password']);
+            if ($request->image){
+                $studentData['image'] = $this->customUploadFile('image', 'students');
+            }
+
+
+        $student = Student::find($user->fk_id);
+        $student->update($studentData);
+
+
+        Session::flash('message', __('common::common.edit_message'));
+        Session::flash('alert-class', 'alert-success');
+        return redirect()->route('students.index');
     }
 
     /**
@@ -134,6 +162,11 @@ class StudentController extends Controller
      */
     public function destroy($id)
     {
-        
+        $user = User::find($id);
+        $user->delete();
+
+        Session::flash('message', __('common::common.delete_message'));
+        Session::flash('alert-class', 'alert-success');
+        return redirect()->route('students.index');
     }
 }

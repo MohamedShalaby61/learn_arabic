@@ -14,7 +14,7 @@
 				<div class="page-section bg-white" style="margin: 50px 0 30px 0; background-color: #fff !important; box-shadow:1px 1px 30px #eee; border: 1px solid yellow;">
 					<h3>@lang('student-subscribe.payment_information') <i class="glyphicon glyphicon-lock" style="float: right; font-size: medium;"></i></h3>
 					<div style="margin-top: 20px;">
-						<form>
+						<form >
 							<div class="StripeElement StripeElement--empty">
 								<div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;">
 									<iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame8" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-f6d4daf53ab44ddc4b9f013359f4c42c.html#style[base][fontSize]=16px&amp;componentName=card&amp;wait=false&amp;rtl=false&amp;keyMode=live&amp;origin=https%3A%2F%2Fwww.cambly.com&amp;referrer=https%3A%2F%2Fwww.cambly.com%2Fen%2Fstudent%2Fcheckout%3FproductId%3D5acfcb39aa1b67d0d282fe22%25233%26purchaseId%3D5d24633c58ef5f0023792d52%26paymentProcessor%3Dstripe&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 19.2px;"></iframe>

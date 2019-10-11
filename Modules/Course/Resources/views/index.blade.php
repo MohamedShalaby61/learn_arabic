@@ -20,7 +20,7 @@
             <div style="min-height: 800px;" class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3 style="font-family: 'Cairo', sans-serif;" class="box-title">{{ 'جدول العروض' }}</h3>
+                        <h3 style="font-family: 'Cairo', sans-serif;" class="box-title">{{ 'جدول الدورات' }}</h3>
                     </div>
 
 
@@ -33,6 +33,7 @@
                                     <th>#</th>
                                     <th>@lang('course::course.name')</th>
                                     <th>@lang('course::course.description')</th>
+                                    <th>@lang('course::course.cost')</th>
                                     <th>@lang('course::course.related_lessons')</th>
                                     <th>@lang('common::common.operations')</th>
                                 </tr>
@@ -42,19 +43,15 @@
                                     <tr>
                                         <td>{{ $index+1 }}</td>
                                         <td>{{ $row->title }}</td>
-                                        <td>{{ str_limit($row->description,100) }}</td>
-                                        <td><a>dsadsdasdsa</a></td>
+                                        <td>{{ str_limit($row->description,50) }}</td>
+                                        <td>{{ $row->cost }} USD</td>
+                                        <td><a href="{{ route('lessons.index',$row->id) }}" class="btn btn-info">@lang('course::course.click_here')</a></td>
                                         <td>
-                                            <form action="{{ route('admins.destroy',$row->id) }}" method="post">
+                                            <form action="{{ route('courses.destroy',$row->id) }}" method="post">
                                                 @csrf
                                                 @method('delete')
-                                                @if(auth()->user()->role_id == 5 )
-                                                    <a href="####" class="btn btn-success disabled btn-sm"><i class="fa fa-edit"></i></a>
-                                                @else
-                                                    <a href="{{ route('admins.edit',$row->id) }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
-                                                @endif
-
-                                                    <button type="submit" onclick="return confirm('هل انت متأكد من حذف المطبعة')" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                                                    <a href="{{ route('courses.edit',$row->id) }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
+                                                    <button type="submit" onclick="return confirm('هل انت متأكد من حذف الدورة')" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
 
                                             </form>
                                         </td>
@@ -88,7 +85,7 @@
             $('#table_id').DataTable({
                 "columnDefs": [
 
-                    { "orderable": false, "targets": 3 },
+                    { "orderable": false, "targets": 4 },
 
                 ],
             });
