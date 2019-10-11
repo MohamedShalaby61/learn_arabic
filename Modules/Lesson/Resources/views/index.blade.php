@@ -1,7 +1,7 @@
 @extends('common::layouts.master')
 
 @section('content')
-    
+
 
     <section class="content-header">
         <h1>
@@ -14,13 +14,13 @@
         </ol>
     </section>
 
-	<section class="content">
+    <section class="content">
 
         <div class="row">
             <div style="min-height: 800px;" class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3 style="font-family: 'Cairo', sans-serif;" class="box-title">{{ 'جدول الدورات' }}</h3>
+                        <h3 style="font-family: 'Cairo', sans-serif;" class="box-title">{{ 'جدول الدروس الخاص بالدورة '.$course->title }}</h3>
                     </div>
 
 
@@ -31,10 +31,8 @@
                                 <thead>
                                 <tr>
                                     <th>#</th>
+                                    <th>@lang('lesson::lesson.name')</th>
                                     <th>@lang('course::course.name')</th>
-                                    <th>@lang('course::course.description')</th>
-                                    <th>@lang('course::course.cost')</th>
-                                    <th>@lang('course::course.related_lessons')</th>
                                     <th>@lang('common::common.operations')</th>
                                 </tr>
                                 </thead>
@@ -42,16 +40,14 @@
                                 @foreach($rows as $index=>$row)
                                     <tr>
                                         <td>{{ $index+1 }}</td>
-                                        <td>{{ $row->title }}</td>
-                                        <td>{{ str_limit($row->description,50) }}</td>
-                                        <td>{{ $row->cost }} USD</td>
-                                        <td><a href="{{ route('lessons.index',$row->id) }}" class="btn btn-info">@lang('course::course.click_here')</a></td>
+                                        <td>{{ $row->name }}</td>
+                                        <td>{{ $row->course->title }}</td>
                                         <td>
-                                            <form action="{{ route('courses.destroy',$row->id) }}" method="post">
+                                            <form action="{{ route('lessons.destroy',$row->id) }}" method="post">
                                                 @csrf
                                                 @method('delete')
-                                                    <a href="{{ route('courses.edit',$row->id) }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
-                                                    <button type="submit" onclick="return confirm('هل انت متأكد من حذف الدورة')" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                                                <a href="{{ route('lessons.edit',$row->id) }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
+                                                <button type="submit" onclick="return confirm('هل انت متأكد من حذف الدرس')" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
 
                                             </form>
                                         </td>
@@ -60,7 +56,7 @@
                                 </tbody>
                             </table>
                         @else
-                            <h1 style="font-family: 'Cairo', sans-serif;">للاسف لا توجد عروض حتي الان</h1>
+                            <h1 style="font-family: 'Cairo', sans-serif;">للاسف لا توجد دروس حتي الان في هذة الدورة</h1>
                         @endif
                     </div>
                     <!-- /.box-body -->
@@ -83,11 +79,11 @@
 
         $(document).ready( function () {
             $('#table_id').DataTable({
-                "columnDefs": [
-
-                    { "orderable": false, "targets": 4 },
-
-                ],
+                // "columnDefs": [
+                //
+                //     { "orderable": false, "targets": 4 },
+                //
+                // ],
             });
         } );
     </script>

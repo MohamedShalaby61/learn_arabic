@@ -54,6 +54,12 @@ class CourseController extends Controller
             return redirect()->route('courses.index');
         }
 
+        if ($request->has('add_and_go_to_lesson')){
+            Session::flash('message', __('common::common.add_message'));
+            Session::flash('alert-class', 'alert-success');
+            return redirect()->route('lessons.create',$course->id);
+        }
+
     }
 
     
