@@ -29,7 +29,7 @@
       <file leaf-file-name="LessonController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/Lesson/Http/Controllers/LessonController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
+            <state relative-caret-position="1456">
               <caret line="56" column="59" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
               <folding>
                 <element signature="e#51#73#0#PHP" expanded="true" />
@@ -41,7 +41,7 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
+            <state relative-caret-position="832">
               <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
@@ -50,7 +50,7 @@
       <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="29510">
               <caret line="1154" column="74" selection-start-line="1154" selection-start-column="74" selection-end-line="1154" selection-end-column="74" />
             </state>
           </provider>
@@ -59,8 +59,8 @@
       <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="26">
+              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -68,8 +68,8 @@
       <file leaf-file-name="AuthenticatesUsers.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
+            <state relative-caret-position="349">
+              <caret line="194" column="31" selection-start-line="194" selection-start-column="31" selection-end-line="194" selection-end-column="31" />
               <folding>
                 <element signature="e#46#74#0#PHP" expanded="true" />
               </folding>
@@ -336,7 +336,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -371,12 +370,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="LoginController&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/Auth/LoginController.php&#10;Router.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/vendor/laravel/framework/src/Illuminate/Routing/Router.php&#10;LoginCon&#9;null&#9;null&#10;laravel/framework/src/Illuminate/Routing/Router.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/vendor/laravel/framework/src/Illuminate/Routing/Router.php&#10;web.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/routes/web.php&#10;create&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Lesson/Resources/views/create.blade.php&#10;Lesson&#9;null&#9;null&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Resources/views/index.blade.php&#10;Course&#9;null&#9;null&#10;index.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Resources/views/index.blade.php&#10;lesson&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Lesson/Resources/lang/ar/lesson.php&#10;contr&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Http/Controllers/CourseController.php&#10;create.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Admin/Resources/views/create.blade.php&#10;web.&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Lesson/Routes/web.php&#10;course&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Http/Controllers/CourseController.php&#10;index.b&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Resources/views/index.blade.php&#10;_aside&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_aside.blade.php&#10;controller&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Student/Http/Controllers/StudentController.php&#10;course.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Resources/lang/ar/course.php&#10;common.p&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/lang/ar/common.php&#10;edit.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Student/Resources/views/edit.blade.php&#10;create.blade&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Student/Resources/views/create.blade.php&#10;payment&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/student/payment.blade.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Routes/web.php&#10;_as&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_aside.blade.php&#10;tutor&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Http/Controllers/TutorController.php&#10;student&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/StudentController.php&#10;customUploadFile&#9;null&#9;null&#10;profile&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/student/profile.blade.php&#10;controlle&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Http/Controllers/TutorController.php&#10;ؤقثشفث&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Resources/views/create.blade.php&#10;Admin&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Admin/Http/Controllers/AdminController.php&#10;studentcontroller&#9;null&#9;null&#10;StudentContr&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/StudentController.php&#10;master&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/master.blade.php&#10;aside&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_aside.blade.php&#10;common&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Http/Controllers/CommonController.php&#10;profile.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/tutor/profile.blade.php&#10;app.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/layouts/app.blade.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Admin/Http/Controllers/AdminController.php&#10;val&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/lang/ar/validation.php&#10;فعفخقؤخىفقخممثق&#9;null&#9;null&#10;Lang&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Http/Middleware/Language.php&#10;createbladephp&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Resources/views/create.blade.php&#10;User.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Models/User.php&#10;co&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/lang/ar/common.php&#10;common.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/lang/ar/common.php&#10;User&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Models/User.php&#10;app&#9;FILE&#9;file://E:/mcomputer science/laravel helpful/abdeleid-mypos-a2be210af394/abdeleid-mypos-a2be210af394/resources/views/layouts/dashboard/app.blade.php&#10;_sessio&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_session.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/printers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
@@ -415,12 +415,14 @@
       <workItem from="1570021356347" duration="29840000" />
       <workItem from="1570526806421" duration="40632000" />
       <workItem from="1570703521765" duration="27281000" />
-      <workItem from="1570811834486" duration="962000" />
+      <workItem from="1570811834486" duration="1163000" />
+      <workItem from="1570814562719" duration="64000" />
+      <workItem from="1570815023338" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98715000" />
+    <option name="totallyTimeSpent" value="99037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -781,7 +783,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Lesson/Http/Controllers/LessonController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
+        <state relative-caret-position="1456">
           <caret line="56" column="59" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
           <folding>
             <element signature="e#51#73#0#PHP" expanded="true" />
@@ -791,29 +793,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="832">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="29510">
           <caret line="1154" column="74" selection-start-line="1154" selection-start-column="74" selection-end-line="1154" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="26">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
+        <state relative-caret-position="349">
+          <caret line="194" column="31" selection-start-line="194" selection-start-column="31" selection-end-line="194" selection-end-column="31" />
           <folding>
             <element signature="e#46#74#0#PHP" expanded="true" />
           </folding>
