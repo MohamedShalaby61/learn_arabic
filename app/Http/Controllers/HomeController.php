@@ -55,8 +55,15 @@ class HomeController extends Controller
     {
         $this->getFavorites();
         $this->data['tutors'] = Tutor::where('status', 1)->whereNotNull('image')->whereNotNull('teaching_experience')->whereNotNull('education')->orderBy('online', 'desc')->orderBy('rating', 'desc')->get();
-
         return view('students')->with($this->data);
+    }
+
+    public function ajaxStudents()
+    {
+        $this->getFavorites();
+        $this->data['tutors'] = Tutor::where('status', 1)->whereNotNull('image')->whereNotNull('teaching_experience')->whereNotNull('education')->orderBy('online', 'desc')->orderBy('rating', 'desc')->get();
+
+        return $this->data;
     }
 
     public function tutorProfile($id)

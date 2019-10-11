@@ -45,6 +45,8 @@ Route::get('/test', 'MeetingController@test')->name('test');
 Route::get('/tutor/register', 'TutorController@register')->name('tutor.register');
 Route::post('/tutor/register', 'TutorController@register')->name('tutor.register');
 
+Route::get('/ajax/students', 'HomeController@ajaxStudents');
+
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/students', 'HomeController@students')->name('students');
     Route::get('/progress', 'HomeController@progress')->name('progress');
