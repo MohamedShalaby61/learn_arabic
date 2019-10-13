@@ -1,6 +1,6 @@
 {
-  "host": "127.0.0.1",
-  "user": "shalaby",
-  "password": "shalaby12345678",
-  "database": "learn_arabic"
+  "host": "localhost",
+  "user": "root",
+  "password": "root",
+  "database": "learn-arabic"
 }
