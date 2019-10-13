@@ -11,10 +11,11 @@
             background-color: #fff !important;
         }
         .cjslib-calendar.cjslib-size-small {
-            width: 320px !important;
+            width: 240px !important;
             height: 358px !important;
         }
         .cjslib-events.cjslib-size-small {
+            width: 330  !important;
             height: 358px !important;
         }
         .cjslib-year, .cjslib-month, .cjslib-date {

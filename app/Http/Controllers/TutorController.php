@@ -186,12 +186,17 @@ class TutorController extends Controller
     }
 
     public function availability(){
-        return view('tutor.availability');
+        return view('tutor.availability', compact('tutorAvailableTimes'));
     }
     public function postAvailability(PostAvailabilityRequest $request)
     {
         $final=[];
-       foreach ($request->from as $key=>$value){
+        // $tutorTimes = auth()->user()->profile->availableTimes->pluck('to', 'from')->toArray() ?? null;
+        foreach ($request->from as $key=>$value){
+           $from = Carbon::parse($value);
+           $to = Carbon::parse($request->to[$key]);
+            // dd($from, $to, date('Y-m-d', strtotime($request->date)), $value, $request->to);
+
            $data['from']=$value;
            $data['to']=$request->to[$key];
            $data['tutor_id']=\auth()->user()->fk_id;
@@ -207,10 +212,8 @@ class TutorController extends Controller
 
     public function getTutorTime($date,$tutor)
     {
-
        $thisDate=date('Y-m-d',strtotime($date));
        $times=TutorTime::with(['bookedUser','tutor'])->where(['tutor_id'=>$tutor,'status'=>1,'date'=>$thisDate])->get();
-//       return response()->json($times);
         return view('profileTime',compact('times'));
     }
     public function bookTime(Request $request)
