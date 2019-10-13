@@ -76,6 +76,7 @@
                                     <label>@lang('course::course.image')</label>
                                     <input class="form-control" type="file" name="image">
                                 </div>
+
                             </div>
 
                         </div>

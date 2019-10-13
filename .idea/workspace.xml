@@ -3,10 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="36569565-79d2-4659-80a3-434c22a91b85" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Course/Http/Controllers/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Course/Http/Controllers/CourseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Course/Resources/lang/ar/course.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Course/Resources/lang/ar/course.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Course/Resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Course/Resources/views/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Course/Resources/views/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Course/Resources/views/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Course/Resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Course/Resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Tutor/Resources/lang/ar/tutor.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Tutor/Resources/lang/ar/tutor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/CourseTutor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CourseTutor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,106 +29,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/views/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LessonController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Lesson/Http/Controllers/LessonController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1456">
-              <caret line="56" column="59" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
-              <folding>
-                <element signature="e#51#73#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29510">
-              <caret line="1154" column="74" selection-start-line="1154" selection-start-column="74" selection-end-line="1154" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthenticatesUsers.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="194" column="31" selection-start-line="194" selection-start-column="31" selection-end-line="194" selection-end-column="31" />
-              <folding>
-                <element signature="e#46#74#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Lesson/Routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/views/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/views/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1274">
-              <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lesson.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/lang/ar/lesson.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -139,103 +57,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Modules/Common/Resources/lang/en/common.php" />
-        <option value="$PROJECT_DIR$/Modules/Common/Resources/views/layouts/_session.php" />
-        <option value="$PROJECT_DIR$/Modules/Common/Resources/views/layouts/_error.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/create.blade.php" />
-        <option value="E:/mcomputer science/laravel helpful/abdeleid-mypos-a2be210af394/abdeleid-mypos-a2be210af394/resources/views/layouts/dashboard/app.blade.php" />
-        <option value="E:/mcomputer science/laravel helpful/AdminLTE-RTL-master/AdminLTE-RTL-master/index.html" />
-        <option value="$PROJECT_DIR$/Modules/Admin/Http/Controllers/AdminController.php" />
-        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/edit.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Admin/Resources/lang/ar/admin.php" />
-        <option value="$PROJECT_DIR$/Modules/Tutor/Resources/lang/en/tutor.php" />
-        <option value="$PROJECT_DIR$/Modules/Tutor/Routes/web.php" />
-        <option value="$PROJECT_DIR$/Modules/Common/Http/Middleware/Language.php" />
-        <option value="$PROJECT_DIR$/resources/lang/ar/validation.php" />
-        <option value="$PROJECT_DIR$/Modules/Tutor/Resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Tutor/Resources/views/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/student/profile.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/tutor/profile.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Common/Http/Controllers/CommonController.php" />
-        <option value="$PROJECT_DIR$/Modules/Tutor/Resources/lang/ar/tutor.php" />
-        <option value="$PROJECT_DIR$/Modules/Tutor/Resources/views/create.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Common/Resources/views/layouts/master.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Student/Resources/lang/en/student.php" />
-        <option value="$PROJECT_DIR$/Modules/Student/Routes/web.php" />
-        <option value="$PROJECT_DIR$/Modules/Tutor/Http/Controllers/TutorController.php" />
-        <option value="$PROJECT_DIR$/Modules/Student/Resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Student/Resources/lang/ar/student.php" />
-        <option value="$PROJECT_DIR$/Modules/Student/Resources/views/edit.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Student/Http/Controllers/StudentController.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/.env.example" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/resources/views/student/payment.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Student/Resources/views/create.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Common/Resources/lang/ar/common.php" />
-        <option value="$PROJECT_DIR$/Modules/Course/Resources/lang/ar/course.php" />
-        <option value="$PROJECT_DIR$/Modules/Common/Resources/views/layouts/_aside.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Course/Resources/views/create.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Course/Resources/views/edit.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Lesson/Resources/lang/en/lesson.php" />
-        <option value="$PROJECT_DIR$/Modules/Course/Http/Controllers/CourseController.php" />
-        <option value="$PROJECT_DIR$/Modules/Course/Resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Lesson/Resources/views/create.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Lesson/Routes/web.php" />
-        <option value="$PROJECT_DIR$/Modules/Lesson/Resources/views/edit.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Lesson/Resources/lang/ar/lesson.php" />
-        <option value="$PROJECT_DIR$/Modules/Lesson/Resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Lesson/Http/Controllers/LessonController.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/sockets/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/Modules/Admin/package.json" />
-      <path value="$PROJECT_DIR$/Modules/Common/package.json" />
-      <path value="$PROJECT_DIR$/Modules/Course/package.json" />
-      <path value="$PROJECT_DIR$/Modules/Lesson/package.json" />
-      <path value="$PROJECT_DIR$/Modules/Student/package.json" />
-      <path value="$PROJECT_DIR$/Modules/Tutor/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/Flot/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/bootstrap-datepicker/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/bootstrap-daterangepicker/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/bootstrap/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/chart.js/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/ckeditor/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/eve-raphael/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/ion.rangeSlider/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/jquery-knob/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/jquery-slimscroll/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/jquery-ui/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/morris.js/package.json" />
-      <path value="$PROJECT_DIR$/public/admin_en/bower_components/select2/package.json" />
-      <path value="$PROJECT_DIR$/public/vendors/OwlCarousel2-2.3.2/package.json" />
-      <path value="$PROJECT_DIR$/public/vendors/WOW-master/package.json" />
-      <path value="$PROJECT_DIR$/public/vendors/aos-master/package.json" />
-      <path value="$PROJECT_DIR$/public/vendors/colorbox-master/package.json" />
-      <path value="$PROJECT_DIR$/public/vendors/filterizr-master/package.json" />
-      <path value="$PROJECT_DIR$/public/vendors/isotope-master/package.json" />
-      <path value="$PROJECT_DIR$/public/vendors/jQuery-slimScroll-master/package.json" />
-      <path value="$PROJECT_DIR$/sockets/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -331,55 +152,14 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="learn_arabic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_arabic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_arabic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_arabic" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_arabic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_arabic" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_arabic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_arabic" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_arabic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_arabic" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1S9Rl0yEBDk4ZKVgAD5HogX927S" />
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="LoginController&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/Auth/LoginController.php&#10;Router.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/vendor/laravel/framework/src/Illuminate/Routing/Router.php&#10;LoginCon&#9;null&#9;null&#10;laravel/framework/src/Illuminate/Routing/Router.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/vendor/laravel/framework/src/Illuminate/Routing/Router.php&#10;web.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/routes/web.php&#10;create&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Lesson/Resources/views/create.blade.php&#10;Lesson&#9;null&#9;null&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Resources/views/index.blade.php&#10;Course&#9;null&#9;null&#10;index.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Resources/views/index.blade.php&#10;lesson&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Lesson/Resources/lang/ar/lesson.php&#10;contr&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Http/Controllers/CourseController.php&#10;create.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Admin/Resources/views/create.blade.php&#10;web.&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Lesson/Routes/web.php&#10;course&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Http/Controllers/CourseController.php&#10;index.b&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Resources/views/index.blade.php&#10;_aside&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_aside.blade.php&#10;controller&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Student/Http/Controllers/StudentController.php&#10;course.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Resources/lang/ar/course.php&#10;common.p&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/lang/ar/common.php&#10;edit.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Student/Resources/views/edit.blade.php&#10;create.blade&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Student/Resources/views/create.blade.php&#10;payment&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/student/payment.blade.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Routes/web.php&#10;_as&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_aside.blade.php&#10;tutor&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Http/Controllers/TutorController.php&#10;student&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/StudentController.php&#10;customUploadFile&#9;null&#9;null&#10;profile&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/student/profile.blade.php&#10;controlle&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Http/Controllers/TutorController.php&#10;ؤقثشفث&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Resources/views/create.blade.php&#10;Admin&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Admin/Http/Controllers/AdminController.php&#10;studentcontroller&#9;null&#9;null&#10;StudentContr&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/StudentController.php&#10;master&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/master.blade.php&#10;aside&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_aside.blade.php&#10;common&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Http/Controllers/CommonController.php&#10;profile.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/tutor/profile.blade.php&#10;app.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/layouts/app.blade.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Admin/Http/Controllers/AdminController.php&#10;val&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/lang/ar/validation.php&#10;فعفخقؤخىفقخممثق&#9;null&#9;null&#10;Lang&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Http/Middleware/Language.php&#10;createbladephp&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Resources/views/create.blade.php&#10;User.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Models/User.php&#10;co&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/lang/ar/common.php&#10;common.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/lang/ar/common.php&#10;User&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Models/User.php&#10;app&#9;FILE&#9;file://E:/mcomputer science/laravel helpful/abdeleid-mypos-a2be210af394/abdeleid-mypos-a2be210af394/resources/views/layouts/dashboard/app.blade.php&#10;_sessio&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_session.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -418,409 +198,22 @@
       <workItem from="1570811834486" duration="1163000" />
       <workItem from="1570814562719" duration="64000" />
       <workItem from="1570815023338" duration="186000" />
+      <workItem from="1570973973739" duration="5740000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99166000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20058565" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1749634" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/bootstrap-tagsinput.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Tutor/Resources/lang/ar/tutor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Common/Resources/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Tutor/Resources/views/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="76" column="93" selection-start-line="76" selection-start-column="81" selection-end-line="76" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Common/Http/Controllers/CommonController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Student/Resources/lang/en/student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Student/Resources/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Admin/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Admin/Http/Controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Admin/Resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="75" selection-start-line="75" selection-end-line="96" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Tutor/Resources/views/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="162" selection-end-line="162" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Traits/HelpersTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StudentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/student/profile.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Student/Resources/lang/ar/student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Student/Resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Tutor/Http/Controllers/TutorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="126" column="97" selection-start-line="126" selection-start-column="97" selection-end-line="126" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1067">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/student/payment.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Student/Resources/views/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2630">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Student/Resources/views/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2107">
-          <caret line="140" column="154" selection-start-line="140" selection-start-column="154" selection-end-line="140" selection-end-column="154" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Tutor/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Common/Resources/lang/ar/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Student/Http/Controllers/StudentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2449">
-          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Course/Resources/lang/ar/course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Common/Resources/views/layouts/_aside.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="68" column="49" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_01_124359_create_courses_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Course/Resources/views/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="57" column="104" selection-start-line="57" selection-start-column="104" selection-end-line="57" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Lession/Resources/lang/ar/lesson.php" />
-    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/lang/en/lesson.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Student/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Course/Resources/views/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="88" column="69" selection-start-line="88" selection-start-column="69" selection-end-line="88" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Admin/Resources/views/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="43" column="81" selection-start-line="43" selection-start-column="81" selection-end-line="43" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Course/Http/Controllers/CourseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Course/Resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="39" column="40" lean-forward="true" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/CourseLesson.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/views/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/views/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/lang/ar/lesson.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Lesson/Http/Controllers/LessonController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1456">
-          <caret line="56" column="59" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
-          <folding>
-            <element signature="e#51#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29510">
-          <caret line="1154" column="74" selection-start-line="1154" selection-start-column="74" selection-end-line="1154" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="194" column="31" selection-start-line="194" selection-start-column="31" selection-end-line="194" selection-end-column="31" />
-          <folding>
-            <element signature="e#46#74#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

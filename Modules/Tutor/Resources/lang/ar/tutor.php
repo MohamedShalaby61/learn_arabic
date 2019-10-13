@@ -20,4 +20,5 @@ return [
     'tutoring_personality' => 'المحتوي الشخصي',
     'interests' => 'الاهتمامات',
     'students' => 'الطلبة',
+    'tutor_name' => 'المحاضر',
 ];

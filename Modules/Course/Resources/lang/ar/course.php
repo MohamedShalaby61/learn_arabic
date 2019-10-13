@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'courses'          => 'الدوارات',
+    'courses'          => 'الدورات',
     'name'             => 'إسم الدورة' ,
     'description'      => 'وصف الدورة' ,
     'related_lessons'  => 'الدروس المرتبطه بالدورة' ,
