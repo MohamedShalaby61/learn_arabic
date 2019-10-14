@@ -55,6 +55,7 @@ class HomeController extends Controller
     {
         $this->getFavorites();
         $this->data['tutors'] = Tutor::where('status', 1)->whereNotNull('image')->whereNotNull('teaching_experience')->whereNotNull('education')->orderBy('online', 'desc')->orderBy('rating', 'desc')->get();
+        // dd($this->data);
         return view('students')->with($this->data);
     }
 
