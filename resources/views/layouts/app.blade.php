@@ -650,11 +650,11 @@
                 $('#confirm-call').modal('toggle');
 
                 $.ajax({
-                    url: '{{ url("tutor/accept_call") }}/' + $('#call_student_id').val(),
+                    url: '{{ url("/tutor/accept_call") }}/' + $('#call_student_id').val(),
                     type: 'get',
                     data: {},
                     success: function(response){
-						console.log(response);
+						console.log('talalw',JSON.stringify(response));
                         socket.emit('call_accepted', {join_url: response, student_id: $('#call_student_id').val(), tutor_id: {{ Auth::user()->fk_id }} });
                         //window.location.href = response;
                         window.open(response, '_blank');

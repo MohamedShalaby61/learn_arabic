@@ -10,27 +10,30 @@ var dayArr = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
 var yearNow = now.getFullYear();
 var monNow = now.getMonth();
 var dateNow = now.getDate();
-const $dateDisplay = document.getElementById('date-display');
-const $dayDisplay = document.getElementById('day-display');
+const dateDisplay = document.getElementById('date-display');
+const dayDisplay = document.getElementById('day-display');
 var time;
-const $dayCols = document.querySelectorAll('#day-number-box .day');
+const dayCols = document.querySelectorAll('#day-number-box .day');
 const DATA = [];
 var clickedTime = new Date();
 
 /*btn*/
-var $totalBtns = document.querySelectorAll('.additional-btn');
-var $todoListWindow = document.getElementById('todo-list-window');
-var $todoWindowBtns = document.querySelectorAll('.todo-window-btn');
-var $calandarBtn = document.getElementById('calandar-btn');
+var totalBtns = document.querySelectorAll('.additional-btn');
+var todoListWindow = document.getElementById('todo-list-window');
+var todoWindowBtns = document.querySelectorAll('.todo-window-btn');
+var calandarBtn = document.getElementById('calandar-btn');
 
-var $monthYearDisplay = document.getElementById('month-year-display');
-$monthYearDisplay.textContent = `${monthArr[now.getMonth()]} ${now.getFullYear()}`;
+var monthYearDisplay = document.getElementById('month-year-display');
+
+console.log(document.getElementById('month-year-display'));
+
+monthYearDisplay.textContent = `${monthArr[now.getMonth()]} ${now.getFullYear()}`;
 
 window.onload = function() {
-    $dateDisplay.textContent = `${now.getDate()}`;
-    $dayDisplay.textContent = `${dayArr[now.getDay()].toUpperCase()}`;
+    dateDisplay.textContent = `${now.getDate()}`;
+    dayDisplay.textContent = `${dayArr[now.getDay()].toUpperCase()}`;
     resetAll();
-    $calandarBtn.classList.add('btn-click-color');
+    calandarBtn.classList.add('btn-click-color');
 };
 
 spreadDate(0, 0);
@@ -39,12 +42,12 @@ var day;
 function spreadDate(left, right){
     var keepGoing = 1;
     time = new Date(yearNow, monNow + left + right, 1);
-    $monthYearDisplay.textContent = `${monthArr[time.getMonth()]} ${time.getFullYear()}`;
+    monthYearDisplay.textContent = `${monthArr[time.getMonth()]} ${time.getFullYear()}`;
 
     var lastDate = new Date(yearNow, monNow + 1 + left + right, 0);
     day = time.getDay() + 1;
      
-    $dayCols.forEach(function($el){
+    dayCols.forEach(function($el){
         var $p = $el.querySelector('p');
         $p.textContent = '';
         $el.dataset.id = '';
@@ -66,7 +69,7 @@ function spreadDate(left, right){
     if(yearNow === time.getFullYear() && monNow === time.getMonth()){
         $todayCol.querySelector('p').classList.add('mark');
     }else{
-        $dayCols.forEach(function($dayCol){
+        dayCols.forEach(function($dayCol){
             $dayCol.querySelector('p').classList.remove('mark');
         });
     };
@@ -119,24 +122,24 @@ var $recreateLi;
 var dayAll = document.querySelectorAll('#day-number-box .day');
 
 /* Mark and Blur After a click */
-$dayCols.forEach(function($el){
+dayCols.forEach(function($el){
     $el.addEventListener('click', (event) => {
         document.getElementById('calendar-left-box').classList.remove('display-none');
         document.getElementById('todo-list-window').classList.remove('display-block');
-        $totalBtns.forEach(($totalBtn) => {$totalBtn.classList.remove('btn-click-color')});
-        $calandarBtn.classList.add('btn-click-color');
+        totalBtns.forEach(($totalBtn) => {$totalBtn.classList.remove('btn-click-color')});
+        calandarBtn.classList.add('btn-click-color');
 
         dayAll.forEach(($day)=>{
             $day.classList.remove('blur');
         });
         event.currentTarget.classList.add('blur');
         dateIndex = Number($el.querySelector('p').innerHTML);
-        $dateDisplay.textContent = dateIndex;
+        dateDisplay.textContent = dateIndex;
         
         clickedTime = new Date(time.getFullYear(), time.getMonth(), dateIndex);
-        $dayDisplay.textContent = dayArr[clickedTime.getDay()].toUpperCase();
+        dayDisplay.textContent = dayArr[clickedTime.getDay()].toUpperCase();
         if(!dateIndex){
-            $dayDisplay.textContent = '';
+            dayDisplay.textContent = '';
         };
 		
 		currentDateTmp = new Date();
@@ -294,16 +297,16 @@ function btnReset(newListTitle){
     });
 }
 
-$todoWindowBtns.forEach(function($todoWindowBtn){
+todoWindowBtns.forEach(function($todoWindowBtn){
     $todoWindowBtn.addEventListener('click', function(event){
-        $totalBtns.forEach(($totalBtn) => {$totalBtn.classList.remove('btn-click-color')});
+        totalBtns.forEach(($totalBtn) => {$totalBtn.classList.remove('btn-click-color')});
         document.getElementById('calendar-left-box').classList.add('display-none');
         document.getElementById('todo-list-window').classList.add('display-block');
         event.target.classList.add('btn-click-color');
 
         var dateArr = [];
 
-        $todoListWindow.innerHTML = '<div class="window-lists" id="window-list-box"><h3 id="window-date">2019년&nbsp&nbsp7월&nbsp&nbsp7일</h3><ul><li class="window-todo-list" id="window-li-clone"><img id="checkbox-circle" src="https://img.auctiva.com/imgdata/2/0/3/3/6/7/8/webimg/1030895684_o.png" alt=""><p>codingcoding</p><img id="delBtn" src="https://img.auctiva.com/imgdata/2/0/3/3/6/7/8/webimg/1030895686_o.png" alt=""></li></ul></div>';
+        todoListWindow.innerHTML = '<div class="window-lists" id="window-list-box"><h3 id="window-date">2019년&nbsp&nbsp7월&nbsp&nbsp7일</h3><ul><li class="window-todo-list" id="window-li-clone"><img id="checkbox-circle" src="https://img.auctiva.com/imgdata/2/0/3/3/6/7/8/webimg/1030895684_o.png" alt=""><p>codingcoding</p><img id="delBtn" src="https://img.auctiva.com/imgdata/2/0/3/3/6/7/8/webimg/1030895686_o.png" alt=""></li></ul></div>';
         var $windowDivUl = document.getElementById('window-list-box');
         var j = 1;
         for(var i = 0; i < DATA.length; i++){
@@ -355,8 +358,8 @@ $todoWindowBtns.forEach(function($todoWindowBtn){
     });
 });
 
-$calandarBtn.addEventListener('click', function(){
-    $totalBtns.forEach(($totalBtn) => {$totalBtn.classList.remove('btn-click-color')});
+calandarBtn.addEventListener('click', function(){
+    totalBtns.forEach(($totalBtn) => {$totalBtn.classList.remove('btn-click-color')});
     document.getElementById('calendar-left-box').classList.remove('display-none');
     document.getElementById('todo-list-window').classList.remove('display-block');
     event.target.classList.add('btn-click-color');

@@ -102,11 +102,10 @@ class MeetingController extends Controller
             ]
         ];
         $res = $this->createAMeeting($userId, $meetingData);
-		
+        // dd($res, $callRecord);
         $callRecord->join_url = $res->join_url;
         $callRecord->save();
-
-        return $res->join_url;
+        return response()->json($res->join_url);
     }
     
     public function test()

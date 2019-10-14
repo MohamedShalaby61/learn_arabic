@@ -173,6 +173,8 @@
             console.log('connected tutor: ' + id);
 
             filterCat = $("#filtr-item-" + id).data("category");
+            console.log(filterCat)
+            filterCat = filterCat.toString()
             filterCat2 = filterCat.replace("0", "1");
             $("#filtr-item-" + id).attr("data-category", filterCat2);
             $("#filtr-item-title-" + id).attr("title", "Available");
@@ -184,6 +186,7 @@
             console.log('disconnected tutor: ' + id);
 
             filterCat = $("#filtr-item-" + id).data("category");
+            filterCat = filterCat.toString()
             filterCat2 = filterCat.replace("1", "0");
             $("#filtr-item-" + id).attr("data-category", filterCat2);
             $("#filtr-item-title-" + id).attr("title", "Not Available");
