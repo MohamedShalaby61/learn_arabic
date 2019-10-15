@@ -70,6 +70,26 @@
                     <i class="fa fa-plus"></i> <span>@lang('course::course.create_courses')</span>
                 </a>
             </li>
+            <li class="treeview">
+                <a href="{{ route('accents.index') }}">
+                    <i class="fa fa-language"></i> <span>@lang('accent::accent.accents')</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="{{ route('types.index') }}">
+                    <i class="fa fa-certificate"></i> <span>@lang('type::type.types')</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="{{ route('specialists.index') }}">
+                    <i class="fa fa-book"></i> <span>@lang('specialist::specialist.specialists')</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="{{ route('personals.index') }}">
+                    <i class="fa fa-angellist"></i> <span>@lang('personal::personal.personals')</span>
+                </a>
+            </li>
         </ul>
     </section>
     <!-- /.sidebar -->

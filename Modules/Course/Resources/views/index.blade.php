@@ -62,7 +62,7 @@
                                 </tbody>
                             </table>
                         @else
-                            <h1 style="font-family: 'Cairo', sans-serif;">للاسف لا توجد عروض حتي الان</h1>
+                            <h1 style="font-family: 'Cairo', sans-serif;">للاسف لا توجد دورات حتي الان</h1>
                         @endif
                     </div>
                     <!-- /.box-body -->

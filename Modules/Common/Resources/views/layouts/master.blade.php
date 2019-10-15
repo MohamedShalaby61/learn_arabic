@@ -156,6 +156,14 @@
                                     <li><a href="{{ route('locale','en') }}">English</a></li>
                                 </ul>
                             </li>
+                            <li class="dropdown calls_class tasks-menu" >
+                                <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" >
+                                    <i class="fa fa-phone"></i> @lang('common::common.calls')
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                </ul>
+                            </li>
                     @endif
                 </ul>
             </div>
@@ -343,6 +351,55 @@
 
 </div><!-- ./wrapper -->
 
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+                <div class="row">
+                    <div style="min-height: 400px;" class="col-xs-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <h3 style="font-family: 'Cairo', sans-serif;" class="box-title">{{ 'سجل المكالمات' }}</h3>
+                            </div>
+
+                            <div class="box-body">
+                                @include('common::layouts._session')
+                                @if($calls->count() > 0)
+                                    <table id="call_table_id" class="table table-bordered table-striped table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>@lang('tutor::tutor.name')</th>
+                                            <th>@lang('student::student.name')</th>
+                                            <th>@lang('common::common.url')</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach($calls as $index=>$call)
+                                            <tr>
+                                                <td>{{ $index+1 }}</td>
+                                                <td>{{ $call->tutor->name }}</td>
+                                                @if($call->student !== null)
+                                                <td>{{ $call->student->name }}</td>
+                                                @else
+                                                <td></td>
+                                                @endif
+                                                <td><a class="btn btn-info" href="{{ $call->join_url }}">@lang('common::common.click_here')</a></td>
+                                            </tr>
+                                        @endforeach
+                                        </tbody>
+                                    </table>
+                                @else
+                                    <h1 style="font-family: 'Cairo', sans-serif;">للاسف لا توجد مكالمات حتي الان</h1>
+                                @endif
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
 @if(App()->getLocale() == 'ar')
     <script src="{{ url('admin_ar') }}/plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <script src="{{ url('admin_ar') }}/bootstrap/js/bootstrap.min.js"></script>
@@ -378,6 +435,23 @@
         });
     </script>
 @endif
+
+@push('css')
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/w/bs/jq-3.3.1/dt-1.10.18/af-2.3.3/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/datatables.min.css"/>
+
+@endpush
+
+@push('js')
+    <script type="text/javascript" src="https://cdn.datatables.net/w/bs/jq-3.3.1/dt-1.10.18/datatables.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready( function () {
+            $('#call_table_id').DataTable();
+        } );
+    </script>
+
+@endpush
 
 @stack('js')
 </body>
