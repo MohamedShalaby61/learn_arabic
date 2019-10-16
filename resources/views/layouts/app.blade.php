@@ -654,9 +654,8 @@
                     type: 'get',
                     data: {},
                     success: function(response){
-						console.log('talalw',JSON.stringify(response));
+                        console.log('from app',response);
                         socket.emit('call_accepted', {join_url: response, student_id: $('#call_student_id').val(), tutor_id: {{ Auth::user()->fk_id }} });
-                        //window.location.href = response;
                         window.open(response, '_blank');
                     }
                 });
