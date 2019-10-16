@@ -30,7 +30,7 @@ class MeetingController extends Controller
             'tutor_id' => $id,
             'join_url' => ''
         ]);
-
+        
         $userId      = 'GocFdEq1Ql2tvn6Yl9XlGg';
         $meetingData = [
             'topic' => 'Live call - ' . $callRecord->id,
@@ -67,14 +67,16 @@ class MeetingController extends Controller
     public function acceptCall($studentId)
     {
         $student = Student::find($studentId);
-        
+
+        // $newZoomUser = $this->createUser($student->user->email, $student->user->name);
+        $zoomUser = $this->getUserInfoByEmail(env('ZOOM_ADMIN_EMAIL'));
+        $userId      = $zoomUser->id;
         $callRecord = Call::create([
             'student_id' => $student->id,
             'tutor_id' => Auth::user()->fk_id,
             'join_url' => ''
         ]);
 
-        $userId      = 'GocFdEq1Ql2tvn6Yl9XlGg';
         $meetingData = [
             'topic' => 'Live call - ' . $callRecord->id,
             'type' => 1,
@@ -102,10 +104,9 @@ class MeetingController extends Controller
             ]
         ];
         $res = $this->createAMeeting($userId, $meetingData);
-        // dd($res, $callRecord);
         $callRecord->join_url = $res->join_url;
         $callRecord->save();
-        return response()->json($res->join_url);
+        return $res->join_url;
     }
     
     public function test()
