@@ -11,10 +11,11 @@
             background-color: #fff !important;
         }
         .cjslib-calendar.cjslib-size-small {
-            width: 320px !important;
+            width: 240px !important;
             height: 358px !important;
         }
         .cjslib-events.cjslib-size-small {
+            width: 330  !important;
             height: 358px !important;
         }
         .cjslib-year, .cjslib-month, .cjslib-date {
@@ -172,6 +173,8 @@
             console.log('connected tutor: ' + id);
 
             filterCat = $("#filtr-item-" + id).data("category");
+            console.log(filterCat)
+            filterCat = filterCat.toString()
             filterCat2 = filterCat.replace("0", "1");
             $("#filtr-item-" + id).attr("data-category", filterCat2);
             $("#filtr-item-title-" + id).attr("title", "Available");
@@ -183,6 +186,7 @@
             console.log('disconnected tutor: ' + id);
 
             filterCat = $("#filtr-item-" + id).data("category");
+            filterCat = filterCat.toString()
             filterCat2 = filterCat.replace("1", "0");
             $("#filtr-item-" + id).attr("data-category", filterCat2);
             $("#filtr-item-title-" + id).attr("title", "Not Available");

@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Traits\ZoomTrait;
 use App\Models\Call;
 use App\Models\Student;
+use App\Models\Tutor;
 
 class MeetingController extends Controller
 {
@@ -30,7 +31,7 @@ class MeetingController extends Controller
             'tutor_id' => $id,
             'join_url' => ''
         ]);
-
+        
         $userId      = 'GocFdEq1Ql2tvn6Yl9XlGg';
         $meetingData = [
             'topic' => 'Live call - ' . $callRecord->id,
@@ -67,14 +68,22 @@ class MeetingController extends Controller
     public function acceptCall($studentId)
     {
         $student = Student::find($studentId);
+        $authTutor = Tutor::find(auth()->user()->fk_id);
         
+        if(empty($authTutor->zoom_id))
+        {
+            $zoomUser = $this->getUserInfoByEmail(env('ZOOM_ADMIN_EMAIL'));
+            $userId      = $zoomUser->id;
+        }else{
+            $userId = $authTutor->zoom_id;
+        }
+
         $callRecord = Call::create([
             'student_id' => $student->id,
             'tutor_id' => Auth::user()->fk_id,
             'join_url' => ''
         ]);
 
-        $userId      = 'GocFdEq1Ql2tvn6Yl9XlGg';
         $meetingData = [
             'topic' => 'Live call - ' . $callRecord->id,
             'type' => 1,
@@ -102,10 +111,8 @@ class MeetingController extends Controller
             ]
         ];
         $res = $this->createAMeeting($userId, $meetingData);
-		
         $callRecord->join_url = $res->join_url;
         $callRecord->save();
-
         return $res->join_url;
     }
     

@@ -149,6 +149,7 @@
     </nav>
 </div>
 
+
 @if(Auth::user())
 <script>
     months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]
@@ -157,26 +158,15 @@
         ["Sunday", 3],               // [ Starting day, day abbreviation length ]                                              Required
         [ "#ffc000", "#E1AB04", "#ffffff", "#ffffff" ],               // Text Dark Color                                                                        Required
         { // Following is optional
+            
             days: [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",  "Saturday" ],
             months: [ "January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ],
             indicator: true,         // Day Event Indicator                                                                    Optional
             indicator_type: 1,       // Day Event Indicator Type (0 not to display num of events, 1 to display num of events)  Optional
             indicator_pos: "bottom", // Day Event Indicator Position (top, bottom)                                             Optional
-            placeholder: ""
+            placeholder: "",
         });
     var data = {!! json_encode($timesArr) !!}
-    /*{
-        2019: {
-            9: {
-                25: [
-                    {
-                        startTime: "00:00",
-                        endTime: "24:00"
-                    }
-                ]
-            }
-        }
-    };*/
 
     var organizer = new Organizer("organizerContainer", calendar, data);
 
@@ -241,6 +231,8 @@
 
 <script src="{{ env('SOCKET_DOMAIN') }}/socket.io/socket.io.js"></script>
 <script>
+
+
 	var downloadTimer1;
 	var timeleft1;
     var socket = io.connect("{{ env('SOCKET_DOMAIN') }}",{query:'student_id={{ Auth::user()->fk_id }}'});

@@ -17,22 +17,20 @@
           padding-top: 25px;
         }
       </style>
-    <div class="col-xs-12 calendar-box-tops red-box" id="calendar-left-box">
-      <p class="left-box-element" id="date-display">13</p>
-      <p class="left-box-element" id="day-display">Wednesday</p>
+      <div class="col-xs-12 calendar-box-tops red-box" id="calendar-left-box">
+        <p class="left-box-element" id="date-display">13</p>
+        <p class="left-box-element" id="day-display">Wednesday</p>
       
-      <div id="todo-box">
-        <ul>
-          <li id="li1">
-                
-          </li>
-        </ul>
-      </div>
-    </div><!--calendar-left-box-->
+        <div id="todo-box">
+          <ul>
+            <li id="li1">
+                  
+            </li>
+          </ul>
+        </div>
+      </div><!--calendar-left-box-->
     
     <div class="calendar-box-tops red-box" id="todo-list-window">
-      
-     
       <div class="window-lists" id="window-list-box">
         <h3 id="window-date">2019년&nbsp&nbsp7월&nbsp&nbsp7일</h3>
         <ul>

@@ -2,6 +2,7 @@
 
 namespace App\Traits;
 use Firebase\JWT\JWT;
+use GuzzleHttp\Client;
 
 trait ZoomTrait {
    private $apiUrl = 'https://api.zoom.us/v2/';
@@ -10,12 +11,12 @@ trait ZoomTrait {
        $token = [
            "iss" => env('ZOOM_KEY'),
            // The benefit of JWT is expiry tokens, we'll set this one to expire in 1 minute
-           "exp" => time() + 60
+           "exp" => time() + 240
        ];
 
        return JWT::encode($token, env('ZOOM_SECRET'));
    }
-
+   
     // private $api_key = 'GTLQZI0QSVG1OARTUWwotw';
     // private $api_secret = 'krYUBHfzGY5mpzN6plU2slb0Ou9Dy7b2ohi6';
     // private $api_url = 'https://api.zoom.us/v1/';
@@ -234,20 +235,38 @@ trait ZoomTrait {
     // }
 
 
+    function sendRequ($calledFunction, $method , $data = [], $query = [])
+    {
+        $baseUrl = $this->apiUrl;
+        $client = new Client;
+        $token = $this->generateJWT();
 
-
-
-
-
-
+        try {
+            $newData = $client->request($method, $baseUrl . $calledFunction , [
+                'json'  =>  $data,
+                'query' =>  $query,
+                'headers'   =>  [
+                    'Content-Type' => 'application/json',
+                    'Authorization'=> "Bearer " . $token,
+                    ]
+            ]);
+            $response = json_decode($newData->getBody());
+            return $response;
+        } catch (\Exception $e) {
+            return $e->getMessage();
+        }
+    }
 
 
    function sendRequest($calledFunction, $method = 'POST', $data = [])
    {
-       $ch = curl_init();
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization:Bearer ' . $this->generateJWT(), 'Content-Type:application/json'));
+        $ch = curl_init();
+        $headers = array();
+        $headers[] = 'Content-Type: application/json';
+        $headers[] = 'Authorization: Bearer ' . $this->generateJWT();
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_URL, $this->apiUrl . $calledFunction);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 		if ($method == 'POST') {
 			curl_setopt($ch, CURLOPT_POST, 1);
 		} else {
@@ -258,18 +277,30 @@ trait ZoomTrait {
 		$response = curl_exec($ch);
 
 		curl_close($ch);
-
 		if(!$response){
 			return false;
 		}
-
        return json_decode($response);
 	}
 
-   public function listUsers()
-   {
+
+    public function listUsers()
+    {
        return $this->sendRequest('users', 'GET');
-	}
+    }
+
+    public function checkUserEmail($query)
+    {
+        $params = ['email' =>  $query];
+       return $this->sendRequ('users/email', 'GET', [], $params);
+    }
+
+    public function getUserInfoByEmail($zoomEmail)
+    {
+        return $this->sendRequ('users/' . $zoomEmail,'GET',[], []);
+    }
+    
+
 
    public function createUser($email, $name)
    {
@@ -278,11 +309,12 @@ trait ZoomTrait {
            'user_info' => [
              'email' => $email,
              'type' => 1,
-             'first_name' => $name
+             'first_name' => $name,
+             'last_name' => $name
            ]
        ];
 
-       return $this->sendRequest('users', 'POST', $data);
+       return $this->sendRequ('users', 'POST', $data,[]);
 	}
 
    public function listMeetings($userId)
@@ -297,6 +329,6 @@ trait ZoomTrait {
 
    public function createAMeeting($userId, $createAMeetingArray = array())
    {
-       return $this->sendRequest('users/' . $userId . '/meetings', 'POST', $createAMeetingArray);
+       return $this->sendRequ('users/' . $userId . '/meetings', 'POST', $createAMeetingArray,[]);
 	}
 }

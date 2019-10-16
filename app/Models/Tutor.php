@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\TutorTime;
 use Illuminate\Database\Eloquent\Model;
 
 class Tutor extends Model
@@ -43,6 +44,7 @@ class Tutor extends Model
 
         return [];
     }
+    
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -105,5 +107,10 @@ class Tutor extends Model
         }
 
         return $value;
+    }
+
+    public function availableTimes()
+    {
+        return $this->hasMany(TutorTime::class);
     }
 }

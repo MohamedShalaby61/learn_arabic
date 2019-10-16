@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
-use App\Traits\HelpersTrait;
+use App\Traits\{HelpersTrait, ZoomTrait};
 
 class RegisterController extends Controller
 {
@@ -26,8 +26,8 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
-
     use HelpersTrait;
+    use ZoomTrait;
 
     /**
      * Where to redirect users after registration.
@@ -71,6 +71,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $request = request();
+       
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -90,7 +91,22 @@ class RegisterController extends Controller
             if ($request->hasFile('video')) {
                 $tutorData['video'] = $this->customUploadFile('video', 'tutors');
             }
+            
+
+            /**  check if entered email exist on zoom or not
+            * if it is exist user cannot create tutor with this email, return with error
+            * if not exist, create new account on zoom and send message to verify account on zoom
+            */
+            $checkUser = $this->checkUserEmail($data['email']);
+            if ($checkUser->existed_email != true) {
+                if($newZoomUser = $this->createUser($data['email'], $data['name']))
+                {
+                    $tutorData['zoom_id'] = $newZoomUser->id;
+                }
+            }
+            
             $insertedRecord = Tutor::create($tutorData);
+
         } else {
             $studentData = [
                 'name' => $data['name'],
