@@ -71,9 +71,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $request = request();
-        if ($this->checkUserEmail($data['email'])) {
-            return redirect('/register')->with('error','this email already have account on zoom platform');                        
-        }
+       
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -100,9 +98,11 @@ class RegisterController extends Controller
             * if not exist, create new account on zoom and send message to verify account on zoom
             */
             
-            if($newZoomUser = $this->createUser($data['email'], $data['name']))
-            {
-                $tutorData['zoom_id'] = $newZoomUser->id;
+            if (!$this->checkUserEmail($data['email'])) {
+                if($newZoomUser = $this->createUser($data['email'], $data['name']))
+                {
+                    $tutorData['zoom_id'] = $newZoomUser->id;
+                }
             }
             
             $insertedRecord = Tutor::create($tutorData);
