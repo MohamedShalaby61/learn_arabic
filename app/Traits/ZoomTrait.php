@@ -291,7 +291,8 @@ trait ZoomTrait {
 
     public function checkUserEmail($query)
     {
-       return $this->sendRequ('users/email', 'GET', [], $query);
+        $params = ['email' =>  $query];
+       return $this->sendRequ('users/email', 'GET', [], $params);
     }
 
     public function getUserInfoByEmail($zoomEmail)

@@ -97,8 +97,8 @@ class RegisterController extends Controller
             * if it is exist user cannot create tutor with this email, return with error
             * if not exist, create new account on zoom and send message to verify account on zoom
             */
-            
-            if (!$this->checkUserEmail($data['email'])) {
+            $checkUser = $this->checkUserEmail($data['email']);
+            if ($checkUser->existed_email != true) {
                 if($newZoomUser = $this->createUser($data['email'], $data['name']))
                 {
                     $tutorData['zoom_id'] = $newZoomUser->id;
