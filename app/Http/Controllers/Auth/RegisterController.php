@@ -90,10 +90,25 @@ class RegisterController extends Controller
             if ($request->hasFile('video')) {
                 $tutorData['video'] = $this->customUploadFile('video', 'tutors');
             }
-            if($newZoomUser = $this->createUser($data['email'], $data['name']))
-            {
-                $tutorData['zoom_id'] = $newZoomUser->id;
+            // check if entered email exist before or not
+            $checkTutor = Tutor::where('email', $data['email'])->first();
+            if (!empty($checkTutor)) {
+                return back()->with('danger','this email already exist');        
             }
+
+            /**  check if entered email exist on zoom or not
+            * if it is exist user cannot create tutor with this email, return with error
+            * if not exist, create new account on zoom and send message to verify account on zoom
+            */
+            if ($this->checkUserEmail($data['email'])) {
+                return back()->with('danger','this email already have account on zoom platform');                        
+            }else{
+                if($newZoomUser = $this->createUser($data['email'], $data['name']))
+                {
+                $tutorData['zoom_id'] = $newZoomUser->id;
+                }
+            }
+            
             $insertedRecord = Tutor::create($tutorData);
 
         } else {

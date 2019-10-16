@@ -235,7 +235,7 @@ trait ZoomTrait {
     // }
 
 
-    function sendRequ($calledFunction, $method , $data = [])
+    function sendRequ($calledFunction, $method , $data = [], $query = [])
     {
         $baseUrl = $this->apiUrl;
         $client = new Client;
@@ -244,6 +244,7 @@ trait ZoomTrait {
         try {
             $newData = $client->request($method, $baseUrl . $calledFunction , [
                 'json'  =>  $data,
+                'query' =>  $query,
                 'headers'   =>  [
                     'Content-Type' => 'application/json',
                     'Authorization'=> "Bearer " . $token,
@@ -288,9 +289,14 @@ trait ZoomTrait {
        return $this->sendRequest('users', 'GET');
     }
 
+    public function checkUserEmail($query)
+    {
+       return $this->sendRequ('users/email', 'GET', [], $query);
+    }
+
     public function getUserInfoByEmail($zoomEmail)
     {
-        return $this->sendRequ('users/' . $zoomEmail,'GET',[]);
+        return $this->sendRequ('users/' . $zoomEmail,'GET',[], []);
     }
     
 
@@ -307,7 +313,7 @@ trait ZoomTrait {
            ]
        ];
 
-       return $this->sendRequ('users', 'POST', $data);
+       return $this->sendRequ('users', 'POST', $data,[]);
 	}
 
    public function listMeetings($userId)
@@ -322,6 +328,6 @@ trait ZoomTrait {
 
    public function createAMeeting($userId, $createAMeetingArray = array())
    {
-       return $this->sendRequ('users/' . $userId . '/meetings', 'POST', $createAMeetingArray);
+       return $this->sendRequ('users/' . $userId . '/meetings', 'POST', $createAMeetingArray,[]);
 	}
 }

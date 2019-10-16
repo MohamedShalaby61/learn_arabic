@@ -69,6 +69,7 @@ class MeetingController extends Controller
     {
         $student = Student::find($studentId);
         $authTutor = Tutor::find(auth()->user()->fk_id);
+        
         if(empty($authTutor->zoom_id))
         {
             $zoomUser = $this->getUserInfoByEmail(env('ZOOM_ADMIN_EMAIL'));
