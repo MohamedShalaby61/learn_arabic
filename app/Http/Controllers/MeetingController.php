@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Traits\ZoomTrait;
 use App\Models\Call;
 use App\Models\Student;
+use App\Models\Tutor;
 
 class MeetingController extends Controller
 {
@@ -67,10 +68,15 @@ class MeetingController extends Controller
     public function acceptCall($studentId)
     {
         $student = Student::find($studentId);
+        $authTutor = Tutor::find(auth()->user()->fk_id);
+        if(empty($authTutor->zoom_id))
+        {
+            $zoomUser = $this->getUserInfoByEmail(env('ZOOM_ADMIN_EMAIL'));
+            $userId      = $zoomUser->id;
+        }else{
+            $userId = $authTutor->zoom_id;
+        }
 
-        // $newZoomUser = $this->createUser($student->user->email, $student->user->name);
-        $zoomUser = $this->getUserInfoByEmail(env('ZOOM_ADMIN_EMAIL'));
-        $userId      = $zoomUser->id;
         $callRecord = Call::create([
             'student_id' => $student->id,
             'tutor_id' => Auth::user()->fk_id,
