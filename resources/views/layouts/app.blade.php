@@ -92,8 +92,6 @@
 			</div>
           </div>
         </nav>
-    @include('layouts.msg')
-
       </header>
     @else
         @if (true || Auth::user()->type == 3)
