@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36569565-79d2-4659-80a3-434c22a91b85" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/learn_arabic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learn_arabic.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="36569565-79d2-4659-80a3-434c22a91b85" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,16 +27,16 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TutorController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
-              <caret line="120" column="21" lean-forward="true" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+              <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="174">
+              <caret line="104" column="25" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="25" />
               <folding>
                 <element signature="e#40#61#0#PHP" expanded="true" />
               </folding>
@@ -52,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
+            <state relative-caret-position="130">
+              <caret line="88" column="39" lean-forward="true" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
               <folding>
                 <element signature="e#45#65#0#PHP" expanded="true" />
               </folding>
@@ -64,11 +56,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="about.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/about.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
-              <caret line="47" column="26" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="26" />
+              <caret line="34" column="18" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -84,12 +81,6 @@
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#nav#0;n#header#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#nav#0;n#header#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#30988#33787#0#HTML" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#svg#0;n#div#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -114,7 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sign out</find>
       <find>user</find>
       <find>الع</find>
       <find>phon</find>
@@ -144,6 +134,7 @@
       <find>favoriteContainer</find>
       <find>$favorites</find>
       <find>favorites</find>
+      <find>about</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -371,13 +362,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="learn_arabic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_arabic" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -385,7 +369,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="register&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/Auth/RegisterController.php&#10;homecontroller&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/HomeController.php&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/layouts/app.blade.php&#10;web.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/routes/web.php&#10;Controller.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/vendor/laravel/framework/src/Illuminate/Routing/Controller.php&#10;tutorc&#9;null&#9;null&#10;tutor.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Resources/lang/ar/tutor.php&#10;validation&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/lang/ar/validation.php&#10;create.blade&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Resources/views/create.blade.php&#10;tutor&#9;null&#9;null&#10;perso&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Personal/Resources/lang/ar/personal.php&#10;_&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_aside.blade.php&#10;acce&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Resources/lang/ar/accent.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Type/Resources/views/index.blade.php&#10;create&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Resources/views/create.blade.php&#10;create.&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Resources/views/create.blade.php&#10;controller&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Http/Controllers/AccentController.php&#10;UserController&#9;null&#9;null&#10;api.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/routes/api.php&#10;MeetingController&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/MeetingController.php&#10;socket.io&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/sockets/node_modules/socket.io&#10;mysqlConfig&#9;null&#9;null&#10;protocol&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/sockets/node_modules/mysql/lib/protocol/Protocol.js&#10;server.js&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/sockets/server.js&#10;.env&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/.env&#10;ZoomTrait&#9;null&#9;null&#10;meetcontroller&#9;null&#9;null&#10;فغحث.&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Type/Resources/lang/ar/type.php&#10;type.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Type/Resources/lang/ar/type.php&#10;type.&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Type/Resources/lang/en/type.php&#10;common&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/lang/ar/common.php&#10;Call&#9;null&#9;null&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Resources/views/index.blade.php&#10;common.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/lang/ar/common.php&#10;master&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/master.blade.php&#10;_aside&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_aside.blade.php&#10;accent&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Resources/lang/ar/accent.php&#10;هىيثء&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Lesson/Resources/views/index.blade.php&#10;index.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Resources/views/index.blade.php&#10;LoginController&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/Auth/LoginController.php&#10;Router.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/vendor/laravel/framework/src/Illuminate/Routing/Router.php&#10;LoginCon&#9;null&#9;null&#10;laravel/framework/src/Illuminate/Routing/Router.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/vendor/laravel/framework/src/Illuminate/Routing/Router.php&#10;Lesson&#9;null&#9;null&#10;Course&#9;null&#9;null&#10;lesson&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Lesson/Resources/lang/ar/lesson.php&#10;contr&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Http/Controllers/CourseController.php&#10;create.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Admin/Resources/views/create.blade.php&#10;web.&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Lesson/Routes/web.php&#10;course&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Http/Controllers/CourseController.php" />
+    <property name="SearchEverywhereHistoryKey" value="home.blade&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/home.blade.php&#10;about.blade.&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/about.blade.php&#10;register&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/Auth/RegisterController.php&#10;homecontroller&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/HomeController.php&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/views/layouts/app.blade.php&#10;web.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/routes/web.php&#10;Controller.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/vendor/laravel/framework/src/Illuminate/Routing/Controller.php&#10;tutorc&#9;null&#9;null&#10;tutor.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Resources/lang/ar/tutor.php&#10;validation&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/resources/lang/ar/validation.php&#10;create.blade&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Tutor/Resources/views/create.blade.php&#10;tutor&#9;null&#9;null&#10;perso&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Personal/Resources/lang/ar/personal.php&#10;_&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_aside.blade.php&#10;acce&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Resources/lang/ar/accent.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Type/Resources/views/index.blade.php&#10;create&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Resources/views/create.blade.php&#10;create.&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Resources/views/create.blade.php&#10;controller&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Http/Controllers/AccentController.php&#10;UserController&#9;null&#9;null&#10;api.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/routes/api.php&#10;MeetingController&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/MeetingController.php&#10;socket.io&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/sockets/node_modules/socket.io&#10;mysqlConfig&#9;null&#9;null&#10;protocol&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/sockets/node_modules/mysql/lib/protocol/Protocol.js&#10;server.js&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/sockets/server.js&#10;.env&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/.env&#10;ZoomTrait&#9;null&#9;null&#10;meetcontroller&#9;null&#9;null&#10;فغحث.&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Type/Resources/lang/ar/type.php&#10;type.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Type/Resources/lang/ar/type.php&#10;type.&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Type/Resources/lang/en/type.php&#10;common&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/lang/ar/common.php&#10;Call&#9;null&#9;null&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Resources/views/index.blade.php&#10;common.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/lang/ar/common.php&#10;master&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/master.blade.php&#10;_aside&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Common/Resources/views/layouts/_aside.blade.php&#10;accent&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Accent/Resources/lang/ar/accent.php&#10;هىيثء&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Lesson/Resources/views/index.blade.php&#10;index.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Resources/views/index.blade.php&#10;LoginController&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/app/Http/Controllers/Auth/LoginController.php&#10;Router.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/vendor/laravel/framework/src/Illuminate/Routing/Router.php&#10;LoginCon&#9;null&#9;null&#10;laravel/framework/src/Illuminate/Routing/Router.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/vendor/laravel/framework/src/Illuminate/Routing/Router.php&#10;Lesson&#9;null&#9;null&#10;Course&#9;null&#9;null&#10;lesson&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Lesson/Resources/lang/ar/lesson.php&#10;contr&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Course/Http/Controllers/CourseController.php&#10;create.blade.php&#9;FILE&#9;file://C:/xampp/htdocs/learn_arabic/Modules/Admin/Resources/views/create.blade.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -434,27 +418,26 @@
       <workItem from="1571054034169" duration="57000" />
       <workItem from="1571054092786" duration="13695000" />
       <workItem from="1571138522655" duration="6233000" />
-      <workItem from="1571258296778" duration="3223000" />
+      <workItem from="1571258296778" duration="3882000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25199000" />
+    <option name="totallyTimeSpent" value="25858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -491,13 +474,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Modules/Common/Resources/lang/ar/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Common/Resources/views/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -816,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="47" column="26" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -839,12 +808,6 @@
             <element signature="n#style#0;n#svg#0;n#div#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -852,26 +815,36 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TutorController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="120" column="21" lean-forward="true" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+          <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/about.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="88" column="39" lean-forward="true" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+          <folding>
+            <element signature="e#45#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="174">
+          <caret line="104" column="25" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="25" />
           <folding>
             <element signature="e#40#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
-          <folding>
-            <element signature="e#45#65#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
