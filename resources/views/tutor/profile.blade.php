@@ -2,6 +2,9 @@
 
 @section('css')
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+    <style>
+      #red-mark{color: red}
+    </style>
 @endsection
 
 @section('content')
@@ -19,7 +22,7 @@
         @csrf
         <div class="modal-body">
             <div class="form-group">
-                <input type="file" name="image" class="form-control-file required" required="" />
+                <input type="file" name="image" class="form-control-file required" required="required" />
             </div>
         </div>
         <div class="modal-footer" style="margin: 0px !important; padding: 5px !important">
@@ -69,8 +72,8 @@
               <div class="row">
                  <div class="col-md-6">
                   <div class="form-group">
-                    <label><strong>@lang('tutor-profile.name')</strong></label>
-                    <input type="text" class="form-control" name="name" value="{{ Auth::user()->name }}" required="" />
+                    <label><strong>@lang('tutor-profile.name')</strong></label><span id="red-mark">*</span>
+                    <input type="text" class="form-control" name="name" value="{{ Auth::user()->name }}" required="required" />
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -81,29 +84,29 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label><strong>@lang('tutor-profile.email')</strong></label>
-                    <input type="text" class="form-control" name="email" value="{{ Auth::user()->email }}" required="" />
+                    <label><strong>@lang('tutor-profile.email')</strong></label><span id="red-mark">*</span>
+                    <input type="text" class="form-control" name="email" value="{{ Auth::user()->email }}" required="required" />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label><strong>@lang('tutor-profile.phone')</strong></label>
-                    <input type="text" class="form-control" name="mobile" value="{{ Auth::user()->profile->mobile }}" />
+                    <label><strong>@lang('tutor-profile.phone')</strong></label><span id="red-mark">*</span>
+                    <input type="text" class="form-control" name="mobile" value="{{ Auth::user()->profile->mobile }}" required/>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label><strong>@lang('tutor-profile.title')</strong></label>
-                    <input type="text" class="form-control" name="title" value="{{ Auth::user()->profile->title }}" required="" />
+                    <label><strong>@lang('tutor-profile.title')</strong></label> <span id="red-mark">*</span>
+                    <input type="text" class="form-control" name="title" value="{{ Auth::user()->profile->title }}" required="required" />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label><strong>@lang('tutor-profile.video')</strong></label>
-                    <input type="file" class="form-control"  style="border: none;" name="video" value="{{ Auth::user()->video }}" required="" @error('video') is-invalid @enderror" />
-                      @if(isset(auth()->user()->profile->video))
-                          <video width="300" height="300" controls src="{{url('uploads/'.auth()->user()->profile->video)}}"></video>
-                          @endif
+                    <label><strong>@lang('tutor-profile.video')</strong></label> <span id="red-mark">*</span>
+                    <input type="file" class="form-control"  style="border: none;" name="video" value="{{ Auth::user()->video }}" required="required" @error('video') is-invalid @enderror />
+                    @if(isset(auth()->user()->profile->video))
+                        <video width="300" height="300" controls src="{{url('uploads/'.auth()->user()->profile->video)}}"></video>
+                      @endif
                   </div>
                 </div>
               </div>
@@ -123,8 +126,8 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label><strong>@lang('tutor-profile.specialized_in')</strong></label>
-                            <select class="form-control" name="specialities[]" id="specialities" multiple="multiple" required="">
+                            <label><strong>@lang('tutor-profile.specialized_in')</strong></label><span id="red-mark">*</span>
+                            <select class="form-control" name="specialities[]" id="specialities" multiple="multiple" required="required">
                                 @foreach ($specialities as $speciality)
                                     <option value="{{ $speciality->id }}" @if(in_array($speciality->id, $tutorSpecialities))selected=""@endif>{{ $speciality->name }}</option>
                                 @endforeach
@@ -133,8 +136,8 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label><strong>@lang('tutor-profile.tutoring_style')</strong></label>
-                            <select class="form-control" name="tutoring_personality_id" required="">
+                            <label><strong>@lang('tutor-profile.tutoring_style')</strong></label><span id="red-mark">*</span>
+                            <select class="form-control" name="tutoring_personality_id" required="required">
                                 <option value=""></option>
                                 @foreach ($tutoringPersonalities as $personality)
                                     <option value="{{ $personality->id }}" @if($personality->id == Auth::user()->profile->tutoring_personality_id)selected=""@endif>{{ $personality->name }}</option>
@@ -145,8 +148,8 @@
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label><strong>@lang('tutor-profile.best_with_levels')</strong></label>
-                            <select class="form-control" name="levels[]" id="levels" multiple="multiple" required="">
+                            <label><strong>@lang('tutor-profile.best_with_levels')</strong></label><span id="red-mark">*</span>
+                            <select class="form-control" name="levels[]" id="levels" multiple="multiple" required="required">
                                 <option value="Elementary" @if(in_array('Elementary', Auth::user()->profile->levels))selected=""@endif>@lang('tutor-profile.elementary')</option>
                                 <option value="Conversational" @if(in_array('Conversational', Auth::user()->profile->levels))selected=""@endif>@lang('tutor-profile.conversational')</option>
                                 <option value="Intermediate" @if(in_array('Intermediate', Auth::user()->profile->levels))selected=""@endif>@lang('tutor-profile.intermediate')</option>
@@ -158,16 +161,16 @@
                 <h4> @lang('tutor-profile.qualifications') </h4>
                 <div class="row">
                     <div class="col-md-6">
-                        <label><strong>@lang('tutor-profile.certificates')</strong></label>
-                        <select class="form-control" name="certificates[]" id="certificates" multiple="multiple" required="">
+                        <label><strong>@lang('tutor-profile.certificates')</strong></label><span id="red-mark">*</span>
+                        <select class="form-control" name="certificates[]" id="certificates" multiple="multiple" required="required">
                             @foreach (Auth::user()->profile->certificates as $certificate)
                                 <option value="{{ $certificate }}" selected="">{{ $certificate }}</option>
                             @endforeach
                         </select>
                     </div>
                     <div class="col-md-6">
-                        <label><strong>@lang('tutor-profile.teaching_experience')</strong></label>
-                        <textarea type="text" class="form-control required" name="teaching_experience" rows="3" required="">{{ Auth::user()->profile->teaching_experience }}</textarea>
+                        <label><strong>@lang('tutor-profile.teaching_experience')</strong></label><span id="red-mark">*</span>
+                        <textarea type="text" class="form-control required" name="teaching_experience" rows="3" required="required">{{ Auth::user()->profile->teaching_experience }}</textarea>
                     </div>
                 </div>
             </div>
@@ -186,8 +189,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label><strong>@lang('tutor-profile.speaks')</strong></label>
-                        <select class="form-control" name="speaks[]" id="speaks" multiple="multiple" required="">
+                        <label><strong>@lang('tutor-profile.speaks')</strong></label><span id="red-mark">*</span>
+                        <select class="form-control" name="speaks[]" id="speaks" multiple="multiple" required="required">
                             @foreach (Auth::user()->profile->speaks as $speaks)
                                 <option value="{{ $speaks }}" selected="">{{ $speaks }}</option>
                             @endforeach
@@ -197,14 +200,14 @@
                 <div class="col-md-6"></div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label><strong>@lang('tutor-profile.profession')</strong></label>
-                        <textarea type="text" class="form-control" name="profession" rows="3" required="">{{ Auth::user()->profile->profession }}</textarea>
+                        <label><strong>@lang('tutor-profile.profession')</strong></label><span id="red-mark">*</span>
+                        <textarea type="text" class="form-control" name="profession" rows="3" required="required">{{ Auth::user()->profile->profession }}</textarea>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label><strong>@lang('tutor-profile.education')</strong></label>
-                        <textarea type="text" class="form-control" name="education" rows="3" required="">{{ Auth::user()->profile->education }}</textarea>
+                        <label><strong>@lang('tutor-profile.education')</strong></label><span id="red-mark">*</span>
+                        <textarea type="text" class="form-control" name="education" rows="3" required="required">{{ Auth::user()->profile->education }}</textarea>
                     </div>
                 </div>
             </div>
@@ -213,8 +216,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label><strong>@lang('tutor-profile.enjoys_discussing')</strong></label>
-                        <select class="form-control" name="enjoys_discussing[]" id="enjoys_discussing" multiple="multiple" required="">
+                        <label><strong>@lang('tutor-profile.enjoys_discussing')</strong></label><span id="red-mark">*</span>
+                        <select class="form-control" name="enjoys_discussing[]" id="enjoys_discussing" multiple="multiple" required="required">
                             @foreach (Auth::user()->profile->enjoys_discussing as $enjoy)
                                 <option value="{{ $enjoy }}" selected="">{{ $enjoy }}</option>
                             @endforeach
@@ -223,8 +226,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label><strong>@lang('tutor-profile.interests')</strong></label>
-                        <textarea type="text" class="form-control" name="interests" rows="3" required="">{{ Auth::user()->profile->interests }}</textarea>
+                        <label><strong>@lang('tutor-profile.interests')</strong></label><span id="red-mark">*</span>
+                        <textarea type="text" class="form-control" name="interests" rows="3" required="required">{{ Auth::user()->profile->interests }}</textarea>
                     </div>
                 </div>
             </div>
