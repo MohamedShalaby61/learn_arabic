@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36569565-79d2-4659-80a3-434c22a91b85" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Config/Resources/lang/ar/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Config/Resources/lang/en/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Config/Resources/views/config.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Common/Resources/lang/ar/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Common/Resources/lang/ar/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Common/Resources/views/layouts/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Common/Resources/views/layouts/_aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="36569565-79d2-4659-80a3-434c22a91b85" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +86,7 @@
       <file leaf-file-name="about.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/about.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="133">
               <caret line="72" column="19" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
             </state>
           </provider>
@@ -473,15 +463,15 @@
       <workItem from="1571054034169" duration="57000" />
       <workItem from="1571054092786" duration="13695000" />
       <workItem from="1571138522655" duration="6233000" />
-      <workItem from="1571258296778" duration="8494000" />
+      <workItem from="1571258296778" duration="9113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30470000" />
+    <option name="totallyTimeSpent" value="31089000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
@@ -906,7 +896,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/about.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="133">
           <caret line="72" column="19" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
         </state>
       </provider>
