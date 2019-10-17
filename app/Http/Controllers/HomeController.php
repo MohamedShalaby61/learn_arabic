@@ -12,7 +12,7 @@ use App\Models\TutorTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
-
+use DB;
 use Mail;
 
 class HomeController extends Controller
@@ -105,8 +105,9 @@ class HomeController extends Controller
     public function about()
     {
         $this->getFavorites();
-        
-        return view('about')->with($this->data);
+        $config = DB::table('about_us')->first();
+        //dd($config);
+        return view('about',compact('config'))->with($this->data);
     }
 
     public function contact()

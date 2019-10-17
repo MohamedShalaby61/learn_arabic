@@ -502,6 +502,7 @@
     @endif
 
     @yield('scripts')
+    @stack('js')
     <script>
         $(document).ready(function(){
             $('#favoriteContainer').on('click', '.tutor_profile',function(){

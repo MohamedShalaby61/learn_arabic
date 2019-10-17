@@ -13,7 +13,11 @@
             <h3>@lang('about.about_us')</h3>
           </div>
           <p>
-            @lang('about.about_us_desc')
+            @if(App()->getLocale() == 'ar')
+            {!! $config->aboutus_ar_one !!}
+            @else
+            {!! $config->aboutus_en_one !!}
+            @endif
           </p>
         </div>
       </div>
@@ -43,7 +47,11 @@
                 <div class="seperator"></div>
               </div>
               <p>
-                @lang('about.who_we_are_desc')
+                @if(App()->getLocale() == 'ar')
+                  {!! $config->aboutus_ar_two !!}
+                @else
+                  {!! $config->aboutus_en_two !!}
+                @endif
               </p>
             </div>
           </div>
@@ -60,7 +68,11 @@
               <h3>@lang('about.why_take_classes_on_arabic_mentors')</h3>
             </div>
             <p>
-              @lang('about.why_take_classes_on_arabic_mentors_desc')
+              @if(App()->getLocale() == 'ar')
+                {!! $config->aboutus_ar_three !!}
+              @else
+                {!! $config->aboutus_en_three !!}
+              @endif
             </p>
             <div class="row counter">
               <div class="col-md-4">
