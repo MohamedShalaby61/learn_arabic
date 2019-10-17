@@ -86,7 +86,8 @@ class RegisterController extends Controller
                 'mobile' => $data['mobile'],
                 'title' => $data['title'],
                 'video' => '',
-                'user_id' => $user->id
+                'user_id' => $user->id,
+                'image' => 'tutors/default.png',
             ];
             if ($request->hasFile('video')) {
                 $tutorData['video'] = $this->customUploadFile('video', 'tutors');

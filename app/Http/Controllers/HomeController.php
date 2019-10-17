@@ -61,8 +61,8 @@ class HomeController extends Controller
     public function ajaxStudents()
     {
         $this->getFavorites();
-        $this->data['tutors'] = Tutor::where('status', 1)->whereNotNull('image')->whereNotNull('teaching_experience')->whereNotNull('education')->orderBy('online', 'desc')->orderBy('rating', 'desc')->get();
-
+        $this->data['tutors'] = Tutor::where('status', 1)->whereNotNull('image')->orderBy('online', 'desc')->orderBy('rating', 'desc')->get();
+        //dd($this->data);
         return $this->data;
     }
 
@@ -136,7 +136,8 @@ class HomeController extends Controller
         $this->data['favorites_ids'] = [];
         $this->data['favorites'][0] = [];
         $this->data['favorites'][1] = [];
-        $favorites = @Auth::user()->profile->favorites;
+        $favorites = Auth::user()->profile->favorites;
+        //dd($favorites);
         if ($favorites) {
             foreach ($favorites as $tutor) {
                 $this->data['favorites'][$tutor->online][] = $tutor;
