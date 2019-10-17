@@ -3,7 +3,7 @@ return [
     'tutors' => 'المعلمين',
     'create_tutors' => 'اضف معلم جديد',
     'name'=> 'اسم المعلم',
-    'title' => 'المسمي الوظيفي',
+    'title' => 'المسمي الوظيفي (عنوان المهنة)',
     'teaching_experience' => 'نبذة عن خبرة التدريس',
     'speaks' => 'اللغات',
     'profession' => 'مستوي الخبرة في',
@@ -20,4 +20,5 @@ return [
     'tutoring_personality' => 'المحتوي الشخصي',
     'interests' => 'الاهتمامات',
     'students' => 'الطلبة',
+    'tutor_name' => 'المحاضر',
 ];

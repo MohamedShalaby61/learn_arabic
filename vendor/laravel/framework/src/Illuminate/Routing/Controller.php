@@ -2,6 +2,7 @@
 
 namespace Illuminate\Routing;
 
+use App\Models\Call;
 use BadMethodCallException;
 
 abstract class Controller
@@ -11,6 +12,12 @@ abstract class Controller
      *
      * @var array
      */
+    public function __construct()
+    {
+        $calls = Call::with(['student','tutor'])->get();
+        \Illuminate\Support\Facades\View::share('calls',$calls);
+    }
+
     protected $middleware = [];
 
     /**

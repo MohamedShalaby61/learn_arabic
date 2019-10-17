@@ -1,7 +1,7 @@
 @extends('common::layouts.master')
 
 @section('content')
-    
+
 
     <section class="content-header">
         <h1>
@@ -34,6 +34,7 @@
                                     <th>@lang('course::course.name')</th>
                                     <th>@lang('course::course.description')</th>
                                     <th>@lang('course::course.cost')</th>
+                                    <th>@lang('tutor::tutor.name')</th>
                                     <th>@lang('course::course.related_lessons')</th>
                                     <th>@lang('common::common.operations')</th>
                                 </tr>
@@ -45,6 +46,7 @@
                                         <td>{{ $row->title }}</td>
                                         <td>{{ str_limit($row->description,50) }}</td>
                                         <td>{{ $row->cost }} USD</td>
+                                        <td>{{ $row->tutors->first()->name }}</td>
                                         <td><a href="{{ route('lessons.index',$row->id) }}" class="btn btn-info">@lang('course::course.click_here')</a></td>
                                         <td>
                                             <form action="{{ route('courses.destroy',$row->id) }}" method="post">
@@ -60,7 +62,7 @@
                                 </tbody>
                             </table>
                         @else
-                            <h1 style="font-family: 'Cairo', sans-serif;">للاسف لا توجد عروض حتي الان</h1>
+                            <h1 style="font-family: 'Cairo', sans-serif;">للاسف لا توجد دورات حتي الان</h1>
                         @endif
                     </div>
                     <!-- /.box-body -->
@@ -85,7 +87,8 @@
             $('#table_id').DataTable({
                 "columnDefs": [
 
-                    { "orderable": false, "targets": 4 },
+                    { "orderable": false, "targets": 5 },
+                    { "orderable": false, "targets": 6 },
 
                 ],
             });

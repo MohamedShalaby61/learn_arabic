@@ -52,15 +52,13 @@ class TutorController extends Controller
         if ($request->isMethod('POST')) {
             $request->validate([
                 'name' => ['required', 'string', 'max:255'],
-                'title' => ['required', 'string', 'max:255'],
-                'video' => ['required', 'string', 'max:255'],
                 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
                 'password' => ['required', 'string', 'min:8'],
                 'mobile' => ['nullable', 'numeric', 'digits_between:0,15'],
             ]);
 
             $data = $request->all();
-
+//dd($data);
             $user = User::create([
                 'name' => $data['name'],
                 'email' => $data['email'],
@@ -74,7 +72,12 @@ class TutorController extends Controller
             if ($request->image){
                 $tutorData['image'] = $this->customUploadFile('image', 'tutors');
             }
+
         }
+            //$tutorData = array_filter($tutorData);
+
+            //dd($tutorData);
+
             $tutor = Tutor::create($tutorData + ['user_id'=>$user->id]);
 
             $user->fk_id = $tutor->id;

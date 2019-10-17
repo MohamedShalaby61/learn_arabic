@@ -68,11 +68,11 @@
                                             <div class="form-group ">
                                                 <div class="form-group ">
                                                     <label>@lang('common::common.video')</label>
-                                                    <input type="text" value="{{ old('video') }}" name="video" class="form-control">
+                                                    <input type="text" name="video" class="form-control">
                                                 </div>
                                                 <div class="form-group ">
                                                     <label>@lang('common::common.certificates')</label>
-                                                    <input type="text" name="certificates[]" class="form-control" id="certificates" value="Amsterdam,Washington,Sydney,Beijing,Cairo">
+                                                    <input type="text" name="certificates[]" class="form-control" id="certificates">
                                                 </div>
                                                 <div class="form-group ">
                                                     <label>@lang('tutor::tutor.speaks')</label>

@@ -80,6 +80,14 @@
                                     <label>@lang('course::course.image')</label>
                                     <input class="form-control" type="file" name="image">
                                 </div>
+                                <div class="form-group">
+                                    <label>@lang('tutor::tutor.tutor_name')</label>
+                                    <select class="form-control" type="text" name="tutor_id">
+                                        @foreach($tutors as $tutor)
+                                            <option value="{{ $tutor->id }}">{{ $tutor->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
                             </div>
 
                         </div>

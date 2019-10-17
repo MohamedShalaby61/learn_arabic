@@ -1,0 +1,13 @@
+{
+    "name": "Accent",
+    "alias": "accent",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Accent\\Providers\\AccentServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
