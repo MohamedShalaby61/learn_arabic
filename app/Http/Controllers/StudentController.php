@@ -101,15 +101,16 @@ class StudentController extends Controller
         $student = Student::find(auth()->user()->fk_id);
         $package_price = PackagePrice::find(request('package_price_id'));
 
+        if ($student->package_subscribed == 1) {
+            return back()->with('error', 'You are subscribed before');            
+        }
         $student->update([
             'package_price_id'  =>  request('package_price_id'),
             'package_start_date'  =>  Carbon::now(),
             'package_expiry_date'  =>  Carbon::now()->addMonths($package_price->months),
             'package_subscribed'    =>  1
         ]);
-        if ($student->package_subscribed == 1) {
-            return back()->with('error', 'You are subscribed before');            
-        }
+        
         return back()->with('success_subscribe', 'modal');
     }
 
