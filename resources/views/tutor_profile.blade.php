@@ -4,7 +4,12 @@
     </div>
     <h4 class="tutor-name">{{ $tutor->name }}</h4>
     @if(Auth::check() && $tutor->online == 1)
-        <a id="call_tutor" class="btn btn-bordered-light">@lang('tutor_profile.call_now')</a>
+        @if ($studentStatus == 'callingNotAvailable')
+            <a id="call_not_available" class="btn btn-bordered-light" disabled>@lang('tutor_profile.call_not_available')</a>        
+            <p style="text-align:center">@lang('tutor_profile.call_not_available_reason')</p>    
+        @else
+            <a id="call_tutor" class="btn btn-bordered-light">@lang('tutor_profile.call_now')</a>
+        @endif
     @endif
 </div>
 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> <span class="sr-only">close</span></button>
@@ -240,7 +245,9 @@
         socket.emit('heartbeat', {student_id: {{ Auth::user()->fk_id }}});
     }, 1000);
 
+    
     $('#call_tutor').click(function() {
+        
         $('#tutor_profile_modal_body').hide();
         $('#tutor_profile_modal_footer').hide();
         $(this).hide();

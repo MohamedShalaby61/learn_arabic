@@ -77,6 +77,8 @@
           </ul>
         </div>
       </div>
+    @include('layouts.msg')
+
     </div>
 
 
@@ -153,8 +155,6 @@
     </div>
   </div>
 
-
-    
 @endsection
 
 @section('scripts')

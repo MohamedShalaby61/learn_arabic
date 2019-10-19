@@ -79,6 +79,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/student/like_tutor', 'StudentController@likeTutor')->name('student.like_tutor');
 	
 	Route::get('/student/payment/{months}/{days}/{minutes}', 'StudentController@payment')->name('student.payment');
+	Route::post('/student/payment', 'StudentController@postPayment');
 });
 
 Route::get('/tutor/{id}', 'HomeController@tutorProfile')->name('tutorProfile');

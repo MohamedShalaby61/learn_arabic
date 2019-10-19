@@ -21,5 +21,7 @@ return [
     'intro' => 'Intro',
     'schedule' => 'Schedule',
     'tutor_busy' => 'Sorry, Tutor is busy',
-    'call_accepted_msg' => 'Call accepted, and you will be redirected to the video calling page'
+    'call_accepted_msg' => 'Call accepted, and you will be redirected to the video calling page',
+    'call_not_available'    =>  "Calling not available",
+    'call_not_available_reason'    =>  "Your balance is not enough to book session you should subscribe now",
 ];

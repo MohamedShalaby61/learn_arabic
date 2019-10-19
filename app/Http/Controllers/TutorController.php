@@ -219,6 +219,24 @@ class TutorController extends Controller
     public function bookTime(Request $request)
     {
         $time=TutorTime::find($request->time_id);
+        $student = Student::find(auth()->user()->fk_id);
+        if (!empty($student)) {
+            if ($student->subscribed() == false) {
+                return back()->with('error','You should subscribe to be able to book session');        
+            }
+
+            /**
+             * if student used days still valid to make a call
+             * if student finish available minutes per day, continue
+             */
+            if ($student->package_used_days <= $student->packagePrice->days) {
+                if ($student->package_used_minutes >= $student->packagePrice->minutes) {
+                    // finish available minutes
+                    return back()->with('error',@lang('tutor_profile.call_not_available_reason'));        
+                }
+            }
+        } 
+
         if($time->booked_user_id ==null){
             $data['booked_datetime']=Carbon::now();
             $data['booked_user_id']=\auth()->id();
