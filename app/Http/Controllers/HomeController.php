@@ -7,6 +7,7 @@ use App\Models\Testimonial;
 use App\Models\Course;
 use App\Models\CourseLesson;
 use App\Models\Call;
+use App\Models\Student;
 use App\Models\TutorTime;
 
 use Illuminate\Http\Request;
@@ -69,8 +70,19 @@ class HomeController extends Controller
     public function tutorProfile($id)
     {
         //$this->middleware('auth');
-
         $tutor = Tutor::findOrFail($id);
+        if (!empty(auth()->user())) {
+            $student = Student::find(auth()->user()->fk_id);
+            /**
+             * if student used days still valid to make a call
+             * if student finish available minutes per day, continue
+             */
+            if ($student->package_used_days <= $student->packagePrice->days) {
+                if ($student->package_used_minutes >= $student->packagePrice->minutes) {
+                    $studentStatus = 'callingNotAvailable';
+                }
+            }
+        }
 
         $timesArr = [];
         $times = TutorTime::where(['tutor_id' => $id, 'status' => 1])->whereDate('date', '>', Carbon::now())->get();
@@ -86,7 +98,7 @@ class HomeController extends Controller
             ];
         }
 
-        return view('tutor_profile')->with(['tutor' => $tutor, 'timesArr' => $timesArr]);
+        return view('tutor_profile')->with(['tutor' => $tutor, 'timesArr' => $timesArr, 'studentStatus'=>$studentStatus]);
     }
 
     public function schedule()

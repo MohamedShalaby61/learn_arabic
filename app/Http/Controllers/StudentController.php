@@ -7,12 +7,13 @@ use App\Models\Package;
 use App\Models\PackagePrice;
 use App\Models\UserCourse;
 use App\Models\FavoriteTutor;
-
+use App\Models\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Hash;
 
 use App\Traits\HelpersTrait;
+use Illuminate\Support\Carbon;
 
 class StudentController extends Controller
 {
@@ -95,6 +96,23 @@ class StudentController extends Controller
         return view('student.subscribe')->with($this->data);
     }
 
+    public function postPayment()
+    {
+        $student = Student::find(auth()->user()->fk_id);
+        $package_price = PackagePrice::find(request('package_price_id'));
+
+        $student->update([
+            'package_price_id'  =>  request('package_price_id'),
+            'package_start_date'  =>  Carbon::now(),
+            'package_expiry_date'  =>  Carbon::now()->addMonths($package_price->months),
+            'package_subscribed'    =>  1
+        ]);
+        if ($student->package_subscribed == 1) {
+            return back()->with('error', 'You are subscribed before');            
+        }
+        return back()->with('success_subscribe', 'modal');
+    }
+
 
     public function subscribe_course($id){
         $this->data['courseId'] = $id;
@@ -123,6 +141,8 @@ class StudentController extends Controller
         
         return view('student.payment')->with($this->data);
     }
+
+    
 
     public function enrollCourse($id)
     {

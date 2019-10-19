@@ -113,10 +113,12 @@
                                 <div style="width: 80%;">
 									@guest
 										<a href="{{ route('register') }}">
-									@else
+                                    @else
+                                            {{-- subscribe button --}}                                    
 										<a id="payment">
 									@endguest
-										<div><button type="button" class="checkout-button btn btn-tertiary btn-block"><span style="display: flex; align-items: center;"><span style="margin-left: auto; margin-right: auto;">
+										<div>
+                                            <button type="button" class="checkout-button btn btn-tertiary btn-block"><span style="display: flex; align-items: center;"></span><span style="margin-left: auto; margin-right: auto;">        
 										@guest
 											@lang('student-subscribe.sign_up')
 										@else
