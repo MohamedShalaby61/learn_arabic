@@ -71,7 +71,7 @@
 				</div>
 				
 				<div class="text-center">
-					<form id="subscribe-form" action="/student/payment" method="post" >
+					<form id="subscribe-form" action="{{route('student.postPayment')}}" method="post" >
 						@csrf
 						<input type="hidden" name="package_price_id" value="{{$price->id}}">
 						<button type="submit" class="btn btn-accent" type="button" style="background-color: #d22f32; border-color: #89001a; color:#fff; border: none;" >
