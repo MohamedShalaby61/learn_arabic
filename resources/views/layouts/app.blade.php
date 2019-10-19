@@ -240,18 +240,19 @@
                                                 <div>@lang('main.favorite_tutors')</div>
                                             </div>
                                         </div>
+
                                         @if(isset($favorites[0]) && !empty($favorites[0]))
                                             <div style="box-sizing: border-box; color: rgba(0, 0, 0, 0.54); font-size: 14px; font-weight: 500; line-height: 48px; padding-left: 16px; width: 100%;">
                                                 Offline
                                             </div>
                                         @endif
                                         @if(isset($favorites[1]) && !empty($favorites[1]))
-                                        <div style="box-sizing: border-box; color: rgba(0, 0, 0, 0.54); font-size: 14px; font-weight: 500; line-height: 48px; padding-left: 16px; width: 100%;">
-                                            Online
-                                        </div>
+                                            <div style="box-sizing: border-box; color: rgba(0, 0, 0, 0.54); font-size: 14px; font-weight: 500; line-height: 48px; padding-left: 16px; width: 100%;">
+                                                Online
+                                            </div>
                                         @endif
                                         <div id="favoriteContainer">
-    
+
                                         </div>
                                     </div>
                                 </div>
@@ -501,6 +502,7 @@
     @endif
 
     @yield('scripts')
+    @stack('js')
     <script>
         $(document).ready(function(){
             $('#favoriteContainer').on('click', '.tutor_profile',function(){

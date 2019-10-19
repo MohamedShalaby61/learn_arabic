@@ -76,7 +76,7 @@
               <input type="submit" value="@lang('home.get_started_it_is_free')" class="btn btn-primary btn-block mt-3" />
             </form>
           @else
-            <a href="/about" class="btn btn-primary btn-block mt-3">@lang('home.read_more')</a>
+            <a href="{{ route('about') }}" class="btn btn-primary btn-block mt-3">@lang('home.read_more')</a>
           @endguest
         </div>
       </div>

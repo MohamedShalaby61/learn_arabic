@@ -90,6 +90,11 @@
                     <i class="fa fa-angellist"></i> <span>@lang('personal::personal.personals')</span>
                 </a>
             </li>
+            <li class="treeview">
+                <a href="{{ route('configs.index') }}">
+                    <i class="fa fa-gear"></i> <span>@lang('config::config.configs')</span>
+                </a>
+            </li>
         </ul>
     </section>
     <!-- /.sidebar -->
