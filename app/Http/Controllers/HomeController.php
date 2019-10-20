@@ -71,15 +71,19 @@ class HomeController extends Controller
     {
         //$this->middleware('auth');
         $tutor = Tutor::findOrFail($id);
+        $studentStatus=null;
         if (!empty(auth()->user())) {
             $student = Student::find(auth()->user()->fk_id);
             /**
              * if student used days still valid to make a call
              * if student finish available minutes per day, continue
              */
-            if ($student->package_used_days <= $student->packagePrice->days) {
-                if ($student->package_used_minutes >= $student->packagePrice->minutes) {
-                    $studentStatus = 'callingNotAvailable';
+            if(!empty($student))
+            {
+                if ($student->package_used_days <= $student->packagePrice->days) {
+                    if ($student->package_used_minutes >= $student->packagePrice->minutes) {
+                        $studentStatus = 'callingNotAvailable';
+                    }
                 }
             }
         }
