@@ -31,36 +31,50 @@ class MeetingController extends Controller
             'tutor_id' => $id,
             'join_url' => ''
         ]);
+        $authTutor = Tutor::find($id);
+        try {
         
-        $userId      = 'GocFdEq1Ql2tvn6Yl9XlGg';
-        $meetingData = [
-            'topic' => 'Live call - ' . $callRecord->id,
-            'type' => '1',
-            'start_time' => '2019-06-16T09:00:00',
-            'duration' => '60',
-            'timezone' => 'Africa/Cairo',
-            'password' => '',
-            'agenda' => '',
-            'settings' => [
-                'host_video' => 'true',
-                'participant_video' => 'true',
-                'cn_meeting' => 'false',
-                'in_meeting' => 'true',
-                'join_before_host' => 'false',
-                'mute_upon_entry' => 'true',
-                'watermark' => 'false',
-                'use_pmi' => 'false',
-                'approval_type' => '2',
-                'registration_type' => '1',
-                'enforce_login' => 'false',
-                'enforce_login_domains' => 'false',
-                'contact_name' => Auth::user()->name,
-                'contact_email' => Auth::user()->email
-            ]
-        ];
-        $res = $this->createAMeeting($userId, $meetingData);
-        $callRecord->join_url = $res->join_url;
-        $callRecord->save();
+            if(empty($authTutor->zoom_id))
+            {
+                $zoomUser = $this->getUserInfoByEmail(env('ZOOM_ADMIN_EMAIL'));
+                $userId      = $zoomUser->id;
+            }else{
+                $userId = $authTutor->zoom_id;
+            }
+
+            // $userId      = 'GocFdEq1Ql2tvn6Yl9XlGg';
+            $meetingData = [
+                'topic' => 'Live call - ' . $callRecord->id,
+                'type' => '1',
+                'start_time' => '2019-06-16T09:00:00',
+                'duration' => '60',
+                'timezone' => 'Africa/Cairo',
+                'password' => '',
+                'agenda' => '',
+                'settings' => [
+                    'host_video' => 'true',
+                    'participant_video' => 'true',
+                    'cn_meeting' => 'false',
+                    'in_meeting' => 'true',
+                    'join_before_host' => 'false',
+                    'mute_upon_entry' => 'true',
+                    'watermark' => 'false',
+                    'use_pmi' => 'false',
+                    'approval_type' => '2',
+                    'registration_type' => '1',
+                    'enforce_login' => 'false',
+                    'enforce_login_domains' => 'false',
+                    'contact_name' => Auth::user()->name,
+                    'contact_email' => Auth::user()->email
+                ]
+            ];
+            $res = $this->createAMeeting($userId, $meetingData);
+        } catch (\Throwable $th) {
+            return back()->with('error', 'Something went wrong');
+        }
+            $callRecord->join_url = $res->join_url;
+            $callRecord->save();
+
 
         return redirect()->away($res->join_url);
     }
@@ -69,48 +83,53 @@ class MeetingController extends Controller
     {
         $student = Student::find($studentId);
         $authTutor = Tutor::find(auth()->user()->fk_id);
-        
-        if(empty($authTutor->zoom_id))
-        {
-            $zoomUser = $this->getUserInfoByEmail(env('ZOOM_ADMIN_EMAIL'));
-            $userId      = $zoomUser->id;
-        }else{
-            $userId = $authTutor->zoom_id;
+
+        try {
+            
+            if(empty($authTutor->zoom_id))
+            {
+                $zoomUser = $this->getUserInfoByEmail(env('ZOOM_ADMIN_EMAIL'));
+                $userId      = $zoomUser->id;
+            }else{
+                $userId = $authTutor->zoom_id;
+            }
+
+            $callRecord = Call::create([
+                'student_id' => $student->id,
+                'tutor_id' => Auth::user()->fk_id,
+                'join_url' => ''
+            ]);
+
+            $meetingData = [
+                'topic' => 'Live call - ' . $callRecord->id,
+                'type' => 1,
+    //            'start_time' => '2019-06-16T09:00:00',
+    //            'duration' => 60,
+                'timezone' => 'Africa/Cairo',
+                'password' => '',
+                'agenda' => '',
+                'settings' => [
+                    'host_video' => true,
+                    'participant_video' => false,
+                    'cn_meeting' => false,
+                    'in_meeting' => true,
+                    'join_before_host' => true,
+                    'mute_upon_entry' => false,
+                    'watermark' => false,
+                    'use_pmi' => false,
+                    'approval_type' => 2,
+                    'registration_type' => '1',
+                    'enforce_login' => false,
+                    'enforce_login_domains' => false,
+                    'contact_name' => $student->name,
+                    'contact_email' => $student->user->email,
+                    'waiting_room' => true
+                ]
+            ];
+            $res = $this->createAMeeting($userId, $meetingData);
+        } catch (\Throwable $th) {
+            return back()->with('error', 'Something went wrong');
         }
-
-        $callRecord = Call::create([
-            'student_id' => $student->id,
-            'tutor_id' => Auth::user()->fk_id,
-            'join_url' => ''
-        ]);
-
-        $meetingData = [
-            'topic' => 'Live call - ' . $callRecord->id,
-            'type' => 1,
-//            'start_time' => '2019-06-16T09:00:00',
-//            'duration' => 60,
-            'timezone' => 'Africa/Cairo',
-            'password' => '',
-            'agenda' => '',
-            'settings' => [
-                'host_video' => true,
-                'participant_video' => false,
-                'cn_meeting' => false,
-                'in_meeting' => true,
-                'join_before_host' => true,
-                'mute_upon_entry' => false,
-                'watermark' => false,
-                'use_pmi' => false,
-                'approval_type' => 2,
-                'registration_type' => '1',
-                'enforce_login' => false,
-                'enforce_login_domains' => false,
-                'contact_name' => $student->name,
-                'contact_email' => $student->user->email,
-                'waiting_room' => true
-            ]
-        ];
-        $res = $this->createAMeeting($userId, $meetingData);
         $callRecord->join_url = $res->join_url;
         $callRecord->save();
         return $res->join_url;

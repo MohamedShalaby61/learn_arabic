@@ -234,6 +234,7 @@ trait ZoomTrait {
     //     return $this->sendRequest('webinar/end',$endAWebinarArray);
     // }
 
+   
 
     function sendRequ($calledFunction, $method , $data = [], $query = [])
     {
