@@ -42,7 +42,7 @@ class MeetingController extends Controller
                 $userId = $authTutor->zoom_id;
             }
 
-            // $userId      = 'GocFdEq1Ql2tvn6Yl9XlGg';
+
             $meetingData = [
                 'topic' => 'Live call - ' . $callRecord->id,
                 'type' => '1',
