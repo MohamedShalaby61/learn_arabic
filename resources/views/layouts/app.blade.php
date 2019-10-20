@@ -652,7 +652,7 @@
                 $('#confirm-call').modal('toggle');
 
                 $.ajax({
-                    url: '{{ url("/tutor/accept_call") }}/' + $('#call_student_id').val(),
+                    url: '{{ url("tutor/accept_call") }}/' + $('#call_student_id').val(),
                     type: 'get',
                     data: {},
                     success: function(response){
