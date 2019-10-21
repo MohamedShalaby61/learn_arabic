@@ -45,8 +45,11 @@ class HomeController extends Controller
             $this->data['favorites'][0] = [];
             $this->data['favorites'][1] = [];
         }
-
-        $this->data['topTutors'] = Tutor::where('status', 1)->whereNotNull('image')->whereNotNull('teaching_experience')->whereNotNull('education')->orderBy('online', 'desc')->orderBy('rating', 'desc')->limit(6)->get();
+        if (auth()->check()){
+            $this->data['topTutors'] = Tutor::where('id','!=',auth()->user()->fk_id)->where('status', 1)->whereNotNull('image')->whereNotNull('teaching_experience')->whereNotNull('education')->orderBy('online', 'desc')->orderBy('rating', 'desc')->limit(6)->get();
+        }else{
+            $this->data['topTutors'] = Tutor::where('status', 1)->whereNotNull('image')->whereNotNull('teaching_experience')->whereNotNull('education')->orderBy('online', 'desc')->orderBy('rating', 'desc')->limit(6)->get();
+        }
         $this->data['testimonials'] = Testimonial::where('status', 1)->orderBy('created_at', 'desc')->limit(3)->get();
 
         return view('home')->with($this->data);

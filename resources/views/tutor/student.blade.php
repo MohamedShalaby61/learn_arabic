@@ -55,7 +55,7 @@
                             <span class="input-group-text"><i class="fas fa-search"></i></span>
                         </div>
                         <input type="text" class="fltr-controls filtr-search form-control" name="filtr-search"
-                               data-search placeholder="search here for a tutors"/>
+                               data-search placeholder="@lang('students.search_here_for_students')"/>
                     </div>
                 </div>
                 <div class="input-group-btn col-md-3">
@@ -66,9 +66,9 @@
 
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">    
                         <!-- For filtering controls add -->
-                        <li class="dropdown-item" data-filter="all"> @lang('students-student.all_items')</li>
-                        <li class="dropdown-item" data-filter="1"> @lang('students-student.online')</li>
-                        <li class="dropdown-item" data-filter="2"> @lang('students-student.offline')</li>
+                        <li class="dropdown-item" data-filter="all"> @lang('students.all_items')</li>
+                        <li class="dropdown-item" data-filter="1"> @lang('students.online')</li>
+                        <li class="dropdown-item" data-filter="2"> @lang('students.offline')</li>
                         <!-- <li class="dropdown-item" data-filter="3"> Category 3 </li>     -->
                     </ul>
                 </div>
