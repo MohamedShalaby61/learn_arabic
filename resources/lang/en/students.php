@@ -18,8 +18,11 @@ return [
     'teaching_certificate' => 'Teaching certificate',
     'find_tutor' => 'Find a Tutor',
     'search_here_for_tutors' => 'search here for a tutors',
+    'search_here_for_students' => 'search here for a students',
     'date' => 'date',
     'course_time' => 'Course time',
     'student' => 'Student',
-    'cancel_time' => 'Cancel Time'
+    'cancel_time' => 'Cancel Time',
+    'accept' => 'Accept',
+    'reject' => 'Reject',
 ];

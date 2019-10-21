@@ -46,7 +46,11 @@
                                         <td>{{ $row->title }}</td>
                                         <td>{{ str_limit($row->description,50) }}</td>
                                         <td>{{ $row->cost }} USD</td>
+                                        @if($row->tutors->first() !== null)
                                         <td>{{ $row->tutors->first()->name }}</td>
+                                        @else
+                                            <td></td>
+                                        @endif
                                         <td><a href="{{ route('lessons.index',$row->id) }}" class="btn btn-info">@lang('course::course.click_here')</a></td>
                                         <td>
                                             <form action="{{ route('courses.destroy',$row->id) }}" method="post">

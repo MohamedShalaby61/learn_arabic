@@ -601,8 +601,8 @@
                         <div id="countdown">{{ env('CALL_TIMER') }}</div>
                     <div class="text-center clearfix">
                         <input type="hidden" id="call_student_id" />
-                        <a class="btn btn-success btn-ok text-white" id="accept_call">Accept</a>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal" id="reject_call">Reject</button>
+                        <a class="btn btn-success btn-ok text-white" id="accept_call">@lang('students.accept')</a>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" id="reject_call">@lang('students.reject')</button>
                     </div>
                     </div>
                 </div>

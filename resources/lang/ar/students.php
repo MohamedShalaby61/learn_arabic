@@ -18,8 +18,11 @@ return [
     'teaching_certificate' => 'شهادة تدريس',
     'find_tutor' => 'اعثر علي معلم',
     'search_here_for_tutors' => 'ابحث عن معلم ...',
+    'search_here_for_students' => 'ابحث عن طالب ...',
     'date' => 'التاريخ',
     'course_time' => 'مدة الدرس',
     'student' => 'طالب',
     'cancel_time' => 'إلغاء',
+    'accept' => 'قبول',
+    'reject' => 'رفض',
 ];
